@@ -1,11 +1,11 @@
-name: Deploy Soccer Site
+name: Deploy SEO Site
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch: 
 
-permissions: # Explicitly grant permissions
-  contents: write
+permissions:
+  contents: read
   pages: write
   id-token: write
 
@@ -13,22 +13,30 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Setup Python
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-          
+          python-version: '3.9'
+
       - name: Build Site
-        run: |
-          # Ensure templates exist or build will fail
-          python build.py
-          
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        run: python build.py
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          cname: tv.cricfoot.net
-          force_orphan: true # Cleaner for static sites
+          # This uploads the entire repository (including the new /match/ folders)
+          path: '.'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
