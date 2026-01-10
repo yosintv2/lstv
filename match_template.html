@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="{{FIXTURE}} live on TV - Channels, times, and broadcast details for {{LEAGUE}} match.">
+    <meta name="keywords" content="{{FIXTURE}}, {{LEAGUE}}, live broadcast, football TV channels, match schedule">
     <title>{{FIXTURE}} Live TV - {{LEAGUE}} | tv.cricfoot.net</title>
+    <link rel="canonical" href="{{DOMAIN}}/match/{{SLUG}}/"> <!-- Assume SLUG placeholder -->
+    
+    <!-- OpenGraph -->
+    <meta property="og:title" content="{{FIXTURE}} Live TV - {{LEAGUE}}">
+    <meta property="og:description" content="Broadcast details for {{FIXTURE}}.">
+    <meta property="og:url" content="{{DOMAIN}}/match/{{SLUG}}/">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{DOMAIN}}/assets/{{SLUG}}-poster.jpg"> <!-- Placeholder -->
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{FIXTURE}} Live TV">
+    <meta name="twitter:description" content="Broadcast details for {{FIXTURE}}.">
+    <meta name="twitter:image" content="{{DOMAIN}}/assets/{{SLUG}}-poster.jpg">
+    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
         body { background: #f1f5f9; font-family: 'Plus Jakarta Sans', sans-serif; }
@@ -15,28 +34,70 @@
         .c-name { background: #f8fafc; padding: 15px; font-weight: 800; font-size: 11px; text-transform: uppercase; color: #64748b; border-right: 1px solid #f1f5f9; }
         .ch-list { padding: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
         .pill { background: #e0f2fe; color: #0369a1; padding: 6px 12px; border-radius: 4px; font-size: 11px; font-weight: 700; border: 1px solid #bae6fd; text-decoration: none; }
+        footer { background: #001529; color: #94a3b8; padding: 60px 20px; font-size: 0.85rem; margin-top: 60px; }
     </style>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsEvent",
+        "name": "{{FIXTURE}}",
+        "startDate": "{{ISO_DATE}}", <!-- Placeholder for ISO -->
+        "endDate": "{{ISO_END}}",
+        "location": {
+            "@type": "Place",
+            "name": "{{VENUE}}"
+        },
+        "competitor": [
+            {"@type": "SportsTeam", "name": "{{HOME_TEAM}}"},
+            {"@type": "SportsTeam", "name": "{{AWAY_TEAM}}"}
+        ],
+        "offers": {
+            "@type": "Offer",
+            "url": "{{DOMAIN}}/match/{{SLUG}}/"
+        },
+        "broadcastOfEvent": [
+            {{BROADCAST_SERVICES}}  <!-- Placeholder: array of {"@type": "BroadcastService", "name": "Channel", ...} -->
+        ]
+    }
+    </script>
 </head>
 <body>
-    <header class="nav-top p-4"><div class="max-w-6xl mx-auto"><a href="{{DOMAIN}}/" class="text-white text-xl font-black italic uppercase">CRICFOOT<span class="text-[#00a0e9]">TV</span></a></div></header>
-    
+    <header class="nav-top p-4">
+        <div class="max-w-6xl mx-auto">
+            <a href="{{DOMAIN}}/" class="text-white text-xl font-black italic uppercase">CRICFOOT<span class="text-[#00a0e9]">TV</span></a>
+        </div>
+    </header>
     <div class="bg-[#001e3c] py-16 text-center text-white">
         <div class="text-[#00a0e9] font-bold text-xs uppercase mb-4">{{LEAGUE}}</div>
         <h1 class="text-4xl md:text-6xl font-black uppercase mb-6">{{FIXTURE}}</h1>
         <div class="text-3xl font-black bg-[#00a0e9] inline-block px-8 py-2 rounded" id="local-kickoff" data-unix="{{UNIX}}">--:--</div>
-        <p class="mt-4 text-slate-400 font-bold uppercase text-xs">{{DATE}}</p>
+        <p class="mt-4 text-slate-400 font-bold uppercase text-xs" id="local-date">{{DATE}}</p>
     </div>
-
     <main class="max-w-4xl mx-auto p-4 py-12">
         <div class="border border-slate-200 rounded-xl overflow-hidden shadow-2xl">{{BROADCAST_ROWS}}</div>
     </main>
-
-    <footer class="bg-[#001529] p-12 text-center text-slate-500 text-[10px] font-bold uppercase">&copy; 2026 TV.CRICFOOT.NET</footer>
-
+    <footer class="text-center">
+        <p class="text-[10px] font-bold uppercase tracking-[0.3em]">&copy; 2026 TV.CRICFOOT.NET</p>
+    </footer>
     <script>
-        const el = document.getElementById('local-kickoff');
-        const unix = el.getAttribute('data-unix');
-        el.innerText = new Date(unix * 1000).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});
+        // Enhanced Local Time & Date
+        const kickoffEl = document.getElementById('local-kickoff');
+        const dateEl = document.getElementById('local-date');
+        const unix = kickoffEl.getAttribute('data-unix');
+        if (unix) {
+            try {
+                const date = new Date(unix * 1000);
+                const timeFormatter = new Intl.DateTimeFormat('default', { hour: '2-digit', minute: '2-digit', hour12: false });
+                const dateFormatter = new Intl.DateTimeFormat('default', { weekday: 'long', month: 'short', day: 'numeric', year: 'numeric' });
+                kickoffEl.innerText = timeFormatter.format(date);
+                dateEl.innerText = dateFormatter.format(date);
+                kickoffEl.setAttribute('aria-label', date.toLocaleString());
+            } catch (e) {
+                console.error('Time conversion error:', e);
+            }
+        }
     </script>
 </body>
 </html>
