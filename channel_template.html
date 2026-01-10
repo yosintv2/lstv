@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><title>{{CHANNEL_NAME}} Soccer Schedule</title>
-    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8"><title>{{CHANNEL_NAME}} Schedule</title>
+    <link rel="stylesheet" href="https://cdn.livesoccertv.com/styles.css?v=267">
 </head>
 <body>
-    <header class="bg-blue-900 p-4 text-white"><a href="{{DOMAIN}}/" class="font-bold">CRICFOOTTV</a></header>
-    <div class="bg-slate-800 py-16 text-center text-white">
-        <h1 class="text-5xl font-black">{{CHANNEL_NAME}}</h1>
-        <p class="opacity-50 mt-2">Verified TV Rights & Broadcast Schedule</p>
-    </div>
-    <main class="max-w-4xl mx-auto my-10 bg-white border">{{LISTING}}</main>
-    <script>
-        const f = new Intl.DateTimeFormat([], {month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'});
-        document.querySelectorAll('[data-unix]').forEach(el => {
-            el.innerText = f.format(new Date(el.dataset.unix * 1000));
-        });
-    </script>
+    <h1 style="background:#00447c; color:white; padding:40px; text-align:center;">{{CHANNEL_NAME}}</h1>
+    <div style="max-width:800px; margin:auto;">{{LISTING}}</div>
 </body>
 </html>
