@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{TITLE}} | LiveSoccerTV</title>
-<meta name="keywords" content="live soccer tv, football on tv, soccer broadcast, watch football live, {{FIXTURE}}, {{CHANNEL_NAME}}">
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8"><title>CricFoot TV - Football TV Guide & Schedules</title>
+    <meta name="description" content="Find where to watch football live today. Official TV listings for all major leagues.">
+    <script src="https://cdn.tailwindcss.com"></script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
-    body { background-color: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif; color: #1e293b; }
-    .nav-top { background-color: #001529; }
+    body { background-color: #f1f5f9; font-family: 'Plus Jakarta Sans', sans-serif; color: #0f172a; margin: 0; }
+    .nav-top { background-color: #001529; border-bottom: 1px solid #1e293b; }
     .nav-leagues { background-color: #001e3c; border-bottom: 4px solid #00a0e9; }
-    .league-title { background: #334155; color: white; padding: 8px 15px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; border-radius: 4px 4px 0 0; }
-    .match-card { background: white; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; padding: 15px; text-decoration: none; color: inherit; transition: all 0.2s; }
-    .match-card:hover { background: #f1f5f9; border-left: 4px solid #00a0e9; }
-    .time-col { width: 60px; font-weight: 800; color: #00a0e9; font-size: 0.9rem; }
-    /* Match Page Table */
-    .row { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid #e2e8f0; background: white; }
+    .date-bar { background-color: #001529; }
+    .league-title { background: #334155; color: white; padding: 10px 15px; font-size: 0.7rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; border-radius: 6px 6px 0 0; }
+    .match-card { background: white; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; padding: 16px; text-decoration: none; color: inherit; transition: 0.2s; }
+    .match-card:hover { border-left: 4px solid #00a0e9; background: #f8fafc; }
+    .time-col { width: 70px; font-weight: 800; color: #00a0e9; }
+    .broadcast-table { background: white; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; }
+    .row { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid #f1f5f9; }
     @media (min-width: 768px) { .row { grid-template-columns: 30% 70%; } }
-    .c-name { background: #f1f5f9; padding: 12px 20px; font-weight: 800; font-size: 0.8rem; border-right: 1px solid #e2e8f0; }
+    .c-name { background: #f8fafc; padding: 15px 20px; font-weight: 800; font-size: 0.8rem; border-right: 1px solid #f1f5f9; }
     .ch-list { padding: 12px 20px; display: flex; flex-wrap: wrap; gap: 8px; }
-    .pill { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
+    .pill { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 6px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; text-decoration: none; }
     .pill:hover { background: #00a0e9; color: white; }
+    footer { background: #001529; color: #94a3b8; padding: 40px 20px; font-size: 0.8rem; margin-top: 50px; }
 </style>
 </head>
 <body>
-    <header class="nav-top p-4">
-        <div class="max-w-5xl mx-auto"><a href="/" class="text-white text-2xl font-black italic uppercase">LIVE<span class="text-[#00a0e9]">SOCCER</span>TV</a></div>
-    </header>
-    <div class="bg-[#001e3c] py-12 px-4 text-center">
-        <h1 class="text-white text-4xl font-black uppercase mb-2">{{CHANNEL_NAME}}</h1>
-        <p class="text-sky-400 font-bold tracking-widest text-xs">OFFICIAL BROADCAST SCHEDULE</p>
-    </div>
-    <main class="max-w-5xl mx-auto p-4 py-10">
-        <h2 class="text-sm font-black uppercase text-slate-400 mb-4">Upcoming Matches on {{CHANNEL_NAME}}</h2>
-        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            {{MATCH_LISTING}}
+    <header class="nav-top p-4"><div class="max-w-6xl mx-auto"><h1 class="text-white text-2xl font-black italic uppercase">CRICFOOT<span class="text-[#00a0e9]">TV</span></h1></div></header>
+    <nav class="nav-leagues text-white text-[11px] font-bold uppercase overflow-x-auto"><div class="max-w-6xl mx-auto flex"><a href="/" class="px-4 py-3 bg-[#00a0e9]">Home</a><a href="#" class="px-4 py-3">TV Channels</a><a href="#" class="px-4 py-3">Live Now</a></div></nav>
+    <div class="date-bar p-3"><div class="max-w-6xl mx-auto flex gap-2 overflow-x-auto">{{DATE_MENU}}</div></div>
+    <main class="max-w-6xl mx-auto p-4 py-8">
+        <div class="flex justify-between items-end mb-6">
+            <h2 class="text-2xl font-black">Match Schedule</h2>
+            <span class="text-slate-400 font-bold text-xs uppercase">{{TODAY}}</span>
         </div>
+        {{MATCH_LISTING}}
     </main>
-</body>
+    </body>
 </html>
