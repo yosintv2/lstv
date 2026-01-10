@@ -1,16 +1,15 @@
 import json, os, re, glob, time
 from datetime import datetime, timedelta
 
-# --- CONFIG ---
-DOMAIN = "https://tv.cricfoot.net"
-DATE_FOLDER = "date/*.json"
-CURRENT_TIME = time.time() # Jan 11, 2026 
+# jan 11, 2026 is today
+TODAY = datetime(2026, 1, 11).date()
+TOMORROW = TODAY + timedelta(days=1)
 
 def slugify(t): return re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
 
-# 1. LOAD ALL DATA
+# Load and Deduplicate
 all_matches = {}
-for file_path in glob.glob(DATE_FOLDER):
+for file_path in glob.glob("date/*.json"):
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             for m in json.load(f):
@@ -18,49 +17,45 @@ for file_path in glob.glob(DATE_FOLDER):
                 if uid not in all_matches: all_matches[uid] = m
     except: pass
 
-# 2. HELPER: RENDER LISTING
-def get_match_html(match_list, filter_date=None, live_only=False):
-    output = ""
-    grouped = {}
-    for m in match_list:
-        m_dt = datetime.fromtimestamp(m['kickoff'])
-        # Filter by Date
-        if filter_date and m_dt.date() != filter_date: continue
-        # Filter by Live (Kickoff <= Now <= Kickoff + 2 hours)
-        if live_only and not (m['kickoff'] <= CURRENT_TIME <= m['kickoff'] + 7200): continue
-        
-        l_name = m.get('league', 'Other')
-        grouped.setdefault(l_name, []).append(m)
-
-    for league, ms in grouped.items():
-        output += f'<div class="league-title">{league}</div>'
-        for mx in ms:
-            t = datetime.fromtimestamp(mx['kickoff']).strftime('%H:%M')
-            url = f"/match/{slugify(mx['fixture'])}/{datetime.fromtimestamp(mx['kickoff']).strftime('%Y%m%d')}/"
-            output += f'<a href="{url}" class="match-card"><div class="time-col">{t}</div><div class="font-bold">{mx["fixture"]}</div></a>'
-    return output if output else '<div class="p-10 text-center text-slate-400 font-bold">No matches found for this selection.</div>'
-
-# 3. GENERATE PAGES
+# Templates
 with open('home_template.html', 'r') as f: home_temp = f.read()
+with open('match_template.html', 'r') as f: match_temp = f.read()
+with open('channel_template.html', 'r') as f: chan_temp = f.read()
 
-dates_to_gen = [
-    ("yesterday.html", datetime.now().date() - timedelta(days=1), "Yesterday"),
-    ("index.html", datetime.now().date(), "Today"),
-    ("tomorrow.html", datetime.now().date() + timedelta(days=1), "Tomorrow"),
-    ("live.html", None, "Live Now")
-]
+channels_data = {}
 
-for filename, target_date, label in dates_to_gen:
-    is_live = (filename == "live.html")
-    content = get_match_html(all_matches.values(), filter_date=target_date, live_only=is_live)
+# Generate Match Pages
+for m in all_matches.values():
+    m_dt = datetime.fromtimestamp(m['kickoff'])
+    m_date = m_dt.date()
     
-    # Generate Date Menu
-    menu = ""
-    for fn, _, lbl in dates_to_gen:
-        active = "bg-[#00a0e9] text-white" if lbl == label else "bg-slate-800 text-slate-400"
-        menu += f'<a href="/{fn}" class="flex-1 text-center py-2 rounded text-[10px] font-black uppercase {active}">{lbl}</a>'
+    # Process only Today and Tomorrow
+    if m_date in [TODAY, TOMORROW]:
+        slug = slugify(m['fixture'])
+        date_str = m_dt.strftime('%Y%m%d')
+        path = f"match/{slug}/{date_str}"
+        os.makedirs(path, exist_ok=True)
+        
+        # Build Table Rows
+        rows, top_ch = "", []
+        for c in m.get('tv_channels', []):
+            pills = "".join([f'<a href="/channel/{slugify(ch)}/" class="pill">{ch}</a>' for ch in c['channels']])
+            rows += f'<div class="row"><div class="c-name">{c["country"]}</div><div class="ch-list">{pills}</div></div>'
+            top_ch.extend(c['channels'])
+            # Store channel data for channel pages
+            for ch in c['channels']:
+                channels_data.setdefault(ch, []).append(m)
 
-    page_html = home_temp.replace("{{MATCH_LISTING}}", content).replace("{{DATE_MENU}}", menu)
-    with open(filename, "w") as f: f.write(page_html)
+        # Write Match Page
+        m_html = match_temp.replace("{{FIXTURE}}", m['fixture']).replace("{{TIME}}", m_dt.strftime('%H:%M'))\
+                           .replace("{{DATE}}", m_dt.strftime('%d %b %Y')).replace("{{BROADCAST_ROWS}}", rows)\
+                           .replace("{{LEAGUE}}", m.get('league', 'Football'))
+        with open(f"{path}/index.html", "w") as f: f.write(m_html)
 
-print("Build Successful: index, yesterday, tomorrow, and live pages generated.")
+# Generate Channel Pages
+for ch_name, m_list in channels_data.items():
+    path = f"channel/{slugify(ch_name)}"
+    os.makedirs(path, exist_ok=True)
+    list_html = "".join([f'<a href="/match/{slugify(x["fixture"])}/{datetime.fromtimestamp(x["kickoff"]).strftime("%Y%m%d")}/" class="match-card"><div class="time-col">{datetime.fromtimestamp(x["kickoff"]).strftime("%H:%M")}</div><div>{x["fixture"]}</div></a>' for x in m_list])
+    c_html = chan_temp.replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", list_html)
+    with open(f"{path}/index.html", "w") as f: f.write(c_html)
