@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Soccer TV Guide - Football on TV Today | tv.cricfoot.net</title>
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Official football TV guide. Find where to watch live soccer today. Local kickoff times for Premier League, La Liga, and more.">
-    <link rel="canonical" href="{{DOMAIN}}/" />
+    <meta name="keywords" content="live soccer TV, football schedule, soccer broadcast, live matches today, football TV guide">
+    <title>Live Soccer TV Guide - Football on TV Today | tv.cricfoot.net</title>
+    <link rel="canonical" href="{{DOMAIN}}/">
+    
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Live Soccer TV Guide - Football on TV Today">
+    <meta property="og:description" content="Find where to watch live soccer today with local times.">
+    <meta property="og:url" content="{{DOMAIN}}/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{DOMAIN}}/assets/soccer-tv-guide.jpg"> <!-- Placeholder -->
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Live Soccer TV Guide">
+    <meta name="twitter:description" content="Find where to watch live soccer today with local times.">
+    <meta name="twitter:image" content="{{DOMAIN}}/assets/soccer-tv-guide.jpg">
+    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
         body { background: #f1f5f9; font-family: 'Plus Jakarta Sans', sans-serif; color: #1e293b; }
@@ -18,61 +35,81 @@
         .match-time { font-weight: 800; color: #00a0e9; text-align: center; font-size: 14px; }
         .match-info { padding: 15px; font-weight: 700; font-size: 15px; border-left: 1px solid #f1f5f9; }
         .top-match { background: #fffbeb; border-left: 4px solid #f59e0b; }
+        footer { background: #001529; color: #94a3b8; padding: 60px 20px; font-size: 0.85rem; margin-top: 60px; }
     </style>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Live Soccer TV Guide",
+        "url": "{{DOMAIN}}/",
+        "description": "Football on TV today",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {{MATCH_ITEMS}}  <!-- Placeholder: array of {"@type": "SportsEvent", "name": "Home vs Away", "startDate": "ISO", ...} -->
+            ]
+        }
+    }
+    </script>
 </head>
 <body>
     <header class="nav-top p-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <a href="{{DOMAIN}}/" class="text-white text-2xl font-black italic uppercase">CRICFOOT<span class="text-[#00a0e9]">TV</span></a>
-            <div class="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Local Time: <span id="user-time" class="text-white"></span></div>
+            <div class="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Local Time: <span id="user-time"></span> on <span id="user-date"></span></div>
         </div>
     </header>
-
     <div class="bg-[#001529] overflow-x-auto border-t border-slate-800">
         <div class="max-w-6xl mx-auto flex">{{WEEKLY_MENU}}</div>
     </div>
-
     <div class="bg-white border-b border-slate-200 p-4">
         <div class="max-w-6xl mx-auto">
-            <input type="text" id="matchSearch" placeholder="Search teams, leagues, or countries..." class="w-full p-3 rounded border border-slate-300 focus:ring-2 focus:ring-[#00a0e9] outline-none font-bold">
+            <input type="text" id="matchSearch" placeholder="Search teams, leagues, or countries..." class="w-full p-3 rounded border border-slate-300 focus:ring-2 focus:ring-[#00a0e9] outline-none font-bold" aria-label="Search matches">
         </div>
     </div>
-
     <main class="max-w-6xl mx-auto p-4 py-8 min-h-screen">
         <div id="listing-container" class="bg-white rounded shadow-xl border border-slate-200 overflow-hidden">
             {{MATCH_LISTING}}
         </div>
     </main>
-
-    <footer class="bg-[#001529] p-12 mt-10 text-center text-slate-500 border-t border-slate-800">
+    <footer>
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 text-left">
             <div><h4 class="text-white font-black mb-4">CRICFOOT TV</h4><p class="text-sm">The most accurate global soccer TV directory.</p></div>
             <div><h4 class="text-white font-black mb-4">PAGES</h4><ul class="text-sm space-y-2"><li><a href="{{DOMAIN}}/">Today</a></li><li><a href="{{DOMAIN}}/sitemap.xml">Sitemap</a></li></ul></div>
             <div><h4 class="text-white font-black mb-4">ADS</h4><div class="h-20 bg-slate-800 rounded"></div></div>
         </div>
-        <p class="text-[10px] font-bold uppercase tracking-[0.3em]">&copy; 2026 TV.CRICFOOT.NET</p>
+        <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-center">&copy; 2026 TV.CRICFOOT.NET</p>
     </footer>
-
     <script>
-        // Local Time Detection
-        const userTime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-        document.getElementById('user-time').innerText = userTime;
-
+        // Enhanced Local Time & Date Detection
+        const now = new Date();
+        const timeFormatter = new Intl.DateTimeFormat('default', { hour: '2-digit', minute: '2-digit', hour12: false });
+        const dateFormatter = new Intl.DateTimeFormat('default', { weekday: 'long', month: 'short', day: 'numeric' });
+        document.getElementById('user-time').innerText = timeFormatter.format(now);
+        document.getElementById('user-date').innerText = dateFormatter.format(now);
+        
+        document.querySelectorAll('.match-time').forEach(el => {
+            const unix = el.getAttribute('data-unix');
+            if (unix) {
+                try {
+                    const date = new Date(unix * 1000);
+                    el.innerText = timeFormatter.format(date);
+                    el.setAttribute('aria-label', date.toLocaleString());
+                } catch (e) {
+                    console.error('Time conversion error:', e);
+                }
+            }
+        });
+        
         // Search Logic
         document.getElementById('matchSearch').addEventListener('input', function(e) {
             let term = e.target.value.toLowerCase();
             document.querySelectorAll('.match-row').forEach(row => {
                 row.style.display = row.textContent.toLowerCase().includes(term) ? 'grid' : 'none';
             });
-        });
-
-        // Convert UTC Kickoffs to Local
-        document.querySelectorAll('.match-time').forEach(el => {
-            const unix = el.getAttribute('data-unix');
-            if(unix) {
-                const date = new Date(unix * 1000);
-                el.innerText = date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});
-            }
         });
     </script>
 </body>
