@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{TITLE}}</title>
+    <meta name="description" content="Official global broadcast guide for {{FIXTURE}}. TV channels and live stream providers for {{LEAGUE}} on {{DATE}}.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #e5e7eb; font-family: 'Inter', sans-serif; }
+        .nav-blue { background: #001529; border-bottom: 3px solid #00a0e9; }
+        .detail-card { background: white; border: 1px solid #d1d5db; border-radius: 4px; }
+        .country-header { background: #f8f9fa; border-left: 4px solid #00a0e9; font-weight: bold; padding: 8px 12px; font-size: 0.9rem; }
+        .channel-pill { background: #eee; padding: 3px 10px; border-radius: 3px; font-size: 0.75rem; border: 1px solid #ccc; font-weight: 600; color: #444; }
+    </style>
+</head>
+<body>
+    <nav class="nav-blue p-4 text-white"><div class="max-w-5xl mx-auto"><a href="/" class="text-xl font-black italic uppercase">LIVE<span class="text-sky-400">SOCCER</span>TV</a></div></nav>
+    <main class="max-w-5xl mx-auto p-4 lg:p-8">
+        <div class="detail-card p-6 mb-6">
+            <h1 class="text-2xl md:text-3xl font-bold text-[#004d99]">{{FIXTURE}}</h1>
+            <p class="text-gray-500 font-bold mt-1 uppercase text-xs">{{LEAGUE}} — {{DATE}}</p>
+            <div class="mt-4 p-3 bg-blue-50 text-blue-800 text-sm rounded border border-blue-100 font-medium italic">How to Watch Live | TV Channels & Broadcast Details</div>
+        </div>
+        <div class="detail-card overflow-hidden">
+            <div class="bg-gray-800 text-white px-4 py-2 text-xs font-bold uppercase tracking-wider">Global TV Broadcasters</div>
+            {{TV_LIST}}
+        </div>
+    </main>
+</body>
+</html>
