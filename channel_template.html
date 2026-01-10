@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{CHANNEL_NAME}} Live Football Schedule | tv.cricfoot.net</title>
+    
+    <base href="{{DOMAIN}}/">
+    
     <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -19,7 +22,7 @@
 <body class="bg-slate-50">
     <header style="background:#002d56; padding: 15px 0; border-bottom: 4px solid #f90;">
         <div class="max-w-4xl mx-auto px-4">
-            <a href="{{DOMAIN}}/" style="color:#fff; font-size:24px; font-weight:900; text-transform:uppercase; letter-spacing:-1px;">CRICFOOT<span style="color:#f90;">TV</span></a>
+            <a href="index.html" style="color:#fff; font-size:24px; font-weight:900; text-transform:uppercase; letter-spacing:-1px;">CRICFOOT<span style="color:#f90;">TV</span></a>
         </div>
     </header>
 
@@ -34,13 +37,6 @@
         <div class="section-header">Upcoming Live Matches on {{CHANNEL_NAME}}</div>
         <div class="match-listings-wrapper bg-white shadow-2xl rounded-b-lg overflow-hidden border border-slate-200">
             {{MATCH_LISTING}}
-        </div>
-
-        <div class="mt-10 p-6 bg-white rounded-lg border border-slate-200 shadow-sm">
-            <h2 class="text-lg font-bold text-[#002d56] mb-2">Broadcaster Information</h2>
-            <p class="text-slate-600 text-sm leading-relaxed">
-                Viewing schedule for {{CHANNEL_NAME}}. All kickoff times are automatically updated to your browser's local timezone for convenience.
-            </p>
         </div>
     </main>
 
@@ -63,9 +59,7 @@
                 }
             }
         }
-        // Run conversion immediately
         convertLocalTimes();
-        // Run again on DOM load to catch dynamic content
         window.addEventListener('DOMContentLoaded', convertLocalTimes);
     </script>
 </body>
