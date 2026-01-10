@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    </head>
+<body>
+    <header class="nav-top p-4">
+        <div class="max-w-5xl mx-auto"><a href="/" class="text-white text-2xl font-black italic uppercase">LIVE<span class="text-[#00a0e9]">SOCCER</span>TV</a></div>
+    </header>
+    <div class="bg-[#001e3c] py-12 px-4 text-center">
+        <h1 class="text-white text-4xl font-black uppercase mb-2">{{CHANNEL_NAME}}</h1>
+        <p class="text-sky-400 font-bold tracking-widest text-xs">OFFICIAL BROADCAST SCHEDULE</p>
+    </div>
+    <main class="max-w-5xl mx-auto p-4 py-10">
+        <h2 class="text-sm font-black uppercase text-slate-400 mb-4">Upcoming Matches on {{CHANNEL_NAME}}</h2>
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+            {{MATCH_LISTING}}
+        </div>
+    </main>
+</body>
+</html>
