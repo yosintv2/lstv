@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Football on {{CHANNEL_NAME}} - Schedule | CricFoot TV</title>
-    <meta name="description" content="Official football schedule for {{CHANNEL_NAME}}. See all upcoming matches and kickoff times for this channel at tv.cricfoot.net.">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{CHANNEL_NAME}} Football Schedule | tv.cricfoot.net</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
-        body { background: #f1f5f9; font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; }
-        .nav-top { background: #001529; }
-        .chan-hero { background: #001e3c; color: white; padding: 60px 20px; }
-        .match-card { background: white; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; padding: 20px; text-decoration: none; color: inherit; }
-        .match-card:hover { border-left: 6px solid #00a0e9; background: #f8fafc; }
-        .time-col { width: 80px; font-weight: 800; color: #00a0e9; font-size: 1.1rem; }
+        body { background: #f1f5f9; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .match-card { background: white; border-bottom: 1px solid #e2e8f0; display: flex; padding: 18px; text-decoration: none; color: inherit; }
+        .time-col { width: 70px; font-weight: 800; color: #00a0e9; }
     </style>
 </head>
 <body>
-    <header class="nav-top p-4"><div class="max-w-6xl mx-auto"><a href="/" class="text-white text-xl font-black italic uppercase">CRICFOOT<span class="text-[#00a0e9]">TV</span></a></div></header>
-
-    <div class="chan-hero text-center">
-        <span class="text-[#00a0e9] font-black uppercase text-[10px] tracking-widest mb-2 block">Official Broadcaster</span>
-        <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tighter">{{CHANNEL_NAME}}</h1>
+    <header class="bg-[#001529] p-4"><a href="/" class="text-white text-xl font-black italic uppercase">CRICFOOT<span class="text-[#00a0e9]">TV</span></a></header>
+    
+    <div class="bg-[#001e3c] py-16 text-center text-white">
+        <h1 class="text-4xl md:text-6xl font-black uppercase">{{CHANNEL_NAME}}</h1>
+        <p class="text-[#00a0e9] font-bold mt-2 uppercase tracking-widest text-xs">Live Schedule</p>
     </div>
 
-    <main class="max-w-4xl mx-auto p-4 py-12">
-        <h2 class="text-sm font-black uppercase text-slate-400 mb-6 tracking-widest text-center">Broadcasting Schedule</h2>
-        <div class="bg-white rounded-xl shadow-xl overflow-hidden border border-slate-200">
+    <main class="max-w-4xl mx-auto p-4 py-10">
+        <div class="bg-white rounded-xl shadow-xl border border-slate-200 overflow-hidden">
             {{MATCH_LISTING}}
         </div>
-    </main>
 
-    <footer class="bg-[#001529] p-10 text-center text-slate-500 text-xs uppercase font-bold">&copy; 2026 tv.cricfoot.net</footer>
+        <div class="mt-8">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="4345862479" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </main>
+    <footer class="bg-[#001529] p-10 text-center text-slate-500 text-[10px] font-bold uppercase">&copy; 2026 TV.CRICFOOT.NET</footer>
 </body>
 </html>
