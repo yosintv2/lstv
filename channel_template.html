@@ -63,7 +63,9 @@
                 }
             }
         }
+        // Run conversion immediately
         convertLocalTimes();
+        // Run again on DOM load to catch dynamic content
         window.addEventListener('DOMContentLoaded', convertLocalTimes);
     </script>
 </body>
