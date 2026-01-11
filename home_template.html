@@ -1,109 +1,152 @@
-<!DOCTYPE html> 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{PAGE_TITLE}} | CricFootTV</title>
-    <link href='https://www.hls-player.net/fav.png' rel='icon' type='image/x-icon'/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; }
-        
-        /* Navigation - Dark Blue Theme */
-        .weekly-nav { background: #002d56; display: flex; overflow-x: auto; scrollbar-width: none; position: sticky; top: 0; z-index: 50; }
-        .weekly-nav::-webkit-scrollbar { display: none; }
-        .date-btn { padding: 12px; text-align: center; color: #ccc; text-decoration: none; border-right: 1px solid #00447c; flex: 1; min-width: 90px; transition: 0.2s; }
-        .date-btn:hover { background: #003a6e; color: #fff; }
-        
-        /* THE CLICKED EFFECT */
-        .date-btn.active { background: #f90 !important; color: #002d56 !important; font-weight: 800; }
-        
-        .league-header { background: #1a202c; color: #fff; padding: 12px 16px; font-weight: 800; font-size: 11px; text-transform: uppercase; border-left: 4px solid #f90; }
-        .match-row { transition: all 0.2s; border-bottom: 1px solid #edf2f7; background: #fff; text-decoration: none; }
-        .match-row:hover { background-color: #f8fafc; transform: translateX(4px); }
-        .time-box { min-width: 75px; border-right: 1px solid #edf2f7; text-align: center; }
-        
-        .search-container { position: sticky; top: 55px; z-index: 40; }
-        .selected-banner { background: #f8fafc; color: #64748b; font-size: 12px; font-weight: 700; text-transform: uppercase; border-top: 1px solid #e2e8f0; }
-    </style>
-</head>
-<body class="bg-slate-100">
-    <header class="bg-[#002d56] py-4 border-b-4 border-[#f90]">
-        <div class="max-w-4xl mx-auto px-4">
-            <a href="{{DOMAIN}}/" class="text-white text-2xl font-black italic tracking-tighter">CRICFOOT<span class="text-[#f90]">TV</span></a>
-        </div>
-    </header>
+import json, os, re, glob
+from datetime import datetime, timedelta, timezone
 
-    <nav class="weekly-nav shadow-lg">
-        <div class="max-w-4xl mx-auto flex w-full">
-            {{WEEKLY_MENU}}
-        </div>
-    </nav>
+# --- CONFIGURATION ---
+DOMAIN = "https://tv.cricfoot.net"
+# Set this to the timezone your primary audience uses (e.g., +5 for South Asia)
+# This ensures 02:00 AM matches group onto the correct day's HTML file.
+LOCAL_OFFSET = timezone(timedelta(hours=5)) 
 
-    <div class="search-container bg-white shadow-sm">
-        <div class="max-w-4xl mx-auto p-4">
-            <input type="text" id="matchSearch" placeholder="Search team or league..." class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 transition-all">
-        </div>
-        <div class="selected-banner py-2 px-8">
-            <div class="max-w-4xl mx-auto flex items-center">
-                <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                Matches for: <span class="text-slate-900 ml-1">{{SELECTED_DATE}}</span>
+NOW = datetime.now(LOCAL_OFFSET)
+TODAY_DATE = NOW.date()
+
+# Friday to Thursday Logic
+days_since_friday = (TODAY_DATE.weekday() - 4) % 7
+START_WEEK = TODAY_DATE - timedelta(days=days_since_friday)
+
+TOP_LEAGUE_IDS = [7, 35, 23, 17]
+
+def slugify(t): 
+    return re.sub(r'[^a-z0-9]+', '-', str(t).lower()).strip('-')
+
+# --- 1. LOAD TEMPLATES ---
+templates = {}
+for name in ['home', 'match', 'channel']:
+    try:
+        with open(f'{name}_template.html', 'r', encoding='utf-8') as f:
+            templates[name] = f.read()
+    except FileNotFoundError:
+        print(f"CRITICAL ERROR: {name}_template.html not found.")
+
+# --- 2. LOAD DATA ---
+all_matches = []
+seen_match_ids = set()
+for f in glob.glob("date/*.json"):
+    with open(f, 'r', encoding='utf-8') as j:
+        try:
+            data = json.load(j)
+            for m in data:
+                mid = m.get('match_id')
+                if mid and mid not in seen_match_ids:
+                    all_matches.append(m)
+                    seen_match_ids.add(mid)
+        except: continue
+
+channels_data = {}
+sitemap_urls = [DOMAIN + "/"]
+
+# --- 3. GENERATE DAILY PAGES ---
+for i in range(7):
+    day = START_WEEK + timedelta(days=i)
+    fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
+    if fname != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname}")
+
+    current_page_menu = ""
+    for j in range(7):
+        m_day = START_WEEK + timedelta(days=j)
+        m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
+        active_class = "active" if m_day == day else ""
+        current_page_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
+
+    # FILTER: Match is only added if its LOCAL date matches the page date
+    day_matches = []
+    for m in all_matches:
+        m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
+        if m_dt_local.date() == day:
+            day_matches.append(m)
+
+    day_matches.sort(key=lambda x: (x.get('league_id') not in TOP_LEAGUE_IDS, x['kickoff']))
+
+    listing_html, last_league = "", ""
+    for m in day_matches:
+        league = m.get('league', 'Other Football')
+        if league != last_league:
+            listing_html += f'<div class="league-header">{league}</div>'
+            last_league = league
+        
+        m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
+        m_slug = slugify(m['fixture'])
+        m_date_folder = m_dt_local.strftime('%Y%m%d')
+        m_url = f"{DOMAIN}/match/{m_slug}/{m_date_folder}/"
+        sitemap_urls.append(m_url)
+        
+        listing_html += f'''
+        <a href="{m_url}" class="match-row flex items-center p-4 bg-white group">
+            <div class="time-box" style="min-width: 95px; text-align: center; border-right: 1px solid #edf2f7; margin-right: 10px;">
+                <div class="text-[10px] uppercase text-slate-400 font-bold auto-date" data-unix="{m['kickoff']}">{m_dt_local.strftime('%d %b')}</div>
+                <div class="font-bold text-blue-600 text-sm auto-time" data-unix="{m['kickoff']}">{m_dt_local.strftime('%H:%M')}</div>
             </div>
-        </div>
-    </div>
+            <div class="flex-1">
+                <span class="text-slate-800 font-semibold text-sm md:text-base">{m['fixture']}</span>
+            </div>
+        </a>'''
 
-    <main class="max-w-4xl mx-auto p-4 py-8">
-        <div class="bg-white shadow-2xl rounded-lg overflow-hidden border border-slate-200">
-            {{MATCH_LISTING}}
-        </div>
-    </main>
+        # --- 4. MATCH PAGES ---
+        m_path = f"match/{m_slug}/{m_date_folder}"
+        os.makedirs(m_path, exist_ok=True)
+        rows = ""
+        for c in m.get('tv_channels', []):
+            pills = "".join([f'<a href="{DOMAIN}/channel/{slugify(ch)}/" class="mx-1 text-blue-600 underline text-xs">{ch}</a>' for ch in c['channels']])
+            for ch in c['channels']:
+                if ch not in channels_data: channels_data[ch] = []
+                # Store match object for channel page listing
+                channels_data[ch].append({'m': m, 'dt': m_dt_local})
+            rows += f'<div class="flex justify-between p-4 border-b"><b>{c["country"]}</b><div>{pills}</div></div>'
 
-    <script>
-function autoDetectTimezone() {
-    // Update the Time (HH:MM)
-    document.querySelectorAll('.auto-time').forEach(el => {
-        const unix = el.getAttribute('data-unix');
-        if (unix) {
-            const date = new Date(unix * 1000);
-            el.innerText = date.toLocaleTimeString([], { 
-                hour: '2-digit', 
-                minute: '2-digit', 
-                hour12: false 
-            });
-        }
-    });
+        with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
+            m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
+            m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
+            m_html = m_html.replace("{{DATE}}", m_dt_local.strftime('%d %b %Y')).replace("{{TIME}}", m_dt_local.strftime('%H:%M'))
+            m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
+            mf.write(m_html)
 
-    // Update the Date (e.g., 12 Jan)
-    document.querySelectorAll('.auto-date').forEach(el => {
-        const unix = el.getAttribute('data-unix');
-        if (unix) {
-            const date = new Date(unix * 1000);
-            el.innerText = date.toLocaleDateString([], { 
-                day: 'numeric', 
-                month: 'short' 
-            });
-        }
-    });
-}
-// Run once on load
-autoDetectTimezone();
+    with open(fname, "w", encoding='utf-8') as df:
+        output = templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", current_page_menu)
+        output = output.replace("{{DOMAIN}}", DOMAIN).replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
+        output = output.replace("{{PAGE_TITLE}}", f"Soccer TV Channels For {day.strftime('%A, %b %d, %Y')}")
+        df.write(output)
 
-        document.getElementById('matchSearch').addEventListener('input', function(e) {
-            let term = e.target.value.toLowerCase();
-            document.querySelectorAll('.match-row').forEach(row => {
-                row.style.display = row.textContent.toLowerCase().includes(term) ? 'flex' : 'none';
-            });
-            document.querySelectorAll('.league-header').forEach(header => {
-                let next = header.nextElementSibling;
-                let visible = false;
-                while(next && next.classList.contains('match-row')) {
-                    if(next.style.display !== 'none') { visible = true; break; }
-                    next = next.nextElementSibling;
-                }
-                header.style.display = visible ? 'block' : 'none';
-            });
-        });
-    </script>
-</body>
-</html>
+# --- 5. FIXED CHANNEL PAGES ---
+for ch_name, matches in channels_data.items():
+    c_slug = slugify(ch_name)
+    c_dir = f"channel/{c_slug}"
+    os.makedirs(c_dir, exist_ok=True)
+    sitemap_urls.append(f"{DOMAIN}/{c_dir}/")
+
+    c_listing = ""
+    # Sort matches for this channel by time
+    matches.sort(key=lambda x: x['m']['kickoff'])
+    for item in matches:
+        m, dt = item['m'], item['dt']
+        c_listing += f'''
+        <a href="{DOMAIN}/match/{slugify(m['fixture'])}/{dt.strftime('%Y%m%d')}/" class="match-row flex items-center p-4 bg-white border-b">
+            <div class="time-box" style="min-width: 90px; text-align: center;">
+                <div class="text-[10px] text-slate-400 font-bold auto-date" data-unix="{m['kickoff']}">{dt.strftime('%d %b')}</div>
+                <div class="font-bold text-blue-600 auto-time" data-unix="{m['kickoff']}">{dt.strftime('%H:%M')}</div>
+            </div>
+            <div class="px-4"><span class="text-sm font-semibold">{m['fixture']}</span></div>
+        </a>'''
+
+    with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
+        c_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing)
+        c_html = c_html.replace("{{DOMAIN}}", DOMAIN).replace("{{WEEKLY_MENU}}", current_page_menu)
+        cf.write(c_html)
+
+# --- 6. SITEMAP ---
+sitemap_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+for url in sitemap_urls:
+    sitemap_content += f'<url><loc>{url}</loc><lastmod>{NOW.strftime("%Y-%m-%d")}</lastmod></url>'
+sitemap_content += '</urlset>'
+with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
+
+print(f"Success! {len(sitemap_urls)} URLs generated.")
