@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
-# Local offset for South Asia (GMT+5) - This acts as a fallback for the static HTML
+# Local offset for South Asia (GMT+5) - Acts as the static fallback
 LOCAL_OFFSET = timezone(timedelta(hours=5)) 
 
 NOW = datetime.now(LOCAL_OFFSET)
@@ -95,7 +95,6 @@ for i in range(7):
         m_path = f"match/{m_slug}/{m_date_folder}"
         os.makedirs(m_path, exist_ok=True)
         
-        # Correct Venue Logic
         venue_val = m.get('venue') or m.get('stadium') or "To Be Announced"
         
         rows = ""
@@ -109,9 +108,12 @@ for i in range(7):
         with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
             m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
-            # FIX: Adding auto-detect spans to Match Detail
+            
+            # THE FIX: Wrap placeholders in a clean span that JavaScript will target
+            # This ensures no old static time text stays behind.
             m_html = m_html.replace("{{DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
             m_html = m_html.replace("{{TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
+            
             m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
             m_html = m_html.replace("{{VENUE}}", venue_val) 
             mf.write(m_html)
@@ -138,7 +140,6 @@ for ch_name, matches in channels_data.items():
         m_slug = slugify(m['fixture'])
         m_date_folder = dt.strftime('%Y%m%d')
         
-        # Layout matching Home.html exactly
         c_listing += f'''
         <a href="{DOMAIN}/match/{m_slug}/{m_date_folder}/" class="match-row flex items-center p-4 bg-white border-b group">
             <div class="time-box" style="min-width: 95px; text-align: center; border-right: 1px solid #edf2f7; margin-right: 10px;">
@@ -151,7 +152,7 @@ for ch_name, matches in channels_data.items():
             </div>
         </a>'''
 
-    with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
+    with open(f"{c_dir}/", "w", encoding='utf-8') as cf:
         c_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name)
         c_html = c_html.replace("{{MATCH_LISTING}}", c_listing)
         c_html = c_html.replace("{{DOMAIN}}", DOMAIN)
