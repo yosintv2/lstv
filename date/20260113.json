@@ -1,0 +1,5125 @@
+[
+    {
+        "match_id": 13981617,
+        "kickoff": 1768239000,
+        "fixture": "Genoa vs Cagliari",
+        "league_id": 23,
+        "league": "Serie A",
+        "venue": "Luigi Ferraris",
+        "tv_channels": [
+            {
+                "country": "AU",
+                "channels": [
+                    "Paramount+"
+                ]
+            },
+            {
+                "country": "BA",
+                "channels": [
+                    "Arena Sport Premium 1"
+                ]
+            },
+            {
+                "country": "BO",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "Disney+",
+                    "ESPN 4"
+                ]
+            },
+            {
+                "country": "BZ",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "CR",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "CY",
+                "channels": [
+                    "Cytavision Sports 4HD"
+                ]
+            },
+            {
+                "country": "CZ",
+                "channels": [
+                    "Sport 1"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "TV2 Play Denmark"
+                ]
+            },
+            {
+                "country": "DO",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "ES",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "FO",
+                "channels": [
+                    "TV2 Play Denmark"
+                ]
+            },
+            {
+                "country": "GB",
+                "channels": [
+                    "DAZN UK"
+                ]
+            },
+            {
+                "country": "GR",
+                "channels": [
+                    "COSMOTE SPORT | 2HD"
+                ]
+            },
+            {
+                "country": "GT",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "HN",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "IT",
+                "channels": [
+                    "DAZN",
+                    "DAZN1"
+                ]
+            },
+            {
+                "country": "MK",
+                "channels": [
+                    "Arena Sport Premium 1"
+                ]
+            },
+            {
+                "country": "MX",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "NI",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "PA",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "PL",
+                "channels": [
+                    "Eleven Sports 1 HD"
+                ]
+            },
+            {
+                "country": "PT",
+                "channels": [
+                    "Sport TV2"
+                ]
+            },
+            {
+                "country": "RO",
+                "channels": [
+                    "Prima Sport 1",
+                    "Digi Sport 2"
+                ]
+            },
+            {
+                "country": "RS",
+                "channels": [
+                    "Arena Sport Premium 1"
+                ]
+            },
+            {
+                "country": "RU",
+                "channels": [
+                    "Match! futbol 1"
+                ]
+            },
+            {
+                "country": "SK",
+                "channels": [
+                    "Sport 1"
+                ]
+            },
+            {
+                "country": "SM",
+                "channels": [
+                    "DAZN1",
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "SV",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Paramount+"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 13981623,
+        "kickoff": 1768247100,
+        "fixture": "Juventus vs Cremonese",
+        "league_id": 23,
+        "league": "Serie A",
+        "venue": "Allianz Stadium",
+        "tv_channels": [
+            {
+                "country": "AR",
+                "channels": [
+                    "Disney+ Premium Argentina"
+                ]
+            },
+            {
+                "country": "AT",
+                "channels": [
+                    "DAZN Austria"
+                ]
+            },
+            {
+                "country": "AU",
+                "channels": [
+                    "Paramount+"
+                ]
+            },
+            {
+                "country": "BO",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "Disney+",
+                    "ESPN 4"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "CY",
+                "channels": [
+                    "Cytavision Sports 4HD"
+                ]
+            },
+            {
+                "country": "CZ",
+                "channels": [
+                    "Sport 1"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "TV2 Play Denmark",
+                    "TV2 Sport X"
+                ]
+            },
+            {
+                "country": "ES",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "FO",
+                "channels": [
+                    "TV2 Play Denmark",
+                    "TV2 Sport X"
+                ]
+            },
+            {
+                "country": "GB",
+                "channels": [
+                    "DAZN UK"
+                ]
+            },
+            {
+                "country": "GR",
+                "channels": [
+                    "COSMOTE SPORT | 1HD"
+                ]
+            },
+            {
+                "country": "IT",
+                "channels": [
+                    "Sky Sport 251",
+                    "NOW",
+                    "DAZN",
+                    "Sky Go",
+                    "Sky Sport Calcio"
+                ]
+            },
+            {
+                "country": "ME",
+                "channels": [
+                    "Arena 4 Premium"
+                ]
+            },
+            {
+                "country": "MK",
+                "channels": [
+                    "Arena 4 Premium"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "PL",
+                "channels": [
+                    "Eleven Sports 1 HD"
+                ]
+            },
+            {
+                "country": "PT",
+                "channels": [
+                    "Sport TV2"
+                ]
+            },
+            {
+                "country": "PY",
+                "channels": [
+                    "Disney+ Premium Argentina"
+                ]
+            },
+            {
+                "country": "RO",
+                "channels": [
+                    "Prima Sport 1",
+                    "Digi Sport 1"
+                ]
+            },
+            {
+                "country": "RS",
+                "channels": [
+                    "Arena 4 Premium"
+                ]
+            },
+            {
+                "country": "RU",
+                "channels": [
+                    "Match! futbol 1"
+                ]
+            },
+            {
+                "country": "SK",
+                "channels": [
+                    "Sport 1"
+                ]
+            },
+            {
+                "country": "SM",
+                "channels": [
+                    "Sky Sport 251",
+                    "NOW",
+                    "DAZN",
+                    "Sky Go",
+                    "Sky Sport Calcio"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Paramount+"
+                ]
+            },
+            {
+                "country": "UY",
+                "channels": [
+                    "Disney+ Premium Argentina"
+                ]
+            },
+            {
+                "country": "XK",
+                "channels": [
+                    "Arena 4 Premium"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14083219,
+        "kickoff": 1768248000,
+        "fixture": "Sevilla vs Celta Vigo",
+        "league_id": 8,
+        "league": "LaLiga",
+        "venue": "Ram\u00f3n S\u00e1nchez Pizju\u00e1n",
+        "tv_channels": [
+            {
+                "country": "AD",
+                "channels": [
+                    "M+ LaLiga TV"
+                ]
+            },
+            {
+                "country": "AO",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga"
+                ]
+            },
+            {
+                "country": "BF",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "BI",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "BJ",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "BO",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "Disney+",
+                    "ESPN 2"
+                ]
+            },
+            {
+                "country": "BW",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "CA",
+                "channels": [
+                    "TSN+"
+                ]
+            },
+            {
+                "country": "CD",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "CF",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "CG",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "Blue Sport 1"
+                ]
+            },
+            {
+                "country": "CI",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "CM",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "CV",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "CY",
+                "channels": [
+                    "Cytavision Sports 8HD",
+                    "Cytavision Sports 4K 1"
+                ]
+            },
+            {
+                "country": "DJ",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "TV2 Play Denmark"
+                ]
+            },
+            {
+                "country": "ER",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "ES",
+                "channels": [
+                    "M+ LaLiga TV",
+                    "Movistar+",
+                    "LaLiga TV (Bar)"
+                ]
+            },
+            {
+                "country": "ET",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "FO",
+                "channels": [
+                    "TV2 Play Denmark"
+                ]
+            },
+            {
+                "country": "GA",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "GB",
+                "channels": [
+                    "Premier Sports 1 HD",
+                    "Premier Sports Player"
+                ]
+            },
+            {
+                "country": "GH",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "GM",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "GN",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "GQ",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "GU",
+                "channels": [
+                    "ESPN Deportes"
+                ]
+            },
+            {
+                "country": "GW",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Premier Sports 1 HD",
+                    "Premier Sports Player"
+                ]
+            },
+            {
+                "country": "IT",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "KE",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "KM",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "LR",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "LS",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "MG",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "ML",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "MP",
+                "channels": [
+                    "ESPN Deportes"
+                ]
+            },
+            {
+                "country": "MR",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "MU",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "MW",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "MZ",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "NA",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "NE",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "NG",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "NO",
+                "channels": [
+                    "TV2 Play",
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "PL",
+                "channels": [
+                    "Eleven Sports 2 HD"
+                ]
+            },
+            {
+                "country": "PR",
+                "channels": [
+                    "ESPN Deportes"
+                ]
+            },
+            {
+                "country": "RE",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "RO",
+                "channels": [
+                    "Prima Sport 2",
+                    "Digi Sport 2"
+                ]
+            },
+            {
+                "country": "RU",
+                "channels": [
+                    "Match! futbol 2"
+                ]
+            },
+            {
+                "country": "RW",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "SC",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "SD",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "SL",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "SM",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "SN",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "SO",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "SS",
+                "channels": [
+                    "DStv Now",
+                    "SuperSport LaLiga"
+                ]
+            },
+            {
+                "country": "ST",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga"
+                ]
+            },
+            {
+                "country": "SZ",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "TD",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "TG",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "TZ",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "UG",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "UM",
+                "channels": [
+                    "ESPN Deportes"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "ESPN Deportes",
+                    "ESPN App"
+                ]
+            },
+            {
+                "country": "VI",
+                "channels": [
+                    "ESPN Deportes"
+                ]
+            },
+            {
+                "country": "YT",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "ZA",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "ZM",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "SuperSport LaLiga",
+                    "SuperSport Maximo 3"
+                ]
+            },
+            {
+                "country": "ZW",
+                "channels": [
+                    "SuperSport GOtv LaLiga",
+                    "DStv Now",
+                    "SuperSport LaLiga"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14062161,
+        "kickoff": 1768325400,
+        "fixture": "VfB Stuttgart vs Eintracht Frankfurt",
+        "league_id": 35,
+        "league": "Bundesliga",
+        "venue": "MHP Arena",
+        "tv_channels": [
+            {
+                "country": "AR",
+                "channels": [
+                    "ESPN 2 Sur"
+                ]
+            },
+            {
+                "country": "AT",
+                "channels": [
+                    "Sky Go",
+                    "Sky Sport Bundesliga"
+                ]
+            },
+            {
+                "country": "BN",
+                "channels": [
+                    "beIN Sports Connect Malaysia"
+                ]
+            },
+            {
+                "country": "BO",
+                "channels": [
+                    "ESPN 2 Sur",
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "OneFootball"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "Sky Bundesliga HD 1"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "ESPN 2 Sur",
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "CO",
+                "channels": [
+                    "ESPN 2 Colombia"
+                ]
+            },
+            {
+                "country": "DE",
+                "channels": [
+                    "Sky Go",
+                    "Sky Bundesliga HD 1"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "Viaplay",
+                    "See"
+                ]
+            },
+            {
+                "country": "EC",
+                "channels": [
+                    "ESPN 2 Sur"
+                ]
+            },
+            {
+                "country": "FI",
+                "channels": [
+                    "VeikkausTV",
+                    "V Sport 2 Suomi"
+                ]
+            },
+            {
+                "country": "GL",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "LU",
+                "channels": [
+                    "Sky Go"
+                ]
+            },
+            {
+                "country": "MY",
+                "channels": [
+                    "beIN Sports 3 Malaysia",
+                    "beIN Sports Connect Malaysia",
+                    "sooka"
+                ]
+            },
+            {
+                "country": "NO",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "ESPN 2 Sur",
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "PL",
+                "channels": [
+                    "Eleven Sports 2 HD"
+                ]
+            },
+            {
+                "country": "PY",
+                "channels": [
+                    "ESPN 2 Sur"
+                ]
+            },
+            {
+                "country": "RO",
+                "channels": [
+                    "Digi Sport 2"
+                ]
+            },
+            {
+                "country": "SE",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "SG",
+                "channels": [
+                    "beIN Sports 3 Malaysia"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "ESPN App"
+                ]
+            },
+            {
+                "country": "UY",
+                "channels": [
+                    "ESPN 2 Sur"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14062156,
+        "kickoff": 1768332600,
+        "fixture": "1. FSV Mainz 05 vs 1. FC Heidenheim",
+        "league_id": 35,
+        "league": "Bundesliga",
+        "venue": "MEWA Arena",
+        "tv_channels": [
+            {
+                "country": "AD",
+                "channels": [
+                    "beIN Sports MAX 6"
+                ]
+            },
+            {
+                "country": "AT",
+                "channels": [
+                    "Sky Go"
+                ]
+            },
+            {
+                "country": "BO",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "OneFootball"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "Sky Bundesliga HD 4"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "DE",
+                "channels": [
+                    "Sky Go",
+                    "DAZN",
+                    "Sky Bundesliga HD 4"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "FI",
+                "channels": [
+                    "VeikkausTV"
+                ]
+            },
+            {
+                "country": "FR",
+                "channels": [
+                    "beIN Sports MAX 6"
+                ]
+            },
+            {
+                "country": "GL",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "LU",
+                "channels": [
+                    "Sky Go"
+                ]
+            },
+            {
+                "country": "MY",
+                "channels": [
+                    "beIN SPORTS MAX Malaysia"
+                ]
+            },
+            {
+                "country": "NO",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "PL",
+                "channels": [
+                    "Eleven Sports 4 HD"
+                ]
+            },
+            {
+                "country": "RO",
+                "channels": [
+                    "Digi Sport 4"
+                ]
+            },
+            {
+                "country": "SE",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "ESPN App"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14062154,
+        "kickoff": 1768332600,
+        "fixture": "Borussia Dortmund vs SV Werder Bremen",
+        "league_id": 35,
+        "league": "Bundesliga",
+        "venue": "Signal Iduna Park",
+        "tv_channels": [
+            {
+                "country": "AD",
+                "channels": [
+                    "beIN Sports 3",
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "AR",
+                "channels": [
+                    "ESPN 2 Sur"
+                ]
+            },
+            {
+                "country": "AT",
+                "channels": [
+                    "Prime Video",
+                    "Sky Sport Bundesliga",
+                    "Sky Go"
+                ]
+            },
+            {
+                "country": "BE",
+                "channels": [
+                    "Prime Video"
+                ]
+            },
+            {
+                "country": "BN",
+                "channels": [
+                    "beIN Sports Connect Malaysia"
+                ]
+            },
+            {
+                "country": "BO",
+                "channels": [
+                    "ESPN 2 Sur",
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "OneFootball",
+                    "YouTube - Caz\u00e9TV",
+                    "Prime Video",
+                    "Xsports"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "Sky Bundesliga HD 1"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "ESPN 2 Sur",
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "CO",
+                "channels": [
+                    "ESPN 2 Colombia"
+                ]
+            },
+            {
+                "country": "DE",
+                "channels": [
+                    "Sky Go",
+                    "DAZN",
+                    "Sky Sport Bundesliga UHD",
+                    "Sky Bundesliga HD 1"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "Viaplay",
+                    "TV3 Sport"
+                ]
+            },
+            {
+                "country": "EC",
+                "channels": [
+                    "ESPN 2 Sur"
+                ]
+            },
+            {
+                "country": "EE",
+                "channels": [
+                    "TV3 Sport"
+                ]
+            },
+            {
+                "country": "ES",
+                "channels": [
+                    "Prime Video",
+                    "DAZN",
+                    "Movistar+"
+                ]
+            },
+            {
+                "country": "FI",
+                "channels": [
+                    "VeikkausTV"
+                ]
+            },
+            {
+                "country": "FR",
+                "channels": [
+                    "beIN Sports 3",
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "GL",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "LT",
+                "channels": [
+                    "TV3 Sport"
+                ]
+            },
+            {
+                "country": "LU",
+                "channels": [
+                    "Sky Go"
+                ]
+            },
+            {
+                "country": "LV",
+                "channels": [
+                    "TV3 Sport"
+                ]
+            },
+            {
+                "country": "MA",
+                "channels": [
+                    "beIN Sports 3"
+                ]
+            },
+            {
+                "country": "MC",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "MY",
+                "channels": [
+                    "beIN Sports 3 Malaysia",
+                    "beIN Sports Connect Malaysia",
+                    "sooka"
+                ]
+            },
+            {
+                "country": "NO",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "ESPN 2 Sur",
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "PL",
+                "channels": [
+                    "Eleven Sports 1 HD"
+                ]
+            },
+            {
+                "country": "PY",
+                "channels": [
+                    "ESPN 2 Sur"
+                ]
+            },
+            {
+                "country": "RO",
+                "channels": [
+                    "Digi Sport 2"
+                ]
+            },
+            {
+                "country": "SE",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "SG",
+                "channels": [
+                    "beIN Sports 3 Malaysia"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Prime Video",
+                    "ESPN App"
+                ]
+            },
+            {
+                "country": "UY",
+                "channels": [
+                    "ESPN 2 Sur"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14062169,
+        "kickoff": 1768332600,
+        "fixture": "Hamburger SV vs Bayer 04 Leverkusen",
+        "league_id": 35,
+        "league": "Bundesliga",
+        "venue": "Volksparkstadion",
+        "tv_channels": [
+            {
+                "country": "AD",
+                "channels": [
+                    "beIN Sports MAX 5"
+                ]
+            },
+            {
+                "country": "AT",
+                "channels": [
+                    "Sky Go"
+                ]
+            },
+            {
+                "country": "BO",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "OneFootball"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "Sky Bundesliga HD 3"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "DE",
+                "channels": [
+                    "Sky Go",
+                    "Sky Bundesliga HD 3",
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "Viaplay",
+                    "See"
+                ]
+            },
+            {
+                "country": "ES",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "FI",
+                "channels": [
+                    "VeikkausTV"
+                ]
+            },
+            {
+                "country": "FR",
+                "channels": [
+                    "beIN Sports MAX 5"
+                ]
+            },
+            {
+                "country": "GL",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "LU",
+                "channels": [
+                    "Sky Go"
+                ]
+            },
+            {
+                "country": "MY",
+                "channels": [
+                    "beIN SPORTS MAX Malaysia"
+                ]
+            },
+            {
+                "country": "NO",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "PL",
+                "channels": [
+                    "Eleven Sports 2 HD"
+                ]
+            },
+            {
+                "country": "SE",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "ESPN App"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15327741,
+        "kickoff": 1768334400,
+        "fixture": "Cultural Leonesa vs Athletic Club",
+        "league_id": 329,
+        "league": "Copa del Rey",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "FI",
+                "channels": [
+                    "VeikkausTV"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15327737,
+        "kickoff": 1768334400,
+        "fixture": "Deportivo La Coru\u00f1a vs Atl\u00e9tico Madrid",
+        "league_id": 329,
+        "league": "Copa del Rey",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15327740,
+        "kickoff": 1768334400,
+        "fixture": "Real Sociedad vs Osasuna",
+        "league_id": 329,
+        "league": "Copa del Rey",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "FI",
+                "channels": [
+                    "VeikkausTV"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15214739,
+        "kickoff": 1768247100,
+        "fixture": "Liverpool vs Barnsley",
+        "league_id": 19,
+        "league": "FA Cup",
+        "venue": "Anfield",
+        "tv_channels": [
+            {
+                "country": "AD",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "AE",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "AO",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "AT",
+                "channels": [
+                    "DAZN Austria"
+                ]
+            },
+            {
+                "country": "AU",
+                "channels": [
+                    "Stan Sport"
+                ]
+            },
+            {
+                "country": "BA",
+                "channels": [
+                    "Arena Sport Premium 2"
+                ]
+            },
+            {
+                "country": "BD",
+                "channels": [
+                    "SonyLIV"
+                ]
+            },
+            {
+                "country": "BF",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "BH",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "BI",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "BJ",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "BO",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "ESPN",
+                    "Disney+"
+                ]
+            },
+            {
+                "country": "BT",
+                "channels": [
+                    "SonyLIV"
+                ]
+            },
+            {
+                "country": "BW",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "CA",
+                "channels": [
+                    "SNP",
+                    "SNE",
+                    "SNO",
+                    "SNW"
+                ]
+            },
+            {
+                "country": "CD",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "CF",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "CG",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "CI",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "CM",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "CV",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "CY",
+                "channels": [
+                    "Cytavision Sports 3HD"
+                ]
+            },
+            {
+                "country": "DJ",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now",
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "Viaplay",
+                    "Viaplay Sport News"
+                ]
+            },
+            {
+                "country": "DZ",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "EG",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "ER",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "ET",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "FI",
+                "channels": [
+                    "V Sport 2 Suomi"
+                ]
+            },
+            {
+                "country": "FR",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "GA",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "GB",
+                "channels": [
+                    "discovery+ App",
+                    "Discovery+",
+                    "TNT Sports Ultimate",
+                    "TNT Sports 1"
+                ]
+            },
+            {
+                "country": "GH",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "GL",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "GM",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "GN",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "GQ",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "GR",
+                "channels": [
+                    "COSMOTE SPORT | 3HD"
+                ]
+            },
+            {
+                "country": "GW",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "HU",
+                "channels": [
+                    "Sp\u00edler1"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "discovery+ App",
+                    "Discovery+",
+                    "TNT Sports 1"
+                ]
+            },
+            {
+                "country": "IN",
+                "channels": [
+                    "SonyLIV"
+                ]
+            },
+            {
+                "country": "IQ",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "IR",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "IT",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "JO",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "KE",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "KM",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "KW",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "LB",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "LK",
+                "channels": [
+                    "SonyLIV"
+                ]
+            },
+            {
+                "country": "LR",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "LS",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "LY",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "MA",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "MC",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "MG",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "MK",
+                "channels": [
+                    "Arena Sport Premium 2"
+                ]
+            },
+            {
+                "country": "ML",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "MR",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now",
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "MU",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "MV",
+                "channels": [
+                    "SonyLIV"
+                ]
+            },
+            {
+                "country": "MW",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "MZ",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "NA",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "NE",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "NG",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "DStv Now",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2"
+                ]
+            },
+            {
+                "country": "NL",
+                "channels": [
+                    "Viaplay Netherlands"
+                ]
+            },
+            {
+                "country": "NO",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "NP",
+                "channels": [
+                    "SonyLIV"
+                ]
+            },
+            {
+                "country": "OM",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "PK",
+                "channels": [
+                    "SonyLIV"
+                ]
+            },
+            {
+                "country": "PL",
+                "channels": [
+                    "TVP Sport HD"
+                ]
+            },
+            {
+                "country": "PS",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "PT",
+                "channels": [
+                    "Sport TV1"
+                ]
+            },
+            {
+                "country": "QA",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "RE",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "RS",
+                "channels": [
+                    "Arena Sport Premium 2"
+                ]
+            },
+            {
+                "country": "RW",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "SA",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "SC",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "SD",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now",
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "SE",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "SI",
+                "channels": [
+                    "Arena Sport Slovenia 1"
+                ]
+            },
+            {
+                "country": "SL",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "SM",
+                "channels": [
+                    "DAZN"
+                ]
+            },
+            {
+                "country": "SN",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "SO",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "SS",
+                "channels": [
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now",
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "ST",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "SY",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "SZ",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "TD",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now",
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "TG",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "TN",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "TZ",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "UG",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "ESPN App"
+                ]
+            },
+            {
+                "country": "YE",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "YT",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "ZA",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Maximo"
+                ]
+            },
+            {
+                "country": "ZM",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "ZW",
+                "channels": [
+                    "SuperSport GOtv Football",
+                    "SuperSport Grandstand",
+                    "SuperSport Maximo",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15246970,
+        "kickoff": 1768334400,
+        "fixture": "Newcastle United vs Manchester City",
+        "league_id": 21,
+        "league": "EFL Cup",
+        "venue": "St James' Park",
+        "tv_channels": [
+            {
+                "country": "AD",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "AE",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "AO",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "AR",
+                "channels": [
+                    "ESPN Argentina"
+                ]
+            },
+            {
+                "country": "AT",
+                "channels": [
+                    "Sky Go",
+                    "Sky Sports Premier League"
+                ]
+            },
+            {
+                "country": "AU",
+                "channels": [
+                    "Paramount+"
+                ]
+            },
+            {
+                "country": "BF",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "BH",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "BI",
+                "channels": [
+                    "Startimes World Football",
+                    "DStv Now",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2"
+                ]
+            },
+            {
+                "country": "BJ",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "BO",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "ESPN"
+                ]
+            },
+            {
+                "country": "BW",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "BZ",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "CD",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "CF",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "CG",
+                "channels": [
+                    "StarTimes App",
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "CI",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "CM",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "CR",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "CV",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "DE",
+                "channels": [
+                    "Sky Go"
+                ]
+            },
+            {
+                "country": "DJ",
+                "channels": [
+                    "beIN SPORTS 1",
+                    "DStv Now",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "TV3 MAX",
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "DO",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "DZ",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "EG",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "ER",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "ET",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "FI",
+                "channels": [
+                    "V Sport 2 Suomi"
+                ]
+            },
+            {
+                "country": "FR",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "GA",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "GB",
+                "channels": [
+                    "Sky Go UK",
+                    "ITV",
+                    "Sky Sports Football",
+                    "STV Scotland",
+                    "Sky Sports Main Event",
+                    "ITVX",
+                    "STV Player",
+                    "Sky Sports Ultra HD"
+                ]
+            },
+            {
+                "country": "GH",
+                "channels": [
+                    "StarTimes App",
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "GL",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "GM",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "GN",
+                "channels": [
+                    "StarTimes App",
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "GQ",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "GT",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "GW",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "HN",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Sky Go UK",
+                    "ITV",
+                    "Sky Sports Football",
+                    "STV Scotland",
+                    "Sky Sports Main Event",
+                    "ITVX",
+                    "Sky Sports Ultra HD",
+                    "Sky Sports Ultra HDR"
+                ]
+            },
+            {
+                "country": "IQ",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "IR",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "JO",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "KE",
+                "channels": [
+                    "StarTimes App",
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "KM",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "KW",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "LB",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "LR",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "LS",
+                "channels": [
+                    "StarTimes App",
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "LU",
+                "channels": [
+                    "Sky Go"
+                ]
+            },
+            {
+                "country": "LY",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "MA",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "MC",
+                "channels": [
+                    "beIN SPORTS 2"
+                ]
+            },
+            {
+                "country": "MG",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "ML",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "MR",
+                "channels": [
+                    "beIN SPORTS 1",
+                    "DStv Now",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2"
+                ]
+            },
+            {
+                "country": "MU",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "MW",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "MX",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "MZ",
+                "channels": [
+                    "StarTimes App",
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "NA",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "NE",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "NG",
+                "channels": [
+                    "Startimes World Football",
+                    "DStv Now",
+                    "SuperSport Maximo 2",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "NI",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "NO",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "OM",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "PA",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "Disney+ Premium Chile"
+                ]
+            },
+            {
+                "country": "PS",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "PT",
+                "channels": [
+                    "Sport TV1"
+                ]
+            },
+            {
+                "country": "QA",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "RE",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "RO",
+                "channels": [
+                    "Digi Sport 1"
+                ]
+            },
+            {
+                "country": "RW",
+                "channels": [
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "SA",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "SC",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "SD",
+                "channels": [
+                    "beIN SPORTS 1",
+                    "DStv Now",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2"
+                ]
+            },
+            {
+                "country": "SE",
+                "channels": [
+                    "Viaplay"
+                ]
+            },
+            {
+                "country": "SL",
+                "channels": [
+                    "StarTimes App",
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "SN",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "SO",
+                "channels": [
+                    "beIN SPORTS 1",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "SS",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "beIN SPORTS 1",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "ST",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "SV",
+                "channels": [
+                    "ESPN 2 Norte"
+                ]
+            },
+            {
+                "country": "SX",
+                "channels": [
+                    "STV Player"
+                ]
+            },
+            {
+                "country": "SY",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "SZ",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "TD",
+                "channels": [
+                    "beIN SPORTS 1",
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "TG",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "TN",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "TZ",
+                "channels": [
+                    "StarTimes App",
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "UG",
+                "channels": [
+                    "StarTimes App",
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "DStv Now"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Paramount+"
+                ]
+            },
+            {
+                "country": "YE",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "YT",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League"
+                ]
+            },
+            {
+                "country": "ZA",
+                "channels": [
+                    "Startimes World Football",
+                    "SuperSport Maximo 2",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "ZM",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "SuperSport Premier League",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "ZW",
+                "channels": [
+                    "SuperSport Maximo 2",
+                    "DStv Now",
+                    "SuperSport Premier League"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14787844,
+        "kickoff": 1768334400,
+        "fixture": "Roma vs Torino",
+        "league_id": 328,
+        "league": "Coppa Italia",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "AL",
+                "channels": [
+                    "TRT Spor"
+                ]
+            },
+            {
+                "country": "AR",
+                "channels": [
+                    "DGO"
+                ]
+            },
+            {
+                "country": "AT",
+                "channels": [
+                    "DAZN Austria"
+                ]
+            },
+            {
+                "country": "AU",
+                "channels": [
+                    "Paramount+"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "TRT Spor"
+                ]
+            },
+            {
+                "country": "CL",
+                "channels": [
+                    "DGO"
+                ]
+            },
+            {
+                "country": "CO",
+                "channels": [
+                    "DGO"
+                ]
+            },
+            {
+                "country": "CZ",
+                "channels": [
+                    "Sport 1"
+                ]
+            },
+            {
+                "country": "DK",
+                "channels": [
+                    "Sport Live"
+                ]
+            },
+            {
+                "country": "EC",
+                "channels": [
+                    "DGO"
+                ]
+            },
+            {
+                "country": "GB",
+                "channels": [
+                    "Premier Sports 1 HD"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Premier Sports 1 HD"
+                ]
+            },
+            {
+                "country": "IT",
+                "channels": [
+                    "Italia 1"
+                ]
+            },
+            {
+                "country": "PE",
+                "channels": [
+                    "DGO"
+                ]
+            },
+            {
+                "country": "PT",
+                "channels": [
+                    "Sport TV3"
+                ]
+            },
+            {
+                "country": "RU",
+                "channels": [
+                    "Match! futbol 1"
+                ]
+            },
+            {
+                "country": "SK",
+                "channels": [
+                    "Sport 1"
+                ]
+            },
+            {
+                "country": "SM",
+                "channels": [
+                    "Italia 1"
+                ]
+            },
+            {
+                "country": "TR",
+                "channels": [
+                    "TRT Spor"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Paramount+"
+                ]
+            },
+            {
+                "country": "UY",
+                "channels": [
+                    "DGO"
+                ]
+            },
+            {
+                "country": "VE",
+                "channels": [
+                    "DGO"
+                ]
+            },
+            {
+                "country": "XK",
+                "channels": [
+                    "TRT Spor"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15262821,
+        "kickoff": 1768248600,
+        "fixture": "Paris Saint-Germain vs Paris FC",
+        "league_id": 335,
+        "league": "Coupe de France",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "AD",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "AE",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "BH",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "YouTube - SportyNet",
+                    "SportyNet"
+                ]
+            },
+            {
+                "country": "CH",
+                "channels": [
+                    "France 3"
+                ]
+            },
+            {
+                "country": "CY",
+                "channels": [
+                    "Cytavision Sports 7HD"
+                ]
+            },
+            {
+                "country": "DE",
+                "channels": [
+                    "Magenta Sport"
+                ]
+            },
+            {
+                "country": "DJ",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "DZ",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "EG",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "FR",
+                "channels": [
+                    "beIN SPORTS 1",
+                    "France 3"
+                ]
+            },
+            {
+                "country": "IQ",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "IR",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "JO",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "KW",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "LB",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "LY",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "MA",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "MC",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "MR",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "MX",
+                "channels": [
+                    "TVC Deportes"
+                ]
+            },
+            {
+                "country": "OM",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "PS",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "PT",
+                "channels": [
+                    "Sport TV3"
+                ]
+            },
+            {
+                "country": "QA",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "SA",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "SD",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "SO",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "SS",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "SY",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "TD",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "TN",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Fox Sports 2",
+                    "Fox Deportes"
+                ]
+            },
+            {
+                "country": "YE",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15262615,
+        "kickoff": 1768334400,
+        "fixture": "Bayeux FC vs Olympique de Marseille",
+        "league_id": 335,
+        "league": "Coupe de France",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "AD",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "DE",
+                "channels": [
+                    "Magenta Sport"
+                ]
+            },
+            {
+                "country": "FR",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "MC",
+                "channels": [
+                    "beIN SPORTS 1"
+                ]
+            },
+            {
+                "country": "PT",
+                "channels": [
+                    "Sport TV2"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Fox Sports 2",
+                    "Fox Deportes"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15190952,
+        "kickoff": 1768298400,
+        "fixture": "Alanyaspor vs Fatih Karag\u00fcmr\u00fck",
+        "league_id": 96,
+        "league": "Turkiye Kupasi, Group A",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15190950,
+        "kickoff": 1768307400,
+        "fixture": "Ba\u015fak\u015fehir FK vs Boluspor",
+        "league_id": 96,
+        "league": "Turkiye Kupasi, Group A",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15190949,
+        "kickoff": 1768325400,
+        "fixture": "Fethiyespor vs Galatasaray",
+        "league_id": 96,
+        "league": "Turkiye Kupasi, Group A",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "AL",
+                "channels": [
+                    "A Spor"
+                ]
+            },
+            {
+                "country": "TR",
+                "channels": [
+                    "A Spor"
+                ]
+            },
+            {
+                "country": "XK",
+                "channels": [
+                    "A Spor"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15187113,
+        "kickoff": 1768384800,
+        "fixture": "Alia\u011fa FK vs Samsunspor",
+        "league_id": 96,
+        "league": "Turkiye Kupasi, Group B",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "AL",
+                "channels": [
+                    "A Spor"
+                ]
+            },
+            {
+                "country": "TR",
+                "channels": [
+                    "A Spor"
+                ]
+            },
+            {
+                "country": "XK",
+                "channels": [
+                    "A Spor"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15187137,
+        "kickoff": 1768316400,
+        "fixture": "Gaziantep FK vs Kocaelispor",
+        "league_id": 96,
+        "league": "Turkiye Kupasi, Group C",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15253785,
+        "kickoff": 1768320000,
+        "fixture": "Sparta Rotterdam vs FC Volendam",
+        "league_id": 330,
+        "league": "KNVB beker",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15253792,
+        "kickoff": 1768326300,
+        "fixture": "De Treffers vs NEC Nijmegen",
+        "league_id": 330,
+        "league": "KNVB beker",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15253789,
+        "kickoff": 1768334400,
+        "fixture": "FC Utrecht vs FC Twente",
+        "league_id": 330,
+        "league": "KNVB beker",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15238902,
+        "kickoff": 1768345200,
+        "fixture": "Club Puebla vs Mazatl\u00e1n FC",
+        "league_id": 11620,
+        "league": "Liga MX, Clausura",
+        "venue": "Estadio Cuauhtemoc",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15238901,
+        "kickoff": 1768352400,
+        "fixture": "CF Pachuca vs Club Le\u00f3n",
+        "league_id": 11620,
+        "league": "Liga MX, Clausura",
+        "venue": "Estadio Miguel Hidalgo",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15238900,
+        "kickoff": 1768352400,
+        "fixture": "Club Necaxa vs CF Monterrey",
+        "league_id": 11620,
+        "league": "Liga MX, Clausura",
+        "venue": "Estadio Victoria",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15238903,
+        "kickoff": 1768359600,
+        "fixture": "Cruz Azul vs Atlas FC",
+        "league_id": 11620,
+        "league": "Liga MX, Clausura",
+        "venue": "Estadio Azteca",
+        "tv_channels": [
+            {
+                "country": "CR",
+                "channels": [
+                    "TUDN"
+                ]
+            },
+            {
+                "country": "DO",
+                "channels": [
+                    "TUDN"
+                ]
+            },
+            {
+                "country": "GT",
+                "channels": [
+                    "TUDN"
+                ]
+            },
+            {
+                "country": "HN",
+                "channels": [
+                    "TUDN"
+                ]
+            },
+            {
+                "country": "MX",
+                "channels": [
+                    "TUDN"
+                ]
+            },
+            {
+                "country": "NI",
+                "channels": [
+                    "TUDN"
+                ]
+            },
+            {
+                "country": "PA",
+                "channels": [
+                    "TUDN"
+                ]
+            },
+            {
+                "country": "SV",
+                "channels": [
+                    "TUDN"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "TUDN"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15238904,
+        "kickoff": 1768360200,
+        "fixture": "FC Ju\u00e1rez vs CD Guadalajara",
+        "league_id": 11620,
+        "league": "Liga MX, Clausura",
+        "venue": "Estadio Olimpico Benito Juarez",
+        "tv_channels": [
+            {
+                "country": "MX",
+                "channels": [
+                    "Azteca 7"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14083611,
+        "kickoff": 1768246200,
+        "fixture": "Huesca vs C\u00f3rdoba",
+        "league_id": 54,
+        "league": "LaLiga 2",
+        "venue": "El Alcoraz",
+        "tv_channels": [
+            {
+                "country": "BR",
+                "channels": [
+                    "Disney+"
+                ]
+            },
+            {
+                "country": "ES",
+                "channels": [
+                    "LaLiga TV Hypermotion",
+                    "DAZN"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15176513,
+        "kickoff": 1768341600,
+        "fixture": "Gr\u00eamio Novorizontino vs Guarani",
+        "league_id": 372,
+        "league": "Paulista S\u00e9rie A1",
+        "venue": "Est\u00e1dio Dr. Jorge Ismael de Biasi",
+        "tv_channels": [
+            {
+                "country": "BR",
+                "channels": [
+                    "TNT"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15176511,
+        "kickoff": 1768350600,
+        "fixture": "Capivariano vs Portuguesa",
+        "league_id": 372,
+        "league": "Paulista S\u00e9rie A1",
+        "venue": "Arena Capivari",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14056475,
+        "kickoff": 1768244400,
+        "fixture": "Jong AZ Alkmaar vs Jong Ajax",
+        "league_id": 131,
+        "league": "Eerste Divisie",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14056479,
+        "kickoff": 1768244400,
+        "fixture": "Jong PSV Eindhoven vs TOP Oss",
+        "league_id": 131,
+        "league": "Eerste Divisie",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14138463,
+        "kickoff": 1768237200,
+        "fixture": "Manisa FK vs \u00dcmraniyespor",
+        "league_id": 98,
+        "league": "1. Lig",
+        "venue": "Mumin Ozkasap Spor Tesisleri",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15192075,
+        "kickoff": 1768333500,
+        "fixture": "Mansfield Town vs Peterborough United",
+        "league_id": 24,
+        "league": "League One",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14771940,
+        "kickoff": 1768230600,
+        "fixture": "Al-Hazem vs Al-Najma SC",
+        "league_id": 955,
+        "league": "Saudi Pro League",
+        "venue": "Al-Hazem Club Stadium",
+        "tv_channels": [
+            {
+                "country": "BR",
+                "channels": [
+                    "Canal Goat"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14771935,
+        "kickoff": 1768239000,
+        "fixture": "Al-Ettifaq vs Al-Khaleej",
+        "league_id": 955,
+        "league": "Saudi Pro League",
+        "venue": "EGO Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14771934,
+        "kickoff": 1768239000,
+        "fixture": "Al-Hilal vs Al-Nassr",
+        "league_id": 955,
+        "league": "Saudi Pro League",
+        "venue": "Kingdom Arena",
+        "tv_channels": [
+            {
+                "country": "AT",
+                "channels": [
+                    "DAZN Austria"
+                ]
+            },
+            {
+                "country": "BI",
+                "channels": [
+                    "Startimes World Football"
+                ]
+            },
+            {
+                "country": "BR",
+                "channels": [
+                    "BandSports",
+                    "Canal Goat"
+                ]
+            },
+            {
+                "country": "CD",
+                "channels": [
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "CG",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "CM",
+                "channels": [
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "FR",
+                "channels": [
+                    "DAZN France"
+                ]
+            },
+            {
+                "country": "GH",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "GN",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "GR",
+                "channels": [
+                    "COSMOTE SPORT | 5HD"
+                ]
+            },
+            {
+                "country": "KE",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "LS",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "MG",
+                "channels": [
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "MW",
+                "channels": [
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "MZ",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "NG",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "PL",
+                "channels": [
+                    "Polsat Sport 1"
+                ]
+            },
+            {
+                "country": "PT",
+                "channels": [
+                    "Sport TV1"
+                ]
+            },
+            {
+                "country": "RO",
+                "channels": [
+                    "Prima Sport 2"
+                ]
+            },
+            {
+                "country": "RW",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "SL",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "TZ",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "UG",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Fox Sports 2",
+                    "Fox Deportes"
+                ]
+            },
+            {
+                "country": "ZA",
+                "channels": [
+                    "Startimes World Football",
+                    "StarTimes App"
+                ]
+            },
+            {
+                "country": "ZM",
+                "channels": [
+                    "StarTimes App"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14771942,
+        "kickoff": 1768317900,
+        "fixture": "Al-Okhdood vs Al-Kholood",
+        "league_id": 955,
+        "league": "Saudi Pro League",
+        "venue": "Prince Hathloul Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14771936,
+        "kickoff": 1768325400,
+        "fixture": "Al-Fateh vs Al-Riyadh",
+        "league_id": 955,
+        "league": "Saudi Pro League",
+        "venue": "Prince Abdullah bin Jalawi Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14771939,
+        "kickoff": 1768325400,
+        "fixture": "Damac FC vs Al-Ittihad",
+        "league_id": 955,
+        "league": "Saudi Pro League",
+        "venue": "Prince Sultan bin Abdul Aziz Stadium",
+        "tv_channels": [
+            {
+                "country": "PT",
+                "channels": [
+                    "Sport TV1"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Fox Sports 2",
+                    "Fox Deportes"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14999969,
+        "kickoff": 1768291200,
+        "fixture": "Sydney FC vs Newcastle Jets",
+        "league_id": 1894,
+        "league": "A-League, Women",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "AU",
+                "channels": [
+                    "Paramount+"
+                ]
+            },
+            {
+                "country": "GB",
+                "channels": [
+                    "discovery+ App",
+                    "Discovery+"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "discovery+ App",
+                    "Discovery+",
+                    "TNT Sports 2"
+                ]
+            },
+            {
+                "country": "US",
+                "channels": [
+                    "Paramount+",
+                    "ESPN App"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15296063,
+        "kickoff": 1768244400,
+        "fixture": "AFC Wimbledon vs West Ham U21",
+        "league_id": 334,
+        "league": "EFL Trophy, Knockout stage",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "GB",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15192298,
+        "kickoff": 1768330800,
+        "fixture": "Bolton Wanderers vs Port Vale",
+        "league_id": 334,
+        "league": "EFL Trophy, Knockout stage",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "GB",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15192295,
+        "kickoff": 1768330800,
+        "fixture": "Bristol Rovers vs Plymouth Argyle",
+        "league_id": 334,
+        "league": "EFL Trophy, Knockout stage",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "GB",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15192296,
+        "kickoff": 1768330800,
+        "fixture": "Doncaster Rovers vs Fleetwood Town",
+        "league_id": 334,
+        "league": "EFL Trophy, Knockout stage",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "GB",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15192299,
+        "kickoff": 1768330800,
+        "fixture": "Huddersfield Town vs Rotherham United",
+        "league_id": 334,
+        "league": "EFL Trophy, Knockout stage",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "GB",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15192297,
+        "kickoff": 1768330800,
+        "fixture": "Luton Town vs Swindon Town",
+        "league_id": 334,
+        "league": "EFL Trophy, Knockout stage",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "GB",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15192301,
+        "kickoff": 1768330800,
+        "fixture": "Stockport County vs Harrogate Town",
+        "league_id": 334,
+        "league": "EFL Trophy, Knockout stage",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "GB",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "Sky Sports+"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14414565,
+        "kickoff": 1768327200,
+        "fixture": "Real Madrid vs Athletic Club",
+        "league_id": 1127,
+        "league": "Liga F Moeve",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "ES",
+                "channels": [
+                    "DAZN"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14856224,
+        "kickoff": 1768235400,
+        "fixture": "Jordan U23 vs Kyrgyzstan U23",
+        "league_id": 2349,
+        "league": "U23 AFC Asian Cup, Group A",
+        "venue": "Alinma Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14856226,
+        "kickoff": 1768235400,
+        "fixture": "Saudi Arabia U23 vs Vietnam U23",
+        "league_id": 2349,
+        "league": "U23 AFC Asian Cup, Group A",
+        "venue": "Prince Abdullah al-Faisal Stadium",
+        "tv_channels": [
+            {
+                "country": "VN",
+                "channels": [
+                    "HTV Key",
+                    "VTV5",
+                    "HTV Th\u1ec3 Thao",
+                    "FPT Play",
+                    "TV 360"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14856285,
+        "kickoff": 1768321800,
+        "fixture": "Japan U23 vs Qatar U23",
+        "league_id": 2349,
+        "league": "U23 AFC Asian Cup, Group B",
+        "venue": "Alinma Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14856286,
+        "kickoff": 1768321800,
+        "fixture": "United Arab Emirates U23 vs Syria U23",
+        "league_id": 2349,
+        "league": "U23 AFC Asian Cup, Group B",
+        "venue": "Prince Abdullah al-Faisal Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14856290,
+        "kickoff": 1768303800,
+        "fixture": "Iran U23 vs Lebanon U23",
+        "league_id": 2349,
+        "league": "U23 AFC Asian Cup, Group C",
+        "venue": "Al-Shabab Club Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14856289,
+        "kickoff": 1768303800,
+        "fixture": "Uzbekistan U23 vs South Korea U23",
+        "league_id": 2349,
+        "league": "U23 AFC Asian Cup, Group C",
+        "venue": "Prince Faisal bin Fahd Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14856353,
+        "kickoff": 1768390200,
+        "fixture": "Iraq U23 vs Australia U23",
+        "league_id": 2349,
+        "league": "U23 AFC Asian Cup, Group D",
+        "venue": "Prince Faisal bin Fahd Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14856352,
+        "kickoff": 1768390200,
+        "fixture": "Thailand U23 vs China U23",
+        "league_id": 2349,
+        "league": "U23 AFC Asian Cup, Group D",
+        "venue": "Al-Shabab Club Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15196048,
+        "kickoff": 1768320000,
+        "fixture": "Al Najma vs Riffa",
+        "league_id": 846,
+        "league": "Premier League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15196050,
+        "kickoff": 1768320000,
+        "fixture": "Al Shabab vs Budaiya",
+        "league_id": 846,
+        "league": "Premier League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15183818,
+        "kickoff": 1768332600,
+        "fixture": "RC Sporting Charleroi vs Club Brugge KV",
+        "league_id": 326,
+        "league": "Beker van Belgie",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15183819,
+        "kickoff": 1768332600,
+        "fixture": "Royal Antwerp FC vs RAAL La Louvi\u00e8re",
+        "league_id": 326,
+        "league": "Beker van Belgie",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15204427,
+        "kickoff": 1768345200,
+        "fixture": "Acad\u00eamica Vit\u00f3ria vs AD Jaguar",
+        "league_id": 380,
+        "league": "Pernambucano, Serie A1",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15188396,
+        "kickoff": 1768345200,
+        "fixture": "Municipal P\u00e9rez Zeled\u00f3n vs San Carlos",
+        "league_id": 11542,
+        "league": "Primera Divisi\u00f3n, Clausura",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "CR",
+                "channels": [
+                    "FUTV"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15188478,
+        "kickoff": 1768356000,
+        "fixture": "Deportivo Saprissa vs Puntarenas FC",
+        "league_id": 11542,
+        "league": "Primera Divisi\u00f3n, Clausura",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "CR",
+                "channels": [
+                    "FUTV"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14222816,
+        "kickoff": 1768237200,
+        "fixture": "Enosis Neon Ypsona FC vs Olympiakos Nicosia",
+        "league_id": 171,
+        "league": "1st Division",
+        "venue": "Ammochostos Stadium",
+        "tv_channels": [
+            {
+                "country": "CY",
+                "channels": [
+                    "Cytavision Sports 1HD"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14222817,
+        "kickoff": 1768237200,
+        "fixture": "Pafos FC vs Omonia Aradippou",
+        "league_id": 171,
+        "league": "1st Division",
+        "venue": "Stelios Kyriakidis",
+        "tv_channels": [
+            {
+                "country": "CY",
+                "channels": [
+                    "Cablenet Sports 1"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15337483,
+        "kickoff": 1768305600,
+        "fixture": "FC Sellier & Bellot Vla\u0161im vs Dukla Praha B",
+        "league_id": 1224,
+        "league": "Winter League, Group A",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15254196,
+        "kickoff": 1768383000,
+        "fixture": "FK Viktoria \u017di\u017ekov vs FK Teplice",
+        "league_id": 1224,
+        "league": "Winter League, Group A",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15254192,
+        "kickoff": 1768212000,
+        "fixture": "1. SK Prost\u011bjov vs FC Zl\u00edn",
+        "league_id": 1224,
+        "league": "Winter League, Group C",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15254195,
+        "kickoff": 1768305600,
+        "fixture": "1. FC Tatran Pre\u0161ov vs SK Han\u00e1ck\u00e1 Slavia Krom\u011b\u0159\u00ed\u017e",
+        "league_id": 1224,
+        "league": "Winter League, Group D",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15122229,
+        "kickoff": 1768333500,
+        "fixture": "Eastleigh vs Brackley Town",
+        "league_id": 173,
+        "league": "National League",
+        "venue": "Silverlake Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15141476,
+        "kickoff": 1768333500,
+        "fixture": "Southend United vs Gateshead",
+        "league_id": 173,
+        "league": "National League",
+        "venue": "Roots Hall",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14214860,
+        "kickoff": 1768219200,
+        "fixture": "Persijap Jepara vs Dewa United FC",
+        "league_id": 1015,
+        "league": "Indonesia Super League",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "ID",
+                "channels": [
+                    "Indosiar"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14303457,
+        "kickoff": 1768246200,
+        "fixture": "Giugliano vs AZ Picerno",
+        "league_id": 11446,
+        "league": "Serie C, Group C",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14303460,
+        "kickoff": 1768246200,
+        "fixture": "Salernitana vs Cosenza",
+        "league_id": 11446,
+        "league": "Serie C, Group C",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "BR",
+                "channels": [
+                    "OneFootball"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 14068601,
+        "kickoff": 1768212000,
+        "fixture": "Atalanta U20 vs Lecce U20",
+        "league_id": 2292,
+        "league": "Primavera 1",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14068592,
+        "kickoff": 1768219200,
+        "fixture": "Frosinone U20 vs Hellas Verona U20",
+        "league_id": 2292,
+        "league": "Primavera 1",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14068591,
+        "kickoff": 1768226400,
+        "fixture": "Roma U20 vs Cremonese U20",
+        "league_id": 2292,
+        "league": "Primavera 1",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14271750,
+        "kickoff": 1768309200,
+        "fixture": "Kelantan The Real Warriors FC vs Sabah FC",
+        "league_id": 1000,
+        "league": "Super League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14271751,
+        "kickoff": 1768309200,
+        "fixture": "Terengganu vs Brunei DPMM FC",
+        "league_id": 1000,
+        "league": "Super League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15042094,
+        "kickoff": 1768333500,
+        "fixture": "Ballymena United vs Cliftonville FC",
+        "league_id": 200,
+        "league": "Premiership",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15032472,
+        "kickoff": 1768333500,
+        "fixture": "Carrick Rangers vs Linfield FC",
+        "league_id": 200,
+        "league": "Premiership",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "GB",
+                "channels": [
+                    "BBC iPlayer",
+                    "BBC Sport Web"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "BBC iPlayer",
+                    "BBC Sport Web"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15188162,
+        "kickoff": 1768333500,
+        "fixture": "Glentoran FC vs Larne FC",
+        "league_id": 200,
+        "league": "Premiership",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15273886,
+        "kickoff": 1768302000,
+        "fixture": "Famalic\u00e3o U23 vs Leix\u00f5es SC U23",
+        "league_id": 11341,
+        "league": "U23 Championship, Championship Round",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15273890,
+        "kickoff": 1768305600,
+        "fixture": "SC Braga U23 vs Santa Clara U23",
+        "league_id": 11341,
+        "league": "U23 Championship, Championship Round",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15273897,
+        "kickoff": 1768316400,
+        "fixture": "Torreense U23 vs Benfica U23",
+        "league_id": 11341,
+        "league": "U23 Championship, Championship Round",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15273937,
+        "kickoff": 1768323600,
+        "fixture": "Sporting U23 vs Acad\u00e9mico Viseu U23",
+        "league_id": 11341,
+        "league": "U23 Championship, Championship Round",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15329482,
+        "kickoff": 1768302000,
+        "fixture": "Mar\u00edtimo U23 vs Estoril Praia U23",
+        "league_id": 11341,
+        "league": "U23 Championship, Relegation Round",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15273948,
+        "kickoff": 1768388400,
+        "fixture": "Portimonense U23 vs Mar\u00edtimo U23",
+        "league_id": 11341,
+        "league": "U23 Championship, Relegation Round",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15273950,
+        "kickoff": 1768388400,
+        "fixture": "Rio Ave U23 vs SC Farense U23",
+        "league_id": 11341,
+        "league": "U23 Championship, Relegation Round",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15325943,
+        "kickoff": 1768333500,
+        "fixture": "Arbroath vs East Fife",
+        "league_id": 331,
+        "league": "Challenge Cup, Playoffs",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15323161,
+        "kickoff": 1768333500,
+        "fixture": "Ayr United vs Stranraer",
+        "league_id": 331,
+        "league": "Challenge Cup, Playoffs",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15323045,
+        "kickoff": 1768333500,
+        "fixture": "Partick Thistle vs Inverness Caledonian Thistle",
+        "league_id": 331,
+        "league": "Challenge Cup, Playoffs",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15323016,
+        "kickoff": 1768333500,
+        "fixture": "Queen's Park FC vs Forfar Athletic",
+        "league_id": 331,
+        "league": "Challenge Cup, Playoffs",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15323149,
+        "kickoff": 1768333500,
+        "fixture": "Stirling Albion vs Stenhousemuir",
+        "league_id": 331,
+        "league": "Challenge Cup, Playoffs",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15324355,
+        "kickoff": 1768333500,
+        "fixture": "St. Johnstone vs Ross County",
+        "league_id": 331,
+        "league": "Challenge Cup, Playoffs",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 14195509,
+        "kickoff": 1768217400,
+        "fixture": "Tanjong Pagar United vs Hougang United",
+        "league_id": 634,
+        "league": "Premier League",
+        "venue": "Jurong East Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15337518,
+        "kickoff": 1768333500,
+        "fixture": "Barry Town vs Llanelli AFC",
+        "league_id": 254,
+        "league": "Cymru Premier",
+        "venue": "TBA",
+        "tv_channels": [
+            {
+                "country": "GB",
+                "channels": [
+                    "BBC iPlayer"
+                ]
+            },
+            {
+                "country": "IE",
+                "channels": [
+                    "BBC iPlayer"
+                ]
+            }
+        ]
+    },
+    {
+        "match_id": 15337519,
+        "kickoff": 1768333500,
+        "fixture": "Caernarfon Town vs Connah's Quay Nomads",
+        "league_id": 254,
+        "league": "Cymru Premier",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15337513,
+        "kickoff": 1768333500,
+        "fixture": "Flint Town United vs Bala Town",
+        "league_id": 254,
+        "league": "Cymru Premier",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15337516,
+        "kickoff": 1768333500,
+        "fixture": "Haverfordwest County AFC vs Briton Ferry Llansawel AFC",
+        "league_id": 254,
+        "league": "Cymru Premier",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15337517,
+        "kickoff": 1768333500,
+        "fixture": "Penybont vs Cardiff Met FC",
+        "league_id": 254,
+        "league": "Cymru Premier",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15337549,
+        "kickoff": 1768333500,
+        "fixture": "The New Saints vs Colwyn Bay",
+        "league_id": 254,
+        "league": "Cymru Premier",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15345479,
+        "kickoff": 1768226400,
+        "fixture": "Ferencv\u00e1ros TC vs SK Rapid Wien",
+        "league_id": 853,
+        "league": "Club Friendly Games",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 15325942,
+        "kickoff": 1768262400,
+        "fixture": "Cerro Largo vs Atl\u00e9tico Tucum\u00e1n",
+        "league_id": 853,
+        "league": "Club Friendly Games",
+        "venue": "TBA",
+        "tv_channels": []
+    }
+]
