@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
-# Local offset for South Asia (GMT+5) - Fallback for static generation
+# Local offset fallback
 LOCAL_OFFSET = timezone(timedelta(hours=5)) 
 
 NOW = datetime.now(LOCAL_OFFSET)
@@ -94,7 +94,6 @@ for i in range(7):
         # --- 4. MATCH PAGES ---
         m_path = f"match/{m_slug}/{m_date_folder}"
         os.makedirs(m_path, exist_ok=True)
-        
         venue_val = m.get('venue') or m.get('stadium') or "To Be Announced"
         
         rows = ""
@@ -102,7 +101,7 @@ for i in range(7):
             pills = "".join([f'<a href="{DOMAIN}/channel/{slugify(ch)}/" class="mx-1 text-blue-600 underline text-xs">{ch}</a>' for ch in c['channels']])
             for ch in c['channels']:
                 if ch not in channels_data: channels_data[ch] = []
-                # FIX: Check if match is already in this specific channel's list
+                # Check for duplicates before adding to channel data
                 if not any(x['m']['match_id'] == m['match_id'] for x in channels_data[ch]):
                     channels_data[ch].append({'m': m, 'dt': m_dt_local, 'league': league})
             rows += f'<div class="flex justify-between p-4 border-b"><b>{c["country"]}</b><div>{pills}</div></div>'
@@ -110,18 +109,9 @@ for i in range(7):
         with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
             m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
-            
-            # 1. SAFE PLAIN TEXT (For <title>, Meta tags, and Headers)
-            # This prevents the "12 Jan 2026.">" error
-            m_html = m_html.replace("{{DATE}}", m_dt_local.strftime("%d %b %Y"))
-            m_html = m_html.replace("{{TIME}}", m_dt_local.strftime("%H:%M"))
-            
-            # 2. HTML SPANS (For actual visible time/date on page)
-            # Use this placeholder in your template for the visible display
-            spans = f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span> '
-            spans += f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>'
-            m_html = m_html.replace("{{LOCAL_TIME_SPANS}}", spans)
-
+            # Match Detail Page Local Time Support
+            m_html = m_html.replace("{{DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
+            m_html = m_html.replace("{{TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
             m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
             m_html = m_html.replace("{{VENUE}}", venue_val) 
             mf.write(m_html)
