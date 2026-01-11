@@ -1,0 +1,49 @@
+name: Future Date Placeholder
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  create-placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Run Creator
+        id: creator
+        run: |
+          # Capture the output from python (e.g., CREATED:20260114:2026-01-14)
+          RESULT=$(python create_placeholders.py)
+          echo "script_result=$RESULT" >> $GITHUB_ENV
+          echo "Cleaning output: $RESULT"
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "YoSinTV-Bot"
+          git config --global user.email "bot@yosintv.com"
+          
+          # Parse the result
+          STATUS=$(echo ${{ env.script_result }} | cut -d':' -f1)
+          FILE_ID=$(echo ${{ env.script_result }} | cut -d':' -f2)
+          FULL_DATE=$(echo ${{ env.script_result }} | cut -d':' -f3)
+
+          git add date/*.json
+
+          if [ "$STATUS" = "CREATED" ]; then
+            git commit -m "Enter TV Channels - $FILE_ID"
+            git push
+          elif [ -n "$(git status --porcelain)" ]; then
+            # This handles the case where you manually added data
+            git commit -m "TV Channels added - $FULL_DATE"
+            git push
+          else
+            echo "No changes to commit."
+          fi
