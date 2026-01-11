@@ -12,7 +12,7 @@ TODAY_DATE = NOW.date()
 days_since_friday = (TODAY_DATE.weekday() - 4) % 7
 START_WEEK = TODAY_DATE - timedelta(days=days_since_friday)
 
-TOP_LEAGUE_IDS = [7, 8, 35, 23, 17, 955 ]
+TOP_LEAGUE_IDS = [7, 8, 35, 23, 17, 955]
 
 def slugify(t): 
     return re.sub(r'[^a-z0-9]+', '-', str(t).lower()).strip('-')
