@@ -1,48 +1,41 @@
-import json, os, re, glob, urllib.request
+import json, os, re, glob
 from datetime import datetime, timedelta
 
 DOMAIN = "https://tv.cricfoot.net"
 NOW = datetime.now()
 TODAY_DATE = NOW.date()
 
-# Priority Leagues
 TOP_LEAGUE_IDS = [7, 35, 23, 17]
 
 # Friday to Thursday Logic
 days_since_friday = (TODAY_DATE.weekday() - 4) % 7
 START_WEEK = TODAY_DATE - timedelta(days=days_since_friday)
 
-def slugify(t): return re.sub(r'[^a-z0-9]+', '-', str(t).lower()).strip('-')
+def slugify(t): return re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
 
-# Load Templates
 templates = {}
 for name in ['home', 'match', 'channel']:
     with open(f'{name}_template.html', 'r', encoding='utf-8') as f:
         templates[name] = f.read()
 
-# --- FETCH DATA FROM API ---
 all_matches = []
 seen_match_ids = set()
-API_URL = "https://yosintv-api.pages.dev/api/date/"
 
-try:
-    print(f"Connecting to API: {API_URL}...")
-    with urllib.request.urlopen(API_URL) as response:
-        data = json.loads(response.read().decode())
-        for m in data:
-            mid = m.get('match_id')
-            if mid and mid not in seen_match_ids:
-                all_matches.append(m)
-                seen_match_ids.add(mid)
-    print(f"Successfully fetched {len(all_matches)} unique matches.")
-except Exception as e:
-    print(f"Critical Error fetching API: {e}")
+for f in glob.glob("date/*.json"):
+    with open(f, 'r', encoding='utf-8') as j:
+        try:
+            data = json.load(j)
+            for m in data:
+                mid = m.get('match_id')
+                if mid not in seen_match_ids:
+                    all_matches.append(m)
+                    seen_match_ids.add(mid)
+        except: continue
 
-# --- START SITEMAP TRACKING ---
 channels_data = {}
+# START SITEMAP TRACKING
 sitemap_urls = [DOMAIN + "/"]
 
-# Generate Weekly Menu
 menu_html = ""
 for i in range(7):
     day = START_WEEK + timedelta(days=i)
@@ -50,11 +43,11 @@ for i in range(7):
     active_class = "active" if day == TODAY_DATE else ""
     menu_html += f'<a href="{DOMAIN}/{fname}" class="date-btn {active_class}"><div>{day.strftime("%a")}</div><b>{day.strftime("%b %d")}</b></a>'
 
-# Generate Daily Pages
 for i in range(7):
     day = START_WEEK + timedelta(days=i)
     fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
     
+    # Track Date Pages in Sitemap
     if fname != "index.html":
         sitemap_urls.append(f"{DOMAIN}/{fname}")
     
@@ -70,6 +63,8 @@ for i in range(7):
         
         m_slug, m_date = slugify(m['fixture']), datetime.fromtimestamp(m['kickoff']).strftime('%Y%m%d')
         m_url = f"{DOMAIN}/match/{m_slug}/{m_date}/"
+        
+        # Track Match Pages in Sitemap
         sitemap_urls.append(m_url)
         
         display_time = datetime.fromtimestamp(m['kickoff']).strftime('%H:%M')
@@ -96,6 +91,7 @@ for i in range(7):
                 
                 if ch not in channels_data:
                     channels_data[ch] = []
+                    # Track New Channel Pages in Sitemap
                     sitemap_urls.append(ch_url)
                 
                 if m not in channels_data[ch]:
@@ -112,7 +108,7 @@ for i in range(7):
     with open(fname, "w", encoding='utf-8') as df:
         df.write(templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", menu_html).replace("{{DOMAIN}}", DOMAIN).replace("{{PAGE_TITLE}}", f"Soccer TV Schedule {day.strftime('%Y-%m-%d')}"))
 
-# Generate Channel Pages
+# Generate Channel Pages (Building the actual files)
 for ch_name, ms in channels_data.items():
     c_slug = slugify(ch_name)
     c_dir = f"channel/{c_slug}"
@@ -139,9 +135,12 @@ for ch_name, ms in channels_data.items():
                  .replace("{{DOMAIN}}", DOMAIN))
 
 # --- GENERATE SITEMAP.XML ---
-sitemap_content = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+sitemap_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
+sitemap_content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+
 for url in sitemap_urls:
     sitemap_content += f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{NOW.strftime("%Y-%m-%d")}</lastmod>\n    <changefreq>daily</changefreq>\n  </url>\n'
+
 sitemap_content += '</urlset>'
 
 with open("sitemap.xml", "w", encoding='utf-8') as sm:
