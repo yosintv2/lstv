@@ -3,7 +3,6 @@ from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
-# Fallback offset for static generation (GMT+5)
 LOCAL_OFFSET = timezone(timedelta(hours=5)) 
 
 NOW = datetime.now(LOCAL_OFFSET)
@@ -50,7 +49,6 @@ for i in range(7):
     fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
     if fname != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname}")
 
-    # Build Menu
     current_page_menu = ""
     for j in range(7):
         m_day = START_WEEK + timedelta(days=j)
@@ -58,7 +56,6 @@ for i in range(7):
         active_class = "active" if m_day == day else ""
         current_page_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
 
-    # Filter by Local Date
     day_matches = []
     for m in all_matches:
         m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
@@ -109,17 +106,25 @@ for i in range(7):
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
             m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
             
-            # 1. Plain text for Meta Tags/Titles (to avoid the ">" syntax error)
+            # --- THE CRITICAL FIX ---
+            # 1. Plain text for Meta/Title (No spans)
             m_html = m_html.replace("{{DATE}}", m_dt_local.strftime("%d %b %Y"))
             m_html = m_html.replace("{{TIME}}", m_dt_local.strftime("%H:%M"))
             
-            # 2. HTML Spans for visible display (User's device will update these)
+            # 2. Dynamic Spans for visible timing in body
             m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
             m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
             
             m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
             m_html = m_html.replace("{{VENUE}}", venue_val) 
             mf.write(m_html)
+
+    # Home/Date Page output
+    with open(fname, "w", encoding='utf-8') as df:
+        output = templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", current_page_menu)
+        output = output.replace("{{DOMAIN}}", DOMAIN).replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
+        output = output.replace("{{PAGE_TITLE}}", f"Soccer TV Channels For {day.strftime('%A, %b %d, %Y')}")
+        df.write(output)
 
 # --- 5. CHANNEL PAGES ---
 for ch_name, matches in channels_data.items():
