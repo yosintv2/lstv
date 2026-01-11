@@ -40,7 +40,7 @@ jobs:
           git add date/*.json
           
           # Commit the changes. If no files changed, it will exit gracefully.
-          git commit -m "Auto-update: Future TV Listings (Day 1, 2, 3)" || echo "No changes to commit"
+          git commit -m "Auto-update: Future TV Listings" || echo "No changes to commit"
           
           # Push the updates back to the repository
           git push
