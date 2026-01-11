@@ -4,11 +4,12 @@ from datetime import datetime, timedelta, timezone
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
 
-# 1. SET YOUR TARGET TIMEZONE OFFSET (e.g., GMT+5 for Pakistan/India area)
-# Change the '5' to your specific local offset
-OFFSET = timezone(timedelta(hours=5)) 
+# 1. SET YOUR TARGET OFFSET (e.g., GMT+5)
+# This ensures early morning matches (02:00, 04:00) group with the NEXT day correctly.
+TARGET_OFFSET = timezone(timedelta(hours=5)) 
 
-NOW = datetime.now(OFFSET)
+# Force the "current" time to align with your target timezone
+NOW = datetime.now(TARGET_OFFSET)
 TODAY_DATE = NOW.date()
 
 # Friday to Thursday Logic
@@ -26,8 +27,8 @@ for name in ['home', 'match', 'channel']:
     try:
         with open(f'{name}_template.html', 'r', encoding='utf-8') as f:
             templates[name] = f.read()
-    except:
-        print(f"ERROR: {name}_template.html missing")
+    except FileNotFoundError:
+        print(f"CRITICAL ERROR: {name}_template.html not found.")
 
 # --- 2. LOAD DATA ---
 all_matches = []
@@ -54,22 +55,23 @@ for i in range(7):
     if fname != "index.html":
         sitemap_urls.append(f"{DOMAIN}/{fname}")
 
+    # Build Dynamic Menu
     current_page_menu = ""
     for j in range(7):
         m_day = START_WEEK + timedelta(days=j)
-        m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
+        m_fname = "/" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
         active_class = "active" if m_day == day else ""
         current_page_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
 
-    # FIX: Filter matches by the TARGET LOCAL TIME, not UTC
+    # FIX: Filter matches by converting UTC timestamp to the LOCAL target date
     day_matches = []
     for m in all_matches:
-        # Convert Unix to UTC first, then move to your OFFSET
-        m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(OFFSET)
+        # Convert Unix to UTC first, then adjust to the target offset
+        m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(TARGET_OFFSET)
         if m_dt_local.date() == day:
             day_matches.append(m)
 
-    day_matches.sort(key=lambda x: (x.get('league_id') not in TOP_LEAGUE_IDS, x['kickoff']))
+    day_matches.sort(key=lambda x: (x.get('league_id') not in TOP_LEAGUE_IDS, x.get('league', ''), x['kickoff']))
 
     listing_html, last_league = "", ""
     for m in day_matches:
@@ -78,12 +80,13 @@ for i in range(7):
             listing_html += f'<div class="league-header">{league}</div>'
             last_league = league
         
-        m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(OFFSET)
+        m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(TARGET_OFFSET)
         m_slug = slugify(m['fixture'])
         m_date_folder = m_dt_local.strftime('%Y%m%d')
         m_url = f"{DOMAIN}/match/{m_slug}/{m_date_folder}/"
         sitemap_urls.append(m_url)
         
+        # Displaying Date and Time based on target local timezone
         listing_html += f'''
         <a href="{m_url}" class="match-row flex items-center p-4 bg-white group">
             <div class="time-box" style="min-width: 95px; text-align: center; border-right: 1px solid #edf2f7; margin-right: 10px;">
@@ -95,11 +98,10 @@ for i in range(7):
             </div>
         </a>'''
 
-        # --- 4. MATCH PAGES ---
+        # --- 4. GENERATE MATCH PAGES ---
         m_path = f"match/{m_slug}/{m_date_folder}"
         os.makedirs(m_path, exist_ok=True)
         
-        # Build Broadcast Rows
         rows = ""
         for c in m.get('tv_channels', []):
             pills = "".join([f'<a href="{DOMAIN}/channel/{slugify(ch)}/" class="mx-1 text-blue-600 underline text-xs">{ch}</a>' for ch in c['channels']])
@@ -110,19 +112,29 @@ for i in range(7):
 
         with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture'])
+            m_html = m_html.replace("{{DOMAIN}}", DOMAIN)
+            m_html = m_html.replace("{{BROADCAST_ROWS}}", rows)
+            m_html = m_html.replace("{{LEAGUE}}", league)
             m_html = m_html.replace("{{DATE}}", m_dt_local.strftime('%d %b %Y'))
             m_html = m_html.replace("{{TIME}}", m_dt_local.strftime('%H:%M'))
-            m_html = m_html.replace("{{BROADCAST_ROWS}}", rows)
-            m_html = m_html.replace("{{DOMAIN}}", DOMAIN)
             mf.write(m_html)
 
     # WRITE DAILY FILE
     with open(fname, "w", encoding='utf-8') as df:
         output = templates['home'].replace("{{MATCH_LISTING}}", listing_html)
         output = output.replace("{{WEEKLY_MENU}}", current_page_menu)
-        output = output.replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
-        output = output.replace("{{PAGE_TITLE}}", f"Soccer TV Channels For {day.strftime('%A, %b %d, %Y')}")
         output = output.replace("{{DOMAIN}}", DOMAIN)
+        output = output.replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
+        output = output.replace("{{PAGE_TITLE}}", f"Soccer TV Channels For {day.strftime('%A, %b %d, %Y')} - CricFootTV")
         df.write(output)
 
-print("Build Successful. Local Time grouping applied.")
+# --- 5. CHANNEL PAGES ---
+for ch_name, ms in channels_data.items():
+    c_slug = slugify(ch_name)
+    c_dir = f"channel/{c_slug}"
+    os.makedirs(c_dir, exist_ok=True)
+    c_listing = "".join([f'<div class="match-row p-4">{x["fixture"]}</div>' for x in ms]) # Simplified for brevity
+    with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
+        cf.write(templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing).replace("{{DOMAIN}}", DOMAIN))
+
+print(f"Build Successful. Matches grouped by {TARGET_OFFSET} local time.")
