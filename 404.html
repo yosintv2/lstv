@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Redirecting...</title>
+    <meta http-equiv="refresh" content="2;url=https://tv.cricfoot.net/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+    <div class="text-center p-8 bg-white shadow-xl rounded-2xl max-w-md border border-slate-200">
+        <div class="text-6xl mb-4">⚽</div>
+        <h1 class="text-2xl font-bold text-slate-800 mb-2">Page Not Found</h1>
+        <p class="text-slate-500 mb-6">The match schedule for this date is not available yet.</p>
+        
+        <div class="flex items-center justify-center space-x-2 text-blue-600 font-semibold">
+            <svg class="animate-spin h-5 w-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span>Redirecting to Home...</span>
+        </div>
+
+        <a href="https://tv.cricfoot.net/" class="mt-8 inline-block bg-[#002d56] text-white px-6 py-2 rounded-lg font-bold hover:bg-[#003a6e] transition-colors">
+            Go Now
+        </a>
+    </div>
+
+    <script>
+        // Fallback Javascript redirect if Meta Refresh fails
+        setTimeout(function() {
+            window.location.href = "https://tv.cricfoot.net/";
+        }, 3000);
+    </script>
+</body>
+</html>
