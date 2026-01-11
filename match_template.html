@@ -94,24 +94,29 @@
     </footer>
 
     <script>
-        function convertLocalTimes() {
-            const timeElements = document.querySelectorAll('.local-time');
-            for (let i = 0; i < timeElements.length; i++) {
-                const unix = timeElements[i].getAttribute('data-unix');
-                // Ensure the template logic provides a numeric unix, otherwise fallback
-                if (unix && !isNaN(unix)) {
-                    const date = new Date(unix * 1000);
-                    timeElements[i].innerText = date.toLocaleTimeString([], { 
-                        hour: '2-digit', 
-                        minute: '2-digit', 
-                        hour12: false 
-                    });
-                }
-            }
+function updateLocalTimes() {
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    
+    // Update Times
+    document.querySelectorAll('.auto-time').forEach(el => {
+        const unix = el.getAttribute('data-unix');
+        if (unix) {
+            const date = new Date(unix * 1000);
+            el.innerText = date.getHours().toString().padStart(2, '0') + ":" + 
+                           date.getMinutes().toString().padStart(2, '0');
         }
-        // Run instantly
-        convertLocalTimes();
-        window.addEventListener('DOMContentLoaded', convertLocalTimes);
+    });
+
+    // Update Dates
+    document.querySelectorAll('.auto-date').forEach(el => {
+        const unix = el.getAttribute('data-unix');
+        if (unix) {
+            const date = new Date(unix * 1000);
+            el.innerText = date.getDate() + " " + months[date.getMonth()];
+        }
+    });
+}
+window.onload = updateLocalTimes;
     </script>
 </body>
 </html>
