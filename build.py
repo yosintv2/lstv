@@ -106,20 +106,17 @@ for i in range(7):
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
             m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
             
-            # --- FIXED LOGIC TO PREVENT Syntax Error in Meta Tags ---
-            # Replace standard placeholders with PLAIN TEXT first for SEO/Meta compatibility
+            # Use safe plain text for metadata
             plain_date = m_dt_local.strftime("%d %b %Y")
             plain_time = m_dt_local.strftime("%H:%M")
+            m_html = m_html.replace("{{DATE}}", plain_date).replace("{{TIME}}", plain_time)
             
-            # Replace these with plain text so they don't break <title> or <meta>
-            m_html = m_html.replace("{{DATE}}", plain_date)
-            m_html = m_html.replace("{{TIME}}", plain_time)
-            
-            # Provide the local-detect versions separately
-            # If your template has these tags, they will show auto-detecting time
-            m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{plain_date}</span>')
-            m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{plain_time}</span>')
-            
+            # REMOVED 🕒 AND FIXED WRAPPED SPANS
+            # Use {{LOCAL_TIME_DISPLAY}} in your template for the visible clock
+            local_display = f'<span class="auto-date" data-unix="{m["kickoff"]}">{plain_date}</span> '
+            local_display += f'<span class="auto-time" data-unix="{m["kickoff"]}">{plain_time}</span>'
+            m_html = m_html.replace("{{LOCAL_TIME_DISPLAY}}", local_display)
+
             m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
             m_html = m_html.replace("{{VENUE}}", venue_val) 
             mf.write(m_html)
