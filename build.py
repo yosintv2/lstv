@@ -13,9 +13,9 @@ MENU_START_DATE = TODAY_DATE - timedelta(days=3)
 
 TOP_LEAGUE_IDS = [7, 35, 23, 17]
 
-# Google Ads Code Block
+# Google Ads Code Block (Wrapped in a class for JS control)
 ADS_CODE = '''
-<div class="ad-container" style="margin: 20px 0; text-align: center;">
+<div class="ad-container google-ad-slot" style="margin: 20px 0; text-align: center;">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
     <ins class="adsbygoogle"
          style="display:block"
@@ -27,7 +27,7 @@ ADS_CODE = '''
 </div>
 '''
 
-# Fully Responsive Menu CSS (Forces 7 items on one line, no scroll)
+# Enhanced CSS: Responsive, Orange Hover, and طراحی consistency
 MENU_CSS = '''
 <style>
     .weekly-menu-container {
@@ -50,19 +50,41 @@ MENU_CSS = '''
         background: #fff;
         border: 1px solid #e2e8f0;
         min-width: 0; 
-        transition: all 0.2s;
+        transition: all 0.2s ease;
     }
     .date-btn div { font-size: 9px; text-transform: uppercase; color: #64748b; font-weight: bold; }
     .date-btn b { font-size: 10px; color: #1e293b; white-space: nowrap; }
+    
+    /* Orange Hover Effect */
+    .date-btn:hover { border-color: #ff9800; background-color: #fffaf0; }
+    .date-btn:hover b { color: #ff9800; }
+    
     .date-btn.active { background: #2563eb; border-color: #2563eb; }
     .date-btn.active div, .date-btn.active b { color: #fff; }
-    
+    .date-btn.active:hover { background: #1d4ed8; }
+
+    /* Search Logic: Hide ads when searching */
+    body.is-searching .google-ad-slot { display: none !important; }
+
     @media (max-width: 480px) {
         .date-btn b { font-size: 8px; }
         .date-btn div { font-size: 7px; }
         .weekly-menu-container { gap: 2px; padding: 5px 2px; }
     }
 </style>
+'''
+
+# This JS should be in your home_template.html or channel_template.html
+SEARCH_JS = '''
+<script>
+document.getElementById('searchInput')?.addEventListener('input', function(e) {
+    if(e.target.value.trim().length > 0) {
+        document.body.classList.add('is-searching');
+    } else {
+        document.body.classList.remove('is-searching');
+    }
+});
+</script>
 '''
 
 def slugify(t): 
@@ -100,7 +122,7 @@ for i in range(7):
     fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
     if fname != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname}")
 
-    # Create the centered responsive menu HTML
+    # Build Menu
     page_specific_menu = f'{MENU_CSS}<div class="weekly-menu-container">'
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
@@ -119,31 +141,22 @@ for i in range(7):
         if m_dt_local.date() == day:
             day_matches.append(m)
 
-    day_matches.sort(key=lambda x: (
-        x.get('league_id') not in TOP_LEAGUE_IDS, 
-        x.get('league', 'Other Football'), 
-        x['kickoff']
-    ))
+    day_matches.sort(key=lambda x: (x.get('league_id') not in TOP_LEAGUE_IDS, x.get('league', 'Other Football'), x['kickoff']))
 
     listing_html, last_league = "", ""
     league_counter = 0
 
     for m in day_matches:
         league = m.get('league', 'Other Football')
-        
         if league != last_league:
             if last_league != "":
                 league_counter += 1
-                # Ad after every 3 leagues
-                if league_counter % 3 == 0:
-                    listing_html += ADS_CODE
+                if league_counter % 3 == 0: listing_html += ADS_CODE
             listing_html += f'<div class="league-header">{league}</div>'
             last_league = league
         
         m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
-        m_slug = slugify(m['fixture'])
-        m_date_folder = m_dt_local.strftime('%Y%m%d')
-        m_url = f"{DOMAIN}/match/{m_slug}/{m_date_folder}/"
+        m_url = f"{DOMAIN}/match/{slugify(m['fixture'])}/{m_dt_local.strftime('%Y%m%d')}/"
         sitemap_urls.append(m_url)
         
         listing_html += f'''
@@ -157,50 +170,28 @@ for i in range(7):
             </div>
         </a>'''
 
-        # --- 4. MATCH PAGES ---
-        m_path = f"match/{m_slug}/{m_date_folder}"
-        os.makedirs(m_path, exist_ok=True)
-        venue_val = m.get('venue') or m.get('stadium') or "To Be Announced"
-        rows = ""
-        for c in m.get('tv_channels', []):
-            channel_links = [f'<a href="{DOMAIN}/channel/{slugify(ch)}/" style="display: inline-block; background: #f1f5f9; color: #2563eb; padding: 2px 8px; border-radius: 4px; margin: 2px; text-decoration: none; font-weight: 600; border: 1px solid #e2e8f0;">{ch}</a>' for ch in c['channels']]
-            pills = "".join(channel_links)
-            for ch in c['channels']:
-                if ch not in channels_data: channels_data[ch] = []
-                if not any(x['m']['match_id'] == m['match_id'] for x in channels_data[ch]):
-                    channels_data[ch].append({'m': m, 'dt': m_dt_local, 'league': league})
-            
-            rows += f'''
-            <div style="display: flex; align-items: flex-start; padding: 12px; border-bottom: 1px solid #edf2f7; background: #fff;">
-                <div style="flex: 0 0 100px; font-weight: 800; color: #475569; font-size: 13px; padding-top: 4px;">{c["country"]}</div>
-                <div style="flex: 1; display: flex; flex-wrap: wrap; gap: 4px;">{pills}</div>
-            </div>'''
+        # Channel Data Aggregation (Filtering for Upcoming only)
+        if int(m['kickoff']) > (datetime.now(timezone.utc).timestamp() - 7200): # Show matches starting from 2 hours ago onwards
+            for c in m.get('tv_channels', []):
+                for ch in c['channels']:
+                    if ch not in channels_data: channels_data[ch] = []
+                    if not any(x['m']['match_id'] == m['match_id'] for x in channels_data[ch]):
+                        channels_data[ch].append({'m': m, 'dt': m_dt_local, 'league': league})
 
-        with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
-            m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
-            m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
-            m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
-            m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
-            m_html = m_html.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", venue_val) 
-            mf.write(m_html)
-
-    # Final ad at bottom
     if listing_html != "": listing_html += ADS_CODE
 
     with open(fname, "w", encoding='utf-8') as df:
-        output = templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", page_specific_menu)
+        output = templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", page_specific_menu + SEARCH_JS)
         output = output.replace("{{DOMAIN}}", DOMAIN).replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
-        output = output.replace("{{PAGE_TITLE}}", f"TV Channels For {day.strftime('%A, %b %d, %Y')}")
         df.write(output)
 
-# --- 5. CHANNEL PAGES ---
+# --- 5. CHANNEL PAGES (UPCOMING ONLY & NEW DESIGN) ---
 for ch_name, matches in channels_data.items():
     c_slug = slugify(ch_name)
     c_dir = f"channel/{c_slug}"
     os.makedirs(c_dir, exist_ok=True)
-    sitemap_urls.append(f"{DOMAIN}/{c_dir}/")
     
-    # Use the same centered menu for channel pages
+    # Mirror the index.html design menu
     channel_menu = f'{MENU_CSS}<div class="weekly-menu-container">'
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
@@ -208,23 +199,43 @@ for ch_name, matches in channels_data.items():
         channel_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
     channel_menu += '</div>'
 
+    # Filter matches to strictly upcoming (current time onwards)
+    current_ts = datetime.now(timezone.utc).timestamp()
+    upcoming_matches = [x for x in matches if int(x['m']['kickoff']) > current_ts]
+    upcoming_matches.sort(key=lambda x: x['m']['kickoff'])
+
     c_listing = ""
-    matches.sort(key=lambda x: x['m']['kickoff'])
-    for item in matches:
+    last_c_league = ""
+    c_league_count = 0
+
+    for item in upcoming_matches:
         m, dt, m_league = item['m'], item['dt'], item['league']
+        
+        # Consistent League Header Design
+        if m_league != last_c_league:
+            if last_c_league != "":
+                c_league_count += 1
+                if c_league_count % 3 == 0: c_listing += ADS_CODE
+            c_listing += f'<div class="league-header">{m_league}</div>'
+            last_c_league = m_league
+
         c_listing += f'''
-        <a href="{DOMAIN}/match/{slugify(m['fixture'])}/{dt.strftime('%Y%m%d')}/" class="match-row flex items-center p-4 bg-white border-b">
-            <div class="time-box" style="min-width: 95px; text-align: center; margin-right: 10px;">
-                <div class="auto-date" data-unix="{m['kickoff']}">{dt.strftime('%d %b')}</div>
-                <div class="auto-time" data-unix="{m['kickoff']}">{dt.strftime('%H:%M')}</div>
+        <a href="{DOMAIN}/match/{slugify(m['fixture'])}/{dt.strftime('%Y%m%d')}/" class="match-row flex items-center p-4 bg-white group">
+            <div class="time-box" style="min-width: 95px; text-align: center; border-right: 1px solid #edf2f7; margin-right: 10px;">
+                <div class="text-[10px] uppercase text-slate-400 font-bold auto-date" data-unix="{m['kickoff']}">{dt.strftime('%d %b')}</div>
+                <div class="font-bold text-blue-600 text-sm auto-time" data-unix="{m['kickoff']}">{dt.strftime('%H:%M')}</div>
             </div>
             <div class="flex-1">
-                <span class="font-semibold">{m['fixture']}</span>
-                <div class="text-xs text-gray-400">{m_league}</div>
+                <span class="text-slate-800 font-semibold text-sm md:text-base">{m['fixture']}</span>
             </div>
         </a>'''
+
     with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
-        cf.write(templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing).replace("{{DOMAIN}}", DOMAIN).replace("{{WEEKLY_MENU}}", channel_menu))
+        final_channel_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name)
+        final_channel_html = final_channel_html.replace("{{MATCH_LISTING}}", c_listing)
+        final_channel_html = final_channel_html.replace("{{DOMAIN}}", DOMAIN)
+        final_channel_html = final_channel_html.replace("{{WEEKLY_MENU}}", channel_menu + SEARCH_JS)
+        cf.write(final_channel_html)
 
 # --- 6. SITEMAP ---
 sitemap_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
@@ -233,4 +244,4 @@ for url in list(set(sitemap_urls)):
 sitemap_content += '</urlset>'
 with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
 
-print(f"Success! Today ({TODAY_DATE}) is now at the center of the menu.")
+print(f"Build Complete! Today is {TODAY_DATE}. Orange hover and search-ad-hide logic active.")
