@@ -1,10 +1,9 @@
-import json, os, re, glob, shutil
+import json, os, re, glob
 from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
 LOCAL_OFFSET = timezone(timedelta(hours=5)) 
-TEMP_DIR = "_temp_site" # The shadow build folder
 
 NOW = datetime.now(LOCAL_OFFSET)
 TODAY_DATE = NOW.date()
@@ -18,13 +17,7 @@ TOP_LEAGUE_IDS = [7, 35, 23, 17]
 def slugify(t): 
     return re.sub(r'[^a-z0-9]+', '-', str(t).lower()).strip('-')
 
-# --- 1. PREPARE SHADOW FOLDERS ---
-# This prevents the 404 error because the live 'match' folder isn't touched yet
-if os.path.exists(TEMP_DIR): shutil.rmtree(TEMP_DIR)
-os.makedirs(f"{TEMP_DIR}/match", exist_ok=True)
-os.makedirs(f"{TEMP_DIR}/channel", exist_ok=True)
-
-# --- 2. LOAD TEMPLATES ---
+# --- 1. LOAD TEMPLATES ---
 templates = {}
 for name in ['home', 'match', 'channel']:
     try:
@@ -33,7 +26,7 @@ for name in ['home', 'match', 'channel']:
     except FileNotFoundError:
         print(f"CRITICAL ERROR: {name}_template.html not found.")
 
-# --- 3. LOAD DATA ---
+# --- 2. LOAD DATA ---
 all_matches = []
 seen_match_ids = set()
 for f in glob.glob("date/*.json"):
@@ -50,13 +43,11 @@ for f in glob.glob("date/*.json"):
 channels_data = {}
 sitemap_urls = [DOMAIN + "/"]
 
-# --- 4. GENERATE DAILY PAGES (INSIDE TEMP FOLDER) ---
+# --- 3. GENERATE DAILY PAGES ---
 for i in range(7):
     day = START_WEEK + timedelta(days=i)
-    fname_raw = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
-    fname = f"{TEMP_DIR}/{fname_raw}"
-    
-    if fname_raw != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname_raw}")
+    fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
+    if fname != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname}")
 
     current_page_menu = ""
     for j in range(7):
@@ -101,8 +92,8 @@ for i in range(7):
             </div>
         </a>'''
 
-        # --- 5. MATCH PAGES (BUILDING IN TEMP) ---
-        m_path = f"{TEMP_DIR}/match/{m_slug}/{m_date_folder}"
+        # --- 4. MATCH PAGES ---
+        m_path = f"match/{m_slug}/{m_date_folder}"
         os.makedirs(m_path, exist_ok=True)
         venue_val = m.get('venue') or m.get('stadium') or "To Be Announced"
         
@@ -138,12 +129,12 @@ for i in range(7):
         output = output.replace("{{PAGE_TITLE}}", f"Soccer TV Channels For {day.strftime('%A, %b %d, %Y')}")
         df.write(output)
 
-# --- 6. CHANNEL PAGES (BUILDING IN TEMP) ---
+# --- 5. CHANNEL PAGES (FIXED & FORMATTED) ---
 for ch_name, matches in channels_data.items():
     c_slug = slugify(ch_name)
-    c_dir = f"{TEMP_DIR}/channel/{c_slug}"
+    c_dir = f"channel/{c_slug}"
     os.makedirs(c_dir, exist_ok=True)
-    sitemap_urls.append(f"{DOMAIN}/channel/{c_slug}/")
+    sitemap_urls.append(f"{DOMAIN}/{c_dir}/")
 
     c_listing = ""
     matches.sort(key=lambda x: x['m']['kickoff'])
@@ -153,6 +144,7 @@ for ch_name, matches in channels_data.items():
         m_slug = slugify(m['fixture'])
         m_date_folder = dt.strftime('%Y%m%d')
         
+        # Matches in the channel list now have the same professional look as the home page
         c_listing += f'''
         <a href="{DOMAIN}/match/{m_slug}/{m_date_folder}/" style="display: flex; align-items: center; padding: 16px; background: white; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: inherit;">
             <div style="min-width: 90px; text-align: center; border-right: 1px solid #edf2f7; margin-right: 15px;">
@@ -169,30 +161,14 @@ for ch_name, matches in channels_data.items():
         c_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name)
         c_html = c_html.replace("{{MATCH_LISTING}}", c_listing)
         c_html = c_html.replace("{{DOMAIN}}", DOMAIN)
-        c_html = c_html.replace("{{WEEKLY_MENU}}", current_page_menu)
+        c_html = c_html.replace("{{WEEKLY_MENU}}", current_page_menu) # Keeps navigation working
         cf.write(c_html)
 
-# --- 7. SITEMAP (BUILDING IN TEMP) ---
+# --- 6. SITEMAP ---
 sitemap_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 for url in list(set(sitemap_urls)):
     sitemap_content += f'<url><loc>{url}</loc><lastmod>{NOW.strftime("%Y-%m-%d")}</lastmod></url>'
 sitemap_content += '</urlset>'
-with open(f"{TEMP_DIR}/sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
+with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
 
-# --- 8. THE ATOMIC SWAP (THE FIX) ---
-# This part replaces the old folders with the new folders instantly.
-# This ensures zero downtime and NO 404 ERRORS.
-print("Build finished in temp folder. Swapping to live site...")
-for item in os.listdir(TEMP_DIR):
-    s = os.path.join(TEMP_DIR, item)
-    d = os.path.join(".", item)
-    if os.path.isdir(s):
-        if os.path.exists(d): shutil.rmtree(d)
-        shutil.move(s, d)
-    else:
-        shutil.move(s, d)
-
-# Cleanup
-if os.path.exists(TEMP_DIR): shutil.rmtree(TEMP_DIR)
-
-print(f"Success! {len(sitemap_urls)} URLs updated without downtime.")
+print(f"Success! {len(sitemap_urls)} URLs generated.")
