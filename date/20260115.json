@@ -1,4 +1,4 @@
-[ 
+[
     {
         "match_id": 14058103,
         "kickoff": 1768410000,
@@ -10,8 +10,8 @@
             {
                 "country": "Algeria",
                 "channels": [
-                    "beIN SPORTS MAX 1",
                     "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1",
                     "Al Aoula Algeria"
                 ]
             },
@@ -24,8 +24,8 @@
             {
                 "country": "Angola",
                 "channels": [
-                    "DStv Now",
                     "TPA 2",
+                    "DStv Now",
                     "AfroSport TV"
                 ]
             },
@@ -38,8 +38,8 @@
             {
                 "country": "Bahrain",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -81,34 +81,34 @@
             {
                 "country": "Burkina Faso",
                 "channels": [
+                    "Canal+ CAN",
                     "RTB",
-                    "DStv Now",
-                    "Canal+ CAN"
+                    "DStv Now"
                 ]
             },
             {
                 "country": "Burundi",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Cabo Verde",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Cameroon",
                 "channels": [
-                    "DStv Now",
-                    "AfroSport TV",
+                    "Canal+ CAN",
                     "Canal2",
-                    "Canal+ CAN"
+                    "DStv Now",
+                    "AfroSport TV"
                 ]
             },
             {
@@ -120,8 +120,8 @@
             {
                 "country": "Central African Republic",
                 "channels": [
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "Canal+ CAN",
+                    "AfroSport TV"
                 ]
             },
             {
@@ -150,9 +150,9 @@
             {
                 "country": "Congo",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -189,18 +189,18 @@
             {
                 "country": "C\u00f4te d'Ivoire",
                 "channels": [
-                    "DStv Now",
-                    "Canal+ CAN"
+                    "Canal+ CAN",
+                    "DStv Now"
                 ]
             },
             {
                 "country": "Djibouti",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "AfroSport TV",
                     "DStv Now",
+                    "AfroSport TV",
+                    "Canal+ CAN",
                     "beIN SPORTS MAX 2",
-                    "Canal+ CAN"
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -218,8 +218,8 @@
             {
                 "country": "Egypt",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -231,9 +231,9 @@
             {
                 "country": "Equatorial Guinea",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -265,32 +265,32 @@
             {
                 "country": "Gabon",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Gambia",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Germany",
                 "channels": [
-                    "Magenta Sport",
-                    "Sportdigital FUSSBALL"
+                    "Sportdigital FUSSBALL",
+                    "Magenta Sport"
                 ]
             },
             {
                 "country": "Ghana",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -302,17 +302,17 @@
             {
                 "country": "Guinea",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Guinea-Bissau",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -330,15 +330,15 @@
             {
                 "country": "Iran, Islamic Republic of",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
                 "country": "Iraq",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -350,8 +350,8 @@
             {
                 "country": "Jordan",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -364,15 +364,15 @@
             {
                 "country": "Kuwait",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
                 "country": "Lebanon",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -391,8 +391,8 @@
             {
                 "country": "Libya",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -410,18 +410,18 @@
             {
                 "country": "Mali",
                 "channels": [
-                    "DStv Now",
-                    "Canal+ CAN"
+                    "Canal+ CAN",
+                    "DStv Now"
                 ]
             },
             {
                 "country": "Mauritania",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "AfroSport TV",
                     "DStv Now",
+                    "AfroSport TV",
+                    "Canal+ CAN",
                     "beIN SPORTS MAX 2",
-                    "Canal+ CAN"
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -445,8 +445,8 @@
             {
                 "country": "Morocco",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -470,31 +470,31 @@
             {
                 "country": "Niger",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Nigeria",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Oman",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
                 "country": "Palestine, State of",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -524,8 +524,8 @@
             {
                 "country": "Qatar",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -537,8 +537,8 @@
             {
                 "country": "Rwanda",
                 "channels": [
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "Canal+ CAN",
+                    "AfroSport TV"
                 ]
             },
             {
@@ -556,10 +556,10 @@
             {
                 "country": "Senegal",
                 "channels": [
+                    "Canal+ CAN",
                     "RTS 1",
-                    "AfroSport TV",
                     "DStv Now",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -577,41 +577,42 @@
             {
                 "country": "Sierra Leone",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Somalia",
                 "channels": [
-                    "beIN SPORTS MAX 1",
                     "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1",
                     "AfroSport TV"
                 ]
             },
             {
                 "country": "South Sudan",
                 "channels": [
-                    "DStv Now",
-                    "beIN SPORTS MAX 1",
                     "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1",
+                    "DStv Now",
                     "AfroSport TV"
                 ]
             },
             {
                 "country": "Spain",
                 "channels": [
-                    "Movistar+"
+                    "Movistar+",
+                    "M+ Liga de Campeones"
                 ]
             },
             {
                 "country": "Sudan",
                 "channels": [
-                    "DStv Now",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "AfroSport TV",
-                    "beIN SPORTS MAX 2"
+                    "DStv Now",
+                    "AfroSport TV"
                 ]
             },
             {
@@ -623,8 +624,8 @@
             {
                 "country": "Syrian Arab Republic",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -637,16 +638,16 @@
             {
                 "country": "Togo",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Tunisia",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -665,8 +666,8 @@
             {
                 "country": "United Arab Emirates",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -690,8 +691,8 @@
             {
                 "country": "Yemen",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -748,9 +749,9 @@
             {
                 "country": "Bahrain",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
@@ -792,33 +793,33 @@
             {
                 "country": "Burkina Faso",
                 "channels": [
-                    "DStv Now",
-                    "Canal+ CAN"
+                    "Canal+ CAN",
+                    "DStv Now"
                 ]
             },
             {
                 "country": "Burundi",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Cabo Verde",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Cameroon",
                 "channels": [
-                    "DStv Now",
-                    "AfroSport TV",
+                    "Canal+ CAN",
                     "Canal2",
-                    "Canal+ CAN"
+                    "DStv Now",
+                    "AfroSport TV"
                 ]
             },
             {
@@ -830,8 +831,8 @@
             {
                 "country": "Central African Republic",
                 "channels": [
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "Canal+ CAN",
+                    "AfroSport TV"
                 ]
             },
             {
@@ -859,9 +860,9 @@
             {
                 "country": "Congo",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -898,19 +899,19 @@
             {
                 "country": "C\u00f4te d'Ivoire",
                 "channels": [
-                    "DStv Now",
+                    "Canal+ CAN",
                     "RTI La 3",
-                    "Canal+ CAN"
+                    "DStv Now"
                 ]
             },
             {
                 "country": "Djibouti",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "AfroSport TV",
                     "DStv Now",
+                    "AfroSport TV",
+                    "Canal+ CAN",
                     "beIN SPORTS MAX 2",
-                    "Canal+ CAN"
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -928,9 +929,9 @@
             {
                 "country": "Egypt",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
@@ -942,9 +943,9 @@
             {
                 "country": "Equatorial Guinea",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -976,32 +977,32 @@
             {
                 "country": "Gabon",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Gambia",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Germany",
                 "channels": [
-                    "Magenta Sport",
-                    "Sportdigital FUSSBALL"
+                    "Sportdigital FUSSBALL",
+                    "Magenta Sport"
                 ]
             },
             {
                 "country": "Ghana",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -1013,17 +1014,17 @@
             {
                 "country": "Guinea",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Guinea-Bissau",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -1035,9 +1036,9 @@
             {
                 "country": "Iran, Islamic Republic of",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
@@ -1072,17 +1073,17 @@
             {
                 "country": "Kuwait",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
                 "country": "Lebanon",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
@@ -1101,9 +1102,9 @@
             {
                 "country": "Libya",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
@@ -1121,19 +1122,19 @@
             {
                 "country": "Mali",
                 "channels": [
-                    "DStv Now",
-                    "Canal+ CAN"
+                    "Canal+ CAN",
+                    "DStv Now"
                 ]
             },
             {
                 "country": "Mauritania",
                 "channels": [
-                    "beIN SPORTS MAX 1",
-                    "AfroSport TV",
-                    "beIN SPORTS",
                     "DStv Now",
+                    "AfroSport TV",
+                    "Canal+ CAN",
                     "beIN SPORTS MAX 2",
-                    "Canal+ CAN"
+                    "beIN SPORTS",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -1157,11 +1158,11 @@
             {
                 "country": "Morocco",
                 "channels": [
-                    "beIN SPORTS MAX 1",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS",
                     "Tamazight TV",
                     "Al Aoula",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -1185,25 +1186,25 @@
             {
                 "country": "Niger",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Nigeria",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Oman",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
@@ -1241,16 +1242,16 @@
             {
                 "country": "Qatar",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
                 "country": "Rwanda",
                 "channels": [
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "Canal+ CAN",
+                    "AfroSport TV"
                 ]
             },
             {
@@ -1269,9 +1270,9 @@
             {
                 "country": "Senegal",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
@@ -1283,37 +1284,37 @@
             {
                 "country": "Sierra Leone",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Somalia",
                 "channels": [
-                    "beIN SPORTS",
-                    "beIN SPORTS MAX 1",
                     "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1",
+                    "beIN SPORTS",
                     "AfroSport TV"
                 ]
             },
             {
                 "country": "South Sudan",
                 "channels": [
-                    "DStv Now",
-                    "beIN SPORTS MAX 1",
                     "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1",
+                    "DStv Now",
                     "AfroSport TV"
                 ]
             },
             {
                 "country": "Sudan",
                 "channels": [
-                    "beIN SPORTS MAX 1",
+                    "DStv Now",
                     "AfroSport TV",
                     "beIN SPORTS",
-                    "DStv Now",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -1325,9 +1326,9 @@
             {
                 "country": "Syrian Arab Republic",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
@@ -1340,17 +1341,17 @@
             {
                 "country": "Togo",
                 "channels": [
+                    "Canal+ CAN",
                     "DStv Now",
-                    "AfroSport TV",
-                    "Canal+ CAN"
+                    "AfroSport TV"
                 ]
             },
             {
                 "country": "Tunisia",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
@@ -1376,8 +1377,8 @@
                 "country": "United Arab Emirates",
                 "channels": [
                     "beIN SPORTS",
-                    "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS MAX 2",
+                    "beIN SPORTS MAX 1"
                 ]
             },
             {
@@ -1401,9 +1402,9 @@
             {
                 "country": "Yemen",
                 "channels": [
-                    "beIN SPORTS",
+                    "beIN SPORTS MAX 2",
                     "beIN SPORTS MAX 1",
-                    "beIN SPORTS MAX 2"
+                    "beIN SPORTS"
                 ]
             },
             {
@@ -1456,8 +1457,8 @@
             {
                 "country": "Brazil",
                 "channels": [
-                    "Disney+",
-                    "ESPN 4"
+                    "ESPN 4",
+                    "Disney+"
                 ]
             },
             {
@@ -1493,8 +1494,8 @@
             {
                 "country": "Denmark",
                 "channels": [
-                    "TV2 Play Denmark",
-                    "TV2 Sport X"
+                    "TV2 Sport X",
+                    "TV2 Play Denmark"
                 ]
             },
             {
@@ -1512,8 +1513,8 @@
             {
                 "country": "Faroe Islands",
                 "channels": [
-                    "TV2 Play Denmark",
-                    "TV2 Sport X"
+                    "TV2 Sport X",
+                    "TV2 Play Denmark"
                 ]
             },
             {
@@ -1531,8 +1532,8 @@
             {
                 "country": "Italy",
                 "channels": [
-                    "DAZN",
-                    "DAZN1"
+                    "DAZN1",
+                    "DAZN"
                 ]
             },
             {
@@ -1588,8 +1589,8 @@
             {
                 "country": "San Marino",
                 "channels": [
-                    "DAZN",
-                    "DAZN1"
+                    "DAZN1",
+                    "DAZN"
                 ]
             },
             {
@@ -1660,22 +1661,22 @@
             {
                 "country": "Denmark",
                 "channels": [
-                    "TV2 Play Denmark",
-                    "TV2 Sport X"
+                    "TV2 Sport X",
+                    "TV2 Play Denmark"
                 ]
             },
             {
                 "country": "Faroe Islands",
                 "channels": [
-                    "TV2 Play Denmark",
-                    "TV2 Sport X"
+                    "TV2 Sport X",
+                    "TV2 Play Denmark"
                 ]
             },
             {
                 "country": "Italy",
                 "channels": [
-                    "DAZN",
-                    "DAZN1"
+                    "DAZN1",
+                    "DAZN"
                 ]
             },
             {
@@ -1713,8 +1714,8 @@
             {
                 "country": "San Marino",
                 "channels": [
-                    "DAZN",
-                    "DAZN1"
+                    "DAZN1",
+                    "DAZN"
                 ]
             },
             {
@@ -1881,8 +1882,8 @@
             {
                 "country": "Brazil",
                 "channels": [
-                    "Disney+",
                     "Prime Video",
+                    "Disney+",
                     "YouTube - Caz\u00e9TV"
                 ]
             },
@@ -1920,8 +1921,8 @@
                 "country": "Ireland",
                 "channels": [
                     "TNT Sports 3",
-                    "Discovery+",
-                    "discovery+ App"
+                    "discovery+ App",
+                    "Discovery+"
                 ]
             },
             {
@@ -1994,8 +1995,8 @@
             {
                 "country": "United Kingdom",
                 "channels": [
-                    "Discovery+",
-                    "discovery+ App"
+                    "discovery+ App",
+                    "Discovery+"
                 ]
             },
             {
@@ -2036,8 +2037,8 @@
             {
                 "country": "Brazil",
                 "channels": [
-                    "OneFootball",
-                    "Canal Goat"
+                    "Canal Goat",
+                    "OneFootball"
                 ]
             },
             {
@@ -2074,15 +2075,15 @@
             {
                 "country": "Finland",
                 "channels": [
-                    "VeikkausTV",
-                    "V Sport 2 Suomi"
+                    "V Sport 2 Suomi",
+                    "VeikkausTV"
                 ]
             },
             {
                 "country": "Germany",
                 "channels": [
-                    "Sky Bundesliga HD 1",
-                    "Sky Go"
+                    "Sky Go",
+                    "Sky Bundesliga HD 1"
                 ]
             },
             {
@@ -2160,8 +2161,8 @@
             {
                 "country": "Romania",
                 "channels": [
-                    "Prima Sport 5",
-                    "Digi Sport 4"
+                    "Digi Sport 4",
+                    "Prima Sport 5"
                 ]
             },
             {
@@ -2231,9 +2232,9 @@
             {
                 "country": "Austria",
                 "channels": [
-                    "Sky Go",
                     "Sky Sport Bundesliga",
-                    "RTL+"
+                    "RTL+",
+                    "Sky Go"
                 ]
             },
             {
@@ -2257,10 +2258,10 @@
             {
                 "country": "Brazil",
                 "channels": [
-                    "Xsports",
                     "Sportv",
+                    "Canal Goat",
                     "OneFootball",
-                    "Canal Goat"
+                    "Xsports"
                 ]
             },
             {
@@ -2272,8 +2273,8 @@
             {
                 "country": "Burundi",
                 "channels": [
-                    "Canal+ Sport 1",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "Canal+ Sport 1"
                 ]
             },
             {
@@ -2315,8 +2316,8 @@
             {
                 "country": "Congo",
                 "channels": [
-                    "Canal+ Sport 1",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "Canal+ Sport 1"
                 ]
             },
             {
@@ -2359,15 +2360,15 @@
             {
                 "country": "Finland",
                 "channels": [
-                    "VeikkausTV",
-                    "V Sport 2 Suomi"
+                    "V Sport 2 Suomi",
+                    "VeikkausTV"
                 ]
             },
             {
                 "country": "France",
                 "channels": [
-                    "beIN Sports 3",
-                    "RTL"
+                    "RTL",
+                    "beIN Sports 3"
                 ]
             },
             {
@@ -2385,19 +2386,19 @@
             {
                 "country": "Germany",
                 "channels": [
-                    "DAZN",
                     "Sky Bundesliga HD 1",
+                    "Sky Go",
                     "Sky Sport Bundesliga UHD",
+                    "DAZN",
                     "RTL",
-                    "RTL+",
-                    "Sky Go"
+                    "RTL+"
                 ]
             },
             {
                 "country": "Ghana",
                 "channels": [
-                    "Canal+ Sport 1",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "Canal+ Sport 1"
                 ]
             },
             {
@@ -2446,8 +2447,8 @@
             {
                 "country": "Luxembourg",
                 "channels": [
-                    "RTL",
-                    "Sky Go"
+                    "Sky Go",
+                    "RTL"
                 ]
             },
             {
@@ -2514,8 +2515,8 @@
             {
                 "country": "Romania",
                 "channels": [
-                    "Prima Sport 3",
-                    "Digi Sport 4"
+                    "Digi Sport 4",
+                    "Prima Sport 3"
                 ]
             },
             {
@@ -2559,9 +2560,9 @@
             {
                 "country": "Switzerland",
                 "channels": [
+                    "RTL+",
                     "Sky Bundesliga HD 1",
-                    "RTL",
-                    "RTL+"
+                    "RTL"
                 ]
             },
             {
@@ -2613,8 +2614,8 @@
             {
                 "country": "Austria",
                 "channels": [
-                    "Prime Video",
-                    "Sky Go"
+                    "Sky Go",
+                    "Prime Video"
                 ]
             },
             {
@@ -2910,8 +2911,8 @@
             {
                 "country": "Bolivia, Plurinational State of",
                 "channels": [
-                    "Disney+ Premium Chile",
-                    "ESPN 2 Sur"
+                    "ESPN 2 Sur",
+                    "Disney+ Premium Chile"
                 ]
             },
             {
@@ -2923,8 +2924,8 @@
             {
                 "country": "Chile",
                 "channels": [
-                    "Disney+ Premium Chile",
-                    "ESPN 2 Sur"
+                    "ESPN 2 Sur",
+                    "Disney+ Premium Chile"
                 ]
             },
             {
@@ -2966,8 +2967,8 @@
             {
                 "country": "Germany",
                 "channels": [
-                    "Sky Bundesliga HD 4",
-                    "Sky Go"
+                    "Sky Go",
+                    "Sky Bundesliga HD 4"
                 ]
             },
             {
@@ -3092,8 +3093,8 @@
             {
                 "country": "Congo",
                 "channels": [
-                    "StarTimes App",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "StarTimes App"
                 ]
             },
             {
@@ -3117,8 +3118,8 @@
             {
                 "country": "Finland",
                 "channels": [
-                    "VeikkausTV",
-                    "V Sport 2 Suomi"
+                    "V Sport 2 Suomi",
+                    "VeikkausTV"
                 ]
             },
             {
@@ -3130,15 +3131,15 @@
             {
                 "country": "Germany",
                 "channels": [
-                    "Sky Bundesliga HD 1",
-                    "Sky Go"
+                    "Sky Go",
+                    "Sky Bundesliga HD 1"
                 ]
             },
             {
                 "country": "Ghana",
                 "channels": [
-                    "StarTimes App",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "StarTimes App"
                 ]
             },
             {
@@ -3170,8 +3171,8 @@
             {
                 "country": "Lesotho",
                 "channels": [
-                    "StarTimes App",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "StarTimes App"
                 ]
             },
             {
@@ -3207,8 +3208,8 @@
             {
                 "country": "Mozambique",
                 "channels": [
-                    "StarTimes App",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "StarTimes App"
                 ]
             },
             {
@@ -3245,8 +3246,8 @@
             {
                 "country": "Romania",
                 "channels": [
-                    "Prima Sport 4",
-                    "Digi Sport 2"
+                    "Digi Sport 2",
+                    "Prima Sport 4"
                 ]
             },
             {
@@ -3272,8 +3273,8 @@
             {
                 "country": "South Africa",
                 "channels": [
-                    "StarTimes App",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "StarTimes App"
                 ]
             },
             {
@@ -3291,15 +3292,15 @@
             {
                 "country": "Tanzania, United Republic of",
                 "channels": [
-                    "StarTimes App",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "StarTimes App"
                 ]
             },
             {
                 "country": "Uganda",
                 "channels": [
-                    "StarTimes App",
-                    "Startimes Sports Life"
+                    "Startimes Sports Life",
+                    "StarTimes App"
                 ]
             },
             {
@@ -3527,8 +3528,8 @@
             {
                 "country": "Brazil",
                 "channels": [
-                    "Disney+",
-                    "ESPN 4"
+                    "ESPN 4",
+                    "Disney+"
                 ]
             },
             {
@@ -3568,8 +3569,8 @@
             {
                 "country": "Brazil",
                 "channels": [
-                    "Disney+",
-                    "ESPN 4"
+                    "ESPN 4",
+                    "Disney+"
                 ]
             },
             {
@@ -3627,8 +3628,8 @@
             {
                 "country": "Brazil",
                 "channels": [
-                    "Disney+",
-                    "ESPN"
+                    "ESPN",
+                    "Disney+"
                 ]
             },
             {
@@ -3646,8 +3647,8 @@
             {
                 "country": "Congo",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -3659,29 +3660,29 @@
             {
                 "country": "Ghana",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Guinea",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Kenya",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Lesotho",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -3699,50 +3700,50 @@
             {
                 "country": "Mozambique",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Nigeria",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Rwanda",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Sierra Leone",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "South Africa",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Tanzania, United Republic of",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Uganda",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -3783,8 +3784,8 @@
             {
                 "country": "Botswana",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3797,8 +3798,8 @@
             {
                 "country": "Burundi",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3810,8 +3811,8 @@
             {
                 "country": "Cameroon",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3842,8 +3843,8 @@
             {
                 "country": "C\u00f4te d'Ivoire",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3855,8 +3856,8 @@
             {
                 "country": "Equatorial Guinea",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3869,8 +3870,8 @@
             {
                 "country": "Eswatini",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3883,22 +3884,22 @@
             {
                 "country": "Gabon",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
                 "country": "Gambia",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
                 "country": "Ghana",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3918,8 +3919,8 @@
             {
                 "country": "Ireland",
                 "channels": [
-                    "Premier Sports Player",
-                    "Premier Sports 1 HD"
+                    "Premier Sports 1 HD",
+                    "Premier Sports Player"
                 ]
             },
             {
@@ -3932,8 +3933,8 @@
             {
                 "country": "Lesotho",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3953,15 +3954,15 @@
             {
                 "country": "Malawi",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
                 "country": "Mali",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3973,8 +3974,8 @@
             {
                 "country": "Mauritius",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -3993,8 +3994,8 @@
             {
                 "country": "Namibia",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -4007,8 +4008,8 @@
             {
                 "country": "Nigeria",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -4045,8 +4046,8 @@
             {
                 "country": "Seychelles",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -4084,8 +4085,8 @@
             {
                 "country": "Togo",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             },
             {
@@ -4098,8 +4099,8 @@
             {
                 "country": "United Kingdom",
                 "channels": [
-                    "Premier Sports Player",
-                    "Premier Sports 1 HD"
+                    "Premier Sports 1 HD",
+                    "Premier Sports Player"
                 ]
             },
             {
@@ -4117,8 +4118,8 @@
             {
                 "country": "Zimbabwe",
                 "channels": [
-                    "DStv Now",
-                    "ESPN Africa"
+                    "ESPN Africa",
+                    "DStv Now"
                 ]
             }
         ]
@@ -4155,11 +4156,11 @@
             {
                 "country": "Angola",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
@@ -4177,8 +4178,8 @@
             {
                 "country": "Austria",
                 "channels": [
-                    "Sky Sports Premier League",
-                    "Sky Go"
+                    "Sky Go",
+                    "Sky Sports Premier League"
                 ]
             },
             {
@@ -4196,10 +4197,10 @@
             {
                 "country": "Benin",
                 "channels": [
+                    "SuperSport Premier League",
                     "SuperSport Maximo",
-                    "SuperSport Grandstand",
                     "SuperSport Maximo 2",
-                    "SuperSport Premier League"
+                    "SuperSport Grandstand"
                 ]
             },
             {
@@ -4211,60 +4212,60 @@
             {
                 "country": "Botswana",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Brazil",
                 "channels": [
-                    "Disney+",
-                    "ESPN"
+                    "ESPN",
+                    "Disney+"
                 ]
             },
             {
                 "country": "Burkina Faso",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Burundi",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "Startimes World Football",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Cabo Verde",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Cameroon",
                 "channels": [
-                    "SuperSport Maximo",
-                    "SuperSport Premier League",
-                    "StarTimes App",
                     "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo",
+                    "StarTimes App",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
@@ -4276,19 +4277,19 @@
             {
                 "country": "Central African Republic",
                 "channels": [
-                    "SuperSport Maximo",
-                    "SuperSport Grandstand",
+                    "SuperSport Premier League",
                     "SuperSport Maximo 2",
-                    "SuperSport Premier League"
+                    "SuperSport Maximo",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Chad",
                 "channels": [
-                    "SuperSport Maximo",
                     "beIN SPORTS 1",
-                    "SuperSport Premier League",
                     "DStv Now",
+                    "SuperSport Maximo",
+                    "SuperSport Premier League",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4296,33 +4297,33 @@
             {
                 "country": "Comoros",
                 "channels": [
-                    "SuperSport Maximo",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2",
-                    "SuperSport Premier League"
+                    "SuperSport Maximo",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2"
                 ]
             },
             {
                 "country": "Congo",
                 "channels": [
-                    "SuperSport Maximo",
-                    "SuperSport Premier League",
-                    "StarTimes App",
-                    "DStv Now",
                     "Startimes World Football",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "DStv Now",
+                    "SuperSport Maximo",
+                    "StarTimes App",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Congo, The Democratic Republic of the",
                 "channels": [
-                    "SuperSport Maximo",
-                    "SuperSport Premier League",
-                    "StarTimes App",
                     "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo",
+                    "StarTimes App",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
@@ -4334,27 +4335,27 @@
             {
                 "country": "C\u00f4te d'Ivoire",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Denmark",
                 "channels": [
-                    "Viaplay",
-                    "TV3+ HD"
+                    "TV3+ HD",
+                    "Viaplay"
                 ]
             },
             {
                 "country": "Djibouti",
                 "channels": [
-                    "SuperSport Maximo",
                     "beIN SPORTS 1",
-                    "SuperSport Premier League",
                     "DStv Now",
+                    "SuperSport Maximo",
+                    "SuperSport Premier League",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4368,9 +4369,9 @@
             {
                 "country": "Equatorial Guinea",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4378,9 +4379,9 @@
             {
                 "country": "Eritrea",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4394,21 +4395,21 @@
             {
                 "country": "Eswatini",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Ethiopia",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
@@ -4420,19 +4421,19 @@
             {
                 "country": "Gabon",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Gambia",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4446,13 +4447,13 @@
             {
                 "country": "Ghana",
                 "channels": [
-                    "SuperSport Maximo",
-                    "SuperSport Premier League",
-                    "StarTimes App",
                     "DStv Now",
-                    "Startimes World Football",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo",
+                    "StarTimes App",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -4464,21 +4465,21 @@
             {
                 "country": "Guinea",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
                     "StarTimes App",
-                    "DStv Now",
-                    "Startimes World Football",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Guinea-Bissau",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4505,10 +4506,10 @@
                 "country": "Ireland",
                 "channels": [
                     "Sky Go UK",
-                    "Sky Sports Main Event",
                     "Sky Sports Football",
+                    "Sky Sports Ultra HD",
                     "Sky Sports Ultra HDR",
-                    "Sky Sports Ultra HD"
+                    "Sky Sports Main Event"
                 ]
             },
             {
@@ -4526,14 +4527,14 @@
             {
                 "country": "Kenya",
                 "channels": [
-                    "Azam Sports 4 HD",
+                    "DStv Now",
                     "SuperSport Maximo",
+                    "Azam Sports 4 HD",
                     "SuperSport Premier League",
                     "StarTimes App",
-                    "DStv Now",
-                    "Startimes World Football",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -4563,23 +4564,23 @@
             {
                 "country": "Lesotho",
                 "channels": [
-                    "SuperSport Maximo",
-                    "SuperSport Premier League",
-                    "StarTimes App",
                     "DStv Now",
-                    "Startimes World Football",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo",
+                    "StarTimes App",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Liberia",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
@@ -4603,10 +4604,10 @@
             {
                 "country": "Madagascar",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
                     "StarTimes App",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4614,32 +4615,32 @@
             {
                 "country": "Malawi",
                 "channels": [
-                    "Azam Sports 4 HD",
-                    "SuperSport Maximo",
-                    "SuperSport Premier League",
-                    "StarTimes App",
                     "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo",
+                    "Azam Sports 4 HD",
+                    "StarTimes App",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Mali",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Mauritania",
                 "channels": [
-                    "SuperSport Maximo",
                     "beIN SPORTS 1",
-                    "SuperSport Premier League",
                     "DStv Now",
+                    "SuperSport Maximo",
+                    "SuperSport Premier League",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4647,9 +4648,9 @@
             {
                 "country": "Mauritius",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4657,10 +4658,10 @@
             {
                 "country": "Mayotte",
                 "channels": [
-                    "SuperSport Maximo",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2",
-                    "SuperSport Premier League"
+                    "SuperSport Maximo",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2"
                 ]
             },
             {
@@ -4684,21 +4685,21 @@
             {
                 "country": "Mozambique",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
                     "StarTimes App",
-                    "DStv Now",
-                    "Startimes World Football",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Namibia",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4706,21 +4707,21 @@
             {
                 "country": "Niger",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Nigeria",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "StarTimes App",
-                    "DStv Now",
-                    "Startimes World Football",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -4768,31 +4769,31 @@
             {
                 "country": "Rwanda",
                 "channels": [
-                    "Azam Sports 4 HD",
-                    "SuperSport Maximo",
-                    "SuperSport Premier League",
-                    "StarTimes App",
                     "Startimes World Football",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo",
+                    "Azam Sports 4 HD",
+                    "StarTimes App",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "R\u00e9union",
                 "channels": [
+                    "SuperSport Premier League",
                     "SuperSport Maximo",
-                    "SuperSport Grandstand",
                     "SuperSport Maximo 2",
-                    "SuperSport Premier League"
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Sao Tome and Principe",
                 "channels": [
-                    "SuperSport Maximo",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2",
-                    "SuperSport Premier League"
+                    "SuperSport Maximo",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2"
                 ]
             },
             {
@@ -4804,9 +4805,9 @@
             {
                 "country": "Senegal",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4820,9 +4821,9 @@
             {
                 "country": "Seychelles",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4830,41 +4831,41 @@
             {
                 "country": "Sierra Leone",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
                     "StarTimes App",
-                    "DStv Now",
-                    "Startimes World Football",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Somalia",
                 "channels": [
-                    "SuperSport Maximo",
                     "beIN SPORTS 1",
+                    "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "South Africa",
                 "channels": [
-                    "Startimes World Football",
-                    "SuperSport Maximo",
                     "SuperSport Maximo 2",
-                    "StarTimes App"
+                    "SuperSport Maximo",
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "South Sudan",
                 "channels": [
-                    "SuperSport Maximo",
                     "beIN SPORTS 1",
-                    "SuperSport Premier League",
                     "DStv Now",
+                    "SuperSport Maximo",
+                    "SuperSport Premier League",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4872,10 +4873,10 @@
             {
                 "country": "Sudan",
                 "channels": [
-                    "SuperSport Maximo",
                     "beIN SPORTS 1",
-                    "SuperSport Premier League",
                     "DStv Now",
+                    "SuperSport Maximo",
+                    "SuperSport Premier League",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4901,22 +4902,22 @@
             {
                 "country": "Tanzania, United Republic of",
                 "channels": [
-                    "Azam Sports 4 HD",
-                    "SuperSport Maximo",
-                    "SuperSport Premier League",
-                    "StarTimes App",
                     "DStv Now",
-                    "Startimes World Football",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo",
+                    "Azam Sports 4 HD",
+                    "StarTimes App",
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Togo",
                 "channels": [
+                    "DStv Now",
                     "SuperSport Maximo",
                     "SuperSport Premier League",
-                    "DStv Now",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -4936,14 +4937,14 @@
             {
                 "country": "Uganda",
                 "channels": [
-                    "Azam Sports 4 HD",
+                    "DStv Now",
                     "SuperSport Maximo",
+                    "Azam Sports 4 HD",
                     "SuperSport Premier League",
                     "StarTimes App",
-                    "DStv Now",
-                    "Startimes World Football",
                     "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Maximo 2",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -4955,10 +4956,10 @@
             {
                 "country": "United Kingdom",
                 "channels": [
-                    "Sky Go UK",
                     "Sky Sports Main Event",
-                    "Sky Sports Football",
-                    "Sky Sports Ultra HD"
+                    "Sky Sports Ultra HD",
+                    "Sky Go UK",
+                    "Sky Sports Football"
                 ]
             },
             {
@@ -4982,21 +4983,21 @@
             {
                 "country": "Zambia",
                 "channels": [
-                    "Azam Sports 4 HD",
                     "SuperSport Maximo",
-                    "SuperSport Premier League",
+                    "Azam Sports 4 HD",
                     "StarTimes App",
-                    "SuperSport Grandstand",
-                    "SuperSport Maximo 2"
+                    "SuperSport Premier League",
+                    "SuperSport Maximo 2",
+                    "SuperSport Grandstand"
                 ]
             },
             {
                 "country": "Zimbabwe",
                 "channels": [
-                    "Azam Sports 4 HD",
-                    "SuperSport Maximo",
-                    "SuperSport Premier League",
                     "DStv Now",
+                    "SuperSport Maximo",
+                    "Azam Sports 4 HD",
+                    "SuperSport Premier League",
                     "SuperSport Grandstand",
                     "SuperSport Maximo 2"
                 ]
@@ -5335,9 +5336,9 @@
                 "country": "Portugal",
                 "channels": [
                     "RTP Internacional",
+                    "RTP 1",
                     "RTP \u00c1frica",
-                    "Sport TV1",
-                    "RTP 1"
+                    "Sport TV1"
                 ]
             },
             {
@@ -5780,8 +5781,8 @@
             {
                 "country": "United States",
                 "channels": [
-                    "TUDN",
-                    "UniM\u00e1s"
+                    "UniM\u00e1s",
+                    "TUDN"
                 ]
             }
         ]
@@ -5797,8 +5798,8 @@
             {
                 "country": "United States",
                 "channels": [
-                    "Peacock",
-                    "Fox Deportes"
+                    "Fox Deportes",
+                    "Peacock"
                 ]
             }
         ]
@@ -5887,8 +5888,8 @@
             {
                 "country": "Brazil",
                 "channels": [
-                    "Record",
-                    "TNT"
+                    "TNT",
+                    "Record"
                 ]
             }
         ]
@@ -5988,15 +5989,15 @@
             {
                 "country": "Ireland",
                 "channels": [
-                    "Discovery+",
-                    "discovery+ App"
+                    "discovery+ App",
+                    "Discovery+"
                 ]
             },
             {
                 "country": "United Kingdom",
                 "channels": [
-                    "Discovery+",
-                    "discovery+ App"
+                    "discovery+ App",
+                    "Discovery+"
                 ]
             },
             {
@@ -6053,8 +6054,8 @@
             {
                 "country": "Congo",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -6066,29 +6067,29 @@
             {
                 "country": "Ghana",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Guinea",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Kenya",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Lesotho",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -6106,15 +6107,15 @@
             {
                 "country": "Mozambique",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Nigeria",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -6132,36 +6133,36 @@
             {
                 "country": "Rwanda",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Sierra Leone",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "South Africa",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Tanzania, United Republic of",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
                 "country": "Uganda",
                 "channels": [
-                    "Startimes World Football",
-                    "StarTimes App"
+                    "StarTimes App",
+                    "Startimes World Football"
                 ]
             },
             {
@@ -7177,8 +7178,8 @@
                 "country": "China",
                 "channels": [
                     "Migu",
-                    "iQiyi",
-                    "CCTV-5 Sports"
+                    "CCTV-5 Sports",
+                    "iQiyi"
                 ]
             },
             {
@@ -7592,7 +7593,32 @@
         "league_id": 375,
         "league": "Greece Cup, Playoffs",
         "venue": "TBA",
-        "tv_channels": []
+        "tv_channels": [
+            {
+                "country": "Montenegro",
+                "channels": [
+                    "Arena 4 Premium"
+                ]
+            },
+            {
+                "country": "North Macedonia",
+                "channels": [
+                    "Arena 4 Premium"
+                ]
+            },
+            {
+                "country": "Serbia",
+                "channels": [
+                    "Arena 4 Premium"
+                ]
+            },
+            {
+                "country": "XK",
+                "channels": [
+                    "Arena 4 Premium"
+                ]
+            }
+        ]
     },
     {
         "match_id": 15324735,
