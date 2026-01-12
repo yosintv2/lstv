@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found | Redirecting...</title>
-    <meta http-equiv="refresh" content="2;url=https://tv.cricfoot.net/">
+    <title>Maintenance Mode | CricFoot</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
@@ -12,29 +11,63 @@
     </style>
 </head>
 <body class="bg-slate-100 flex items-center justify-center min-h-screen">
-    <div class="text-center p-8 bg-white shadow-xl rounded-2xl max-w-md border border-slate-200">
-        <div class="text-6xl mb-4">⚽</div>
-        <h1 class="text-2xl font-bold text-slate-800 mb-2">Page Not Found</h1>
-        <p class="text-slate-500 mb-6">The match schedule for this date is not available yet.</p>
+    <div class="text-center p-8 bg-white shadow-xl rounded-2xl max-w-md border border-slate-200 mx-4">
+        <div class="text-6xl mb-4 animate-pulse">🛠️</div>
         
-        <div class="flex items-center justify-center space-x-2 text-blue-600 font-semibold">
-            <svg class="animate-spin h-5 w-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-            </svg>
-            <span>Redirecting to Home...</span>
+        <h1 class="text-2xl font-bold text-slate-800 mb-2">Under Maintenance</h1>
+        <p class="text-slate-500 mb-6">We're updating the pitch for the next big match. We'll be back online shortly!</p>
+        
+        <div class="bg-slate-50 border border-slate-100 rounded-lg py-4 mb-6">
+            <span class="block text-sm uppercase tracking-widest text-slate-400 font-bold mb-1">Back In</span>
+            <div id="countdown" class="text-4xl font-mono font-bold text-blue-600">
+                10:00
+            </div>
         </div>
 
-        <a href="https://tv.cricfoot.net/" class="mt-8 inline-block bg-[#002d56] text-white px-6 py-2 rounded-lg font-bold hover:bg-[#003a6e] transition-colors">
-            Go Now
-        </a>
+        <div class="w-full bg-slate-200 rounded-full h-1.5 mb-8">
+            <div class="bg-blue-600 h-1.5 rounded-full animate-[shimmer_2s_infinite]" style="width: 70%"></div>
+        </div>
+        
+        <p class="text-xs text-slate-400">Thank you for your patience.</p>
     </div>
 
     <script>
-        // Fallback Javascript redirect if Meta Refresh fails
-        setTimeout(function() {
-            window.location.href = "https://tv.cricfoot.net/";
-        }, 3000);
+        // Set the countdown time in minutes
+        let timeInMinutes = 10;
+        let currentTime = timeInMinutes * 60;
+
+        const countdownElement = document.getElementById('countdown');
+
+        const updateCountdown = () => {
+            const minutes = Math.floor(currentTime / 60);
+            const seconds = currentTime % 60;
+
+            // Format numbers to always show two digits
+            const displayMinutes = minutes < 10 ? '0' + minutes : minutes;
+            const displaySeconds = seconds < 10 ? '0' + seconds : seconds;
+
+            countdownElement.innerText = `${displayMinutes}:${displaySeconds}`;
+
+            if (currentTime <= 0) {
+                clearInterval(timerInterval);
+                countdownElement.innerText = "Ready!";
+                // Optional: Auto-refresh when timer hits zero
+                // window.location.reload();
+            } else {
+                currentTime--;
+            }
+        };
+
+        // Run every second
+        const timerInterval = setInterval(updateCountdown, 1000);
     </script>
+
+    <style>
+        @keyframes shimmer {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+    </style>
 </body>
 </html>
