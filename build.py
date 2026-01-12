@@ -11,7 +11,7 @@ TODAY_DATE = NOW.date()
 # CENTER LOGIC: To make Today the 4th item, we start the menu 3 days ago
 MENU_START_DATE = TODAY_DATE - timedelta(days=3)
 
-TOP_LEAGUE_IDS = [7, 35, 23, 17]
+TOP_LEAGUE_IDS = [17, 35, 23, 7, 8, 34, 679]
 
 # Google Ads Code Block
 ADS_CODE = '''
