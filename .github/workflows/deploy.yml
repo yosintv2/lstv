@@ -5,8 +5,8 @@ on:
     branches: [ main ]
   workflow_dispatch: 
   schedule:
-    # Runs every 30 minutes (POSIX cron syntax)
-    - cron: '*/30 * * * *'
+    # Runs every 12 hours (00:00 and 12:00 UTC)
+    - cron: '0 */12 * * *'
 
 permissions:
   contents: read
