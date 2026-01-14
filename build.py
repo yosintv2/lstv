@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
-LOCAL_OFFSET = timezone(timedelta(hours=5))
+LOCAL_OFFSET = timezone(timedelta(hours=5)) 
 
 DIST_DIR = "dist"
 os.makedirs(DIST_DIR, exist_ok=True)
