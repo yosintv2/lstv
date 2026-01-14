@@ -248,6 +248,19 @@ for ch_name, matches in channels_data.items():
     with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
         cf.write(templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing).replace("{{DOMAIN}}", DOMAIN).replace("{{WEEKLY_MENU}}", channel_menu))
 
+
+
+# --- 6. SITEMAP ---
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+# Error handler for 404 (Page Not Found)
+@app.errorhandler(404)
+def p(e):
+    # Returns your 404 template and the 404 status code
+    return render_template('404.html'), 404
+
 # --- 6. SITEMAP ---
 sitemap_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 for url in sorted(list(set(sitemap_urls))):
