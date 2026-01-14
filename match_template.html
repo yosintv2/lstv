@@ -3,158 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>{{FIXTURE}} Live Streaming, TV Schedule & TV Channels | CricFootTV</title>
-    <meta name="description" content="Watch {{FIXTURE}} live. Find official TV channels and international broadcasters for {{LEAGUE}} on {{LOCAL_DATE}}. Get kickoff times, lineups, and match stats.">
-    <meta name="keywords" content="{{FIXTURE}} live stream, watch {{FIXTURE}} on TV, {{LEAGUE}} live schedule, football stats, lineups">
-    <script>
-      (function() {
-        var link = document.createElement('link');
-        link.rel = 'canonical';
-        link.href = window.location.protocol + '//' + window.location.host + window.location.pathname;
-        document.head.appendChild(link);
-      })();
-    </script>
-    
-    <meta property="og:type" content="event">
-    <meta property="og:title" content="{{FIXTURE}} Live TV Streaming and TV Schedule | CricFootTV">
-    <meta property="og:description" content="Complete broadcasting guide, lineups, and H2H stats for {{FIXTURE}} in the {{LEAGUE}}.">
-    <meta property="og:url" content="{{DOMAIN}}/">
-    <meta property="og:image" content="https://www.hls-player.net/fav.png">
-
-    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267" type="text/css">
-    <link href='https://www.hls-player.net/fav.png' rel='icon' type='image/x-icon'/>
+    <title>{{FIXTURE}} Live Streaming & TV Channels | CricFootTV</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; }
-        .section-header { background: #1a202c; color: #ffffff; padding: 12px 16px; font-weight: 800; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid #f90; }
-        
-        /* SofaScore Data Styles */
-        .form-dot { display: inline-block; width: 22px; height: 22px; line-height: 22px; text-align: center; border-radius: 4px; color: #fff; font-size: 11px; margin: 0 2px; font-weight: bold; text-transform: uppercase; }
-        .form-W { background: #22c55e; } .form-L { background: #ef4444; } .form-D { background: #94a3b8; }
-        
-        .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #f1f5f9; font-size: 14px; }
-        .stat-name { color: #64748b; font-size: 12px; font-weight: 600; text-transform: uppercase; }
-        
-        .lineup-list li { padding: 6px 0; border-bottom: 1px solid #f1f5f9; font-size: 13px; color: #334155; }
-        .lineup-list li:last-child { border-bottom: none; }
-
-        .faq-item { background: #fff; border-bottom: 1px solid #edf2f7; padding: 16px; }
-        .faq-question { font-weight: 700; color: #002d56; margin-bottom: 5px; font-size: 15px; }
-        .faq-answer { color: #475569; font-size: 14px; line-height: 1.6; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; }
+        .section-header { background: #002d56; color: white; padding: 10px 15px; font-weight: 800; text-transform: uppercase; font-size: 12px; border-left: 4px solid #f90; margin-top: 20px; }
+        .channel-pill { display: inline-block; background: #f1f5f9; color: #2563eb; padding: 3px 10px; border-radius: 4px; margin: 2px; text-decoration: none; font-weight: 700; border: 1px solid #e2e8f0; font-size: 12px; }
+        .broadcast-row { display: flex; padding: 12px; border-bottom: 1px solid #e2e8f0; background: white; align-items: center; }
+        .country-name { flex: 0 0 100px; font-weight: 800; color: #475569; font-size: 13px; }
+        .stat-bar-bg { background: #e2e8f0; height: 8px; border-radius: 4px; overflow: hidden; width: 100%; position: relative; }
+        .stat-bar-fill { background: #2563eb; height: 100%; transition: width 0.5s; }
     </style>
 </head>
-<body class="bg-slate-100">
+<body>
 
-    <header style="background:#002d56; padding: 15px 0; border-bottom: 4px solid #f90;">
-        <div class="max-w-4xl mx-auto px-4">
-            <a href="{{DOMAIN}}/" style="color:#fff; font-size:24px; font-weight:900; text-transform:uppercase; letter-spacing:-1px;">CRICFOOT<span style="color:#f90;">TV</span></a>
-        </div>
+    <header class="bg-[#002d56] p-4 border-b-4 border-orange-500 text-center">
+        <a href="{{DOMAIN}}/" class="text-white font-black text-2xl">CRICFOOT<span class="text-orange-500">TV</span></a>
     </header>
 
-    <div style="background: linear-gradient(to bottom, #002d56, #00447c); color: white;" class="py-12 border-b-4 border-orange-500">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <div class="inline-block px-3 py-1 bg-orange-500 text-white text-[10px] font-black uppercase rounded mb-4">{{LEAGUE}}</div>
-            <h1 class="text-3xl md:text-5xl font-black mb-4 tracking-tight">{{FIXTURE}}</h1>
-            <div class="flex flex-wrap justify-center gap-4 text-sm font-semibold opacity-90">
-                <span class="bg-black/20 px-3 py-1 rounded">📅 {{LOCAL_DATE}}</span>
-                <span class="bg-black/20 px-3 py-1 rounded">🕒 {{LOCAL_TIME}}</span>
-                <span class="bg-black/20 px-3 py-1 rounded">🏟️ {{VENUE}}</span>
-            </div>
-            <div class="mt-6 inline-flex items-center bg-white/10 rounded-full px-4 py-2 border border-white/20 text-xs">
-                <span class="mr-2 text-orange-400 font-bold">WIN ODDS:</span> {{ODDS}}
-            </div>
+    <div class="bg-gradient-to-b from-[#002d56] to-[#00447c] text-white py-10 px-4 text-center">
+        <div class="inline-block px-3 py-1 bg-orange-500 text-[10px] font-bold rounded mb-2 uppercase">{{LEAGUE}}</div>
+        <h1 class="text-3xl md:text-5xl font-black tracking-tighter">{{FIXTURE}}</h1>
+        <div class="flex justify-center gap-4 mt-4 text-sm opacity-80">
+            <span>📅 {{LOCAL_DATE}}</span> <span>🕒 {{LOCAL_TIME}}</span>
         </div>
+        <div id="live-odds" class="mt-4 text-orange-400 font-bold text-xs uppercase"></div>
     </div>
 
-    <main class="max-w-4xl mx-auto p-4 py-8">
-        
-        <div class="section-header">Live TV Channels & Broadcasters</div>
-        <div class="bg-white shadow-xl rounded-b-lg overflow-hidden border border-slate-200 mb-8">
-            {{BROADCAST_ROWS}}
+    <main class="max-w-4xl mx-auto p-4">
+        <div class="grid md:grid-cols-2 gap-4">
+            <div id="h2h-box"></div>
+            <div id="form-box"></div>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-6 mb-8">
-            <div>
-                <div class="section-header">Recent Form</div>
-                <div class="bg-white p-6 shadow-md rounded-b-lg border border-slate-200">
-                    {{FORM}}
-                    <p class="text-[10px] text-slate-400 mt-4 uppercase font-bold">Last 5 matches: Left (Home) vs Right (Away)</p>
-                </div>
-            </div>
-            <div>
-                <div class="section-header">Head to Head</div>
-                <div class="bg-white p-6 shadow-md rounded-b-lg border border-slate-200 flex items-center justify-center">
-                    <div class="text-center">
-                        <div class="text-lg font-bold text-slate-800">{{H2H}}</div>
-                        <div class="text-[10px] text-slate-400 uppercase font-bold mt-2">All-time record</div>
-                    </div>
-                </div>
-            </div>
+        <div class="section-header">Official TV Channels</div>
+        <div class="bg-white shadow rounded-b-lg">{{BROADCAST_ROWS}}</div>
+
+        <div class="section-header">Live Match Statistics</div>
+        <div id="sofa-stats" class="bg-white p-6 shadow rounded-b-lg">
+            <p class="text-gray-400 text-center text-sm">Stats will update live at kickoff...</p>
         </div>
 
-        <div class="section-header">Starting Lineups</div>
-        <div class="bg-white shadow-md rounded-b-lg border border-slate-200 mb-8 p-4">
-            {{LINEUPS}}
-        </div>
-
-        <div class="section-header">Match Statistics</div>
-        <div class="bg-white shadow-md rounded-b-lg border border-slate-200 mb-8 p-6">
-            {{STATS}}
-        </div>
-
-        <div class="section-header">Frequently Asked Questions</div>
-        <div class="bg-white shadow-xl rounded-b-lg overflow-hidden border border-slate-200">
-            <div class="faq-item">
-                <div class="faq-question">Where can I watch {{FIXTURE}} live?</div>
-                <div class="faq-answer">You can watch {{FIXTURE}} live on the channels listed above. Popular options include beIN Sports, Sky Sports, and SuperSport.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">What are the predicted lineups for {{FIXTURE}}?</div>
-                <div class="faq-answer">Official lineups are usually released 60 minutes before kickoff. Check our lineups section above for the latest updates.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">What time is kickoff?</div>
-                <div class="faq-answer">The match kicks off at <span class="auto-time text-blue-600 font-bold" data-unix="{{UNIX}}">...</span> local time.</div>
-            </div>
+        <div class="section-header">Confirmed Lineups</div>
+        <div id="sofa-lineups" class="bg-white p-6 shadow rounded-b-lg mb-10">
+            <p class="text-gray-400 text-center text-sm">Lineups usually announced 60m before kickoff.</p>
         </div>
     </main>
 
-    <footer style="background:#002d56; color:#94a3b8; padding:60px 20px; text-align:center; font-size:12px; font-weight: 600;">
-        <div class="max-w-4xl mx-auto">
-            &copy; 2026 TV.CRICFOOT.NET - OFFICIAL MATCH GUIDE
-        </div>
-    </footer>
-
-    <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
-        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
-        <script type="text/javascript">sc_online_i(1727643,"ffffff","ffffff");</script>
-    </div>
-    
     <script>
-    function updateLocalTimes() {
-        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        const matchId = "{{MATCH_ID}}";
         
-        document.querySelectorAll('.auto-time').forEach(el => {
-            const unix = el.getAttribute('data-unix');
-            if (unix) {
-                const date = new Date(unix * 1000);
-                el.innerText = date.getHours().toString().padStart(2, '0') + ":" + 
-                               date.getMinutes().toString().padStart(2, '0');
-            }
-        });
+        async function fetchSofa(endpoint) {
+            try {
+                const res = await fetch(`https://api.sofascore.com/api/v1/event/${matchId}/${endpoint}`);
+                return res.json();
+            } catch (e) { return null; }
+        }
 
-        document.querySelectorAll('.auto-date').forEach(el => {
-            const unix = el.getAttribute('data-unix');
-            if (unix) {
-                const date = new Date(unix * 1000);
-                el.innerText = date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+        async function initLivePage() {
+            if(!matchId) return;
+
+            // 1. Odds
+            const odds = await fetchSofa('provider/1/winning-odds');
+            if(odds?.winningOdds) {
+                document.getElementById('live-odds').innerText = `Home: ${odds.winningOdds.home} | Draw: ${odds.winningOdds.draw} | Away: ${odds.winningOdds.away}`;
             }
-        });
-    }
-    window.onload = updateLocalTimes;
+
+            // 2. Form
+            const form = await fetchSofa('pregame-form');
+            if(form) {
+                let html = '<div class="section-header">Team Form</div><div class="bg-white p-4 shadow flex justify-between items-center">';
+                ['home', 'away'].forEach(side => {
+                    html += '<div class="flex gap-1">';
+                    form[side].forEach(f => {
+                        const color = f.label === 'W' ? 'bg-green-500' : (f.label === 'L' ? 'bg-red-500' : 'bg-gray-400');
+                        html += `<span class="${color} text-white w-6 h-6 flex items-center justify-center rounded text-[10px] font-bold">${f.label}</span>`;
+                    });
+                    html += '</div>';
+                    if(side === 'home') html += '<span class="font-bold">VS</span>';
+                });
+                document.getElementById('form-box').innerHTML = html + '</div>';
+            }
+
+            // 3. Lineups
+            const lineups = await fetchSofa('lineups');
+            if(lineups?.confirmed) {
+                let html = '<div class="grid grid-cols-2 gap-8">';
+                ['home', 'away'].forEach(side => {
+                    html += `<div><h3 class="font-bold border-b mb-2 text-blue-600 uppercase text-xs">${side} XI</h3><ul class="text-sm">`;
+                    lineups[side].players.forEach(p => {
+                        html += `<li class="py-1 border-b border-gray-50">${p.player.name} <span class="text-gray-400 text-[10px] float-right">#${p.shirtNumber}</span></li>`;
+                    });
+                    html += '</ul></div>';
+                });
+                document.getElementById('sofa-lineups').innerHTML = html + '</div>';
+            }
+
+            // 4. Statistics
+            const stats = await fetchSofa('statistics');
+            if(stats?.statistics) {
+                const fullStats = stats.statistics.find(s => s.period === 'ALL')?.groups;
+                if(fullStats) {
+                    let html = '';
+                    fullStats.forEach(group => {
+                        group.statisticsItems.forEach(item => {
+                            html += `<div class="mb-4">
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span>${item.home}</span><span class="text-gray-400 uppercase">${item.name}</span><span>${item.away}</span>
+                                </div>
+                                <div class="stat-bar-bg flex">
+                                    <div class="bg-blue-600 h-full" style="width: ${item.homeValue}%"></div>
+                                    <div class="bg-orange-500 h-full" style="width: ${item.awayValue}%"></div>
+                                </div>
+                            </div>`;
+                        });
+                    });
+                    document.getElementById('sofa-stats').innerHTML = html;
+                }
+            }
+        }
+
+        initLivePage();
     </script>
 </body>
 </html>
