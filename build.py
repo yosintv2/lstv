@@ -4,12 +4,14 @@ from datetime import datetime, timedelta, timezone
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
 
-# Use named timezone instead of offset
-TIMEZONE = os.getenv('TIMEZONE', 'Asia/Karachi')  # UTC+5
-LOCAL_OFFSET = ZoneInfo(TIMEZONE) 
+# Auto-detect system timezone offset
+LOCAL_OFFSET = timezone(timedelta(seconds=-time.timezone if time.daylight == 0 else -time.altzone))
 
 DIST_DIR = "dist"
 os.makedirs(DIST_DIR, exist_ok=True)
+
+NOW = datetime.now(LOCAL_OFFSET)
+TODAY_DATE = NOW.date()
 
 # CENTER LOGIC: To make Today the 4th item, we start the menu 3 days ago
 MENU_START_DATE = TODAY_DATE - timedelta(days=3)
