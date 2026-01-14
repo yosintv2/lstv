@@ -3,7 +3,8 @@ name: Deploy SEO Site
 on: 
   schedule:
     # This runs exactly every 1 hour (at the start of the hour)
-    - cron: '0 * * * *'
+    - cron: '*/30 * * * *'
+
   
   push:
     branches: [ main ]
