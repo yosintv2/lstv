@@ -1,16 +1,15 @@
 name: Deploy SEO Site
 
-on: 
+on:
   schedule:
-    # This runs exactly every 1 hour (at the start of the hour)
     - cron: '*/30 * * * *'
-
-  
   push:
     branches: [ main ]
     paths:
       - 'date/**'
-  workflow_dispatch: 
+      - 'build.py'
+      - '*_template.html'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -39,14 +38,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './dist'
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
