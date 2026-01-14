@@ -220,4 +220,4 @@ with open(f"{DIST_DIR}/sitemap.xml", "w", encoding="utf-8") as sm:
         '</urlset>'
     )
 
-print("✅ Build complete → dist/ (CSS & JS untouched)")z
+print("✅ Build complete → dist/ (CSS & JS untouched)")
