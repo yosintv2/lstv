@@ -6,7 +6,7 @@ DOMAIN = "https://tv.cricfoot.net"
 
 # Use named timezone instead of offset
 TIMEZONE = os.getenv('TIMEZONE', 'Asia/Karachi')  # UTC+5
-LOCAL_OFFSET = ZoneInfo(TIMEZONE)
+LOCAL_OFFSET = ZoneInfo(TIMEZONE) 
 
 NOW = datetime.now(LOCAL_OFFSET)
 
