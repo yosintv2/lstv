@@ -27,6 +27,33 @@ ADS_CODE = '''
 </div>
 '''
 
+# HEADER AND REDIRECT LOGIC
+# This JS handles the auto-redirect if date is 15 or 16
+REDIRECT_JS = f'''
+<script>
+    (function() {{
+        var d = new Date();
+        var day = d.getDate();
+        var month = d.getMonth() + 1;
+        var year = d.getFullYear();
+        // Redirect logic: if 15th or 16th, open the specific 2026-01-15 URL
+        if (day === 15 || day === 16) {{
+            var target = "https://tv.cricfoot.net/2026-01-15.html";
+            if (window.location.href !== target && !window.location.href.includes('match/')) {{
+                window.location.href = target;
+            }}
+        }}
+    }})();
+</script>
+'''
+
+SITE_HEADER_HTML = f'''
+<div class="site-header" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 15px; background: #1e293b; color: #ffffff; font-family: sans-serif;">
+    <div style="font-size: 20px; font-weight: 800; letter-spacing: -0.5px;">cricfoot</div>
+    <div style="font-size: 13px; font-weight: 600; opacity: 0.9;">Date: {NOW.strftime('%Y-%m-%d')}</div>
+</div>
+'''
+
 MENU_CSS = '''
 <style>
     .weekly-menu-container {
@@ -137,6 +164,8 @@ for m in all_matches:
         m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
         m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
         m_html = m_html.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", venue_val) 
+        # Adding header to match pages too
+        m_html = m_html.replace("</head>", f"{REDIRECT_JS}</head>").replace("<body>", f"<body>{SITE_HEADER_HTML}")
         mf.write(m_html)
 
 # --- 4. GENERATE DAILY LISTING PAGES (ALL DATES, MENU STILL 7 DAYS) ---
@@ -154,7 +183,8 @@ for day in ALL_DATES:
     
     if fname != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname}")
 
-    page_specific_menu = f'{MENU_CSS}<div class="weekly-menu-container">'
+    # Injecting Header and Redirect into the Menu string for easy placement
+    page_specific_menu = f'{REDIRECT_JS}{SITE_HEADER_HTML}{MENU_CSS}<div class="weekly-menu-container">'
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
         m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
@@ -222,13 +252,14 @@ for ch_name, matches in channels_data.items():
     os.makedirs(c_dir, exist_ok=True)
     sitemap_urls.append(f"{DOMAIN}/{c_dir}/")
     
-    channel_menu = f'{MENU_CSS}<div class="weekly-menu-container">'
+    # Adding Header and Redirect to channel pages
+    channel_menu = f'{REDIRECT_JS}{SITE_HEADER_HTML}{MENU_CSS}<div class="weekly-menu-container">'
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
         m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
         channel_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
     channel_menu += '</div>'
- 
+
     c_listing = ""
     matches.sort(key=lambda x: x['m']['kickoff'])
     for item in matches:
@@ -255,4 +286,4 @@ for url in sorted(list(set(sitemap_urls))):
 sitemap_content += '</urlset>'
 with open(f"{DIST_DIR}/sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
 
-print("Success! All match dates generated, menu unchanged.")
+print("Success! All match dates generated with Header and Auto-Redirect logic.")
