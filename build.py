@@ -8,8 +8,6 @@ DOMAIN = "https://tv.cricfoot.net"
 TIMEZONE = os.getenv('TIMEZONE', 'Asia/Karachi')  # UTC+5
 LOCAL_OFFSET = ZoneInfo(TIMEZONE) 
 
-NOW = datetime.now(LOCAL_OFFSET)
-
 DIST_DIR = "dist"
 os.makedirs(DIST_DIR, exist_ok=True)
 
