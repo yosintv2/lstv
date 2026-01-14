@@ -25,6 +25,9 @@ MENU_CSS = '''
     .sofa-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 20px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
     .sofa-header { background: #f1f5f9; padding: 12px 16px; border-bottom: 1px solid #e2e8f0; font-weight: 800; color: #334155; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
     .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; border-bottom: 1px solid #f8fafc; font-size: 14px; }
+    .form-container { display: flex; gap: 6px; }
+    .form-circle { width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: 800; box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1); }
+
     .stat-label { color: #64748b; font-weight: 600; font-size: 12px; text-transform: uppercase; text-align: center; flex: 1; }
     .stat-value { font-weight: 700; color: #1e293b; width: 40px; }
     
@@ -35,8 +38,7 @@ MENU_CSS = '''
     .team-col ul { list-style: none; padding: 0; margin: 0; }
     .team-col li { font-size: 13px; padding: 6px 0; color: #475569; border-bottom: 1px dashed #f1f5f9; }
     
-    .form-container { display: flex; gap: 6px; }
-    .form-circle { width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: 800; box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1); }
+
     
     @media (max-width: 480px) { .date-btn b { font-size: 8px; } .date-btn div { font-size: 7px; } }
 </style>
