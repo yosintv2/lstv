@@ -1,4 +1,4 @@
-import json, os, re, glob, time 
+import json, os, re, glob, time
 from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
@@ -158,7 +158,8 @@ for day in ALL_DATES:
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
         m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
-        active_class = "active" if m_day == day else ""
+        # FIX: Active should be based on TODAY_DATE, not the current page day
+        active_class = "active" if m_day == TODAY_DATE else ""
         page_specific_menu += f'''
         <a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}">
             <div>{m_day.strftime("%a")}</div>
@@ -226,7 +227,9 @@ for ch_name, matches in channels_data.items():
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
         m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
-        channel_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
+        # FIX: Active should be based on TODAY_DATE
+        active_class = "active" if m_day == TODAY_DATE else ""
+        channel_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
     channel_menu += '</div>'
 
     c_listing = ""
