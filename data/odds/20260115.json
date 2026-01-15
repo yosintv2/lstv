@@ -442,9 +442,9 @@
   },
   "15176507": {
     "home": {
-      "fractionalValue": "67/100",
-      "expected": 60,
-      "actual": 64,
+      "fractionalValue": "31/50",
+      "expected": 62,
+      "actual": 60,
       "id": 19286857
     },
     "away": null

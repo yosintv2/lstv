@@ -21,9 +21,9 @@
       "id": 19287418
     },
     "away": {
-      "fractionalValue": "7/2",
-      "expected": 22,
-      "actual": 11,
+      "fractionalValue": "15/4",
+      "expected": 21,
+      "actual": 1,
       "id": 19287419
     }
   },
@@ -57,8 +57,8 @@
   },
   "14025076": {
     "home": {
-      "fractionalValue": "11/50",
-      "expected": 82,
+      "fractionalValue": "1/5",
+      "expected": 83,
       "actual": 81,
       "id": 19293944
     },
@@ -431,9 +431,9 @@
       "id": 19287436
     },
     "away": {
-      "fractionalValue": "6/5",
-      "expected": 45,
-      "actual": 44,
+      "fractionalValue": "5/4",
+      "expected": 44,
+      "actual": 45,
       "id": 19287437
     }
   },
@@ -3010,6 +3010,29 @@
       "expected": 25,
       "actual": 6,
       "id": 19348065
+    }
+  },
+  "14025082": {
+    "home": null,
+    "away": {
+      "fractionalValue": "53/100",
+      "expected": 65,
+      "actual": 60,
+      "id": 19348511
+    }
+  },
+  "14025089": {
+    "home": {
+      "fractionalValue": "73/100",
+      "expected": 58,
+      "actual": 43,
+      "id": 19348513
+    },
+    "away": {
+      "fractionalValue": "7/2",
+      "expected": 22,
+      "actual": 22,
+      "id": 19348514
     }
   }
 }
