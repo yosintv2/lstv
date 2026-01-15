@@ -25,7 +25,7 @@
         <div class="bg-slate-50 border border-slate-100 rounded-lg py-4 mb-6">
             <span class="block text-sm uppercase tracking-widest text-slate-400 font-bold mb-1">Back In</span>
             <div id="countdown" class="text-4xl font-mono font-bold text-blue-600">
-                10:00
+                00:30
             </div>
         </div>
 
@@ -41,9 +41,8 @@
     </div>
 
     <script>
-        // Set the countdown time in minutes
-        let timeInMinutes = 1;
-        let currentTime = timeInMinutes * 60;
+        // Set the countdown time in seconds (Changed to 30)
+        let currentTime = 30;
 
         const countdownElement = document.getElementById('countdown');
 
@@ -51,8 +50,8 @@
             const minutes = Math.floor(currentTime / 60);
             const seconds = currentTime % 60;
 
-            // Format numbers to always show two digits
-            const displayMinutes = minutes < 1 ? '0' + minutes : minutes;
+            // Format numbers to always show two digits (00:00 style)
+            const displayMinutes = minutes < 10 ? '0' + minutes : minutes;
             const displaySeconds = seconds < 10 ? '0' + seconds : seconds;
 
             countdownElement.innerText = `${displayMinutes}:${displaySeconds}`;
