@@ -105,15 +105,6 @@ async def process_day(session, days_offset):
     
     print(f"DONE: Generated {save_path}")
 
-To update your scraper to cover 7 days instead of 3, you only need to modify the main() function at the bottom of your script.
-
-Instead of passing the list [1, 2, 3], we will use range(1, 8). This will loop through Day 1 (tomorrow) all the way to Day 7.
-
-Updated Main Function
-Replace your existing main() function with this code:
-
-Python
-
 async def main():
     async with AsyncSession() as session:
         # range(1, 8) generates numbers: 1, 2, 3, 4, 5, 6, 7
