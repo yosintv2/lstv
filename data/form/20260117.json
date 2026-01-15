@@ -204,26 +204,26 @@
     "awayTeam": {
       "avgRating": "6.98",
       "position": 1,
-      "value": "43",
+      "value": "46",
       "form": [
         "W",
         "W",
         "W",
-        "W",
-        "D"
+        "D",
+        "W"
       ]
     },
     "label": "Pts"
   },
   "13981633": {
     "homeTeam": {
-      "avgRating": "6.86",
-      "position": 4,
-      "value": "39",
+      "avgRating": "6.87",
+      "position": 3,
+      "value": "40",
       "form": [
-        "L",
         "W",
         "W",
+        "D",
         "D",
         "D"
       ]
@@ -311,7 +311,7 @@
     },
     "awayTeam": {
       "avgRating": "6.89",
-      "position": 3,
+      "position": 4,
       "value": "39",
       "form": [
         "W",
@@ -354,13 +354,13 @@
     "homeTeam": {
       "avgRating": "6.74",
       "position": 14,
-      "value": "21",
+      "value": "22",
       "form": [
-        "L",
         "W",
         "D",
         "L",
-        "W"
+        "W",
+        "D"
       ]
     },
     "awayTeam": {
@@ -407,7 +407,7 @@
   "14062174": {
     "homeTeam": {
       "avgRating": "6.74",
-      "position": 12,
+      "position": 13,
       "value": "17",
       "form": [
         "D",
@@ -460,15 +460,15 @@
   },
   "14062176": {
     "homeTeam": {
-      "avgRating": "6.83",
-      "position": 11,
+      "avgRating": "6.81",
+      "position": 12,
       "value": "17",
       "form": [
         "D",
+        "L",
+        "L",
         "D",
-        "L",
-        "L",
-        "D"
+        "L"
       ]
     },
     "awayTeam": {
@@ -531,10 +531,10 @@
       "value": "12",
       "form": [
         "L",
-        "L",
         "D",
         "W",
-        "D"
+        "D",
+        "L"
       ]
     },
     "label": "Pts"
@@ -542,7 +542,7 @@
   "14062177": {
     "homeTeam": {
       "avgRating": "6.75",
-      "position": 13,
+      "position": 14,
       "value": "16",
       "form": [
         "W",
@@ -553,15 +553,15 @@
       ]
     },
     "awayTeam": {
-      "avgRating": "6.83",
+      "avgRating": "6.80",
       "position": 10,
       "value": "19",
       "form": [
-        "D",
         "W",
         "L",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     "label": "Pts"
@@ -595,25 +595,25 @@
   },
   "14062170": {
     "homeTeam": {
-      "avgRating": "6.97",
-      "position": 4,
-      "value": "29",
+      "avgRating": "6.98",
+      "position": 3,
+      "value": "32",
       "form": [
-        "W",
         "D",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ]
     },
     "awayTeam": {
       "avgRating": "7.15",
       "position": 1,
-      "value": "44",
+      "value": "47",
       "form": [
         "W",
-        "W",
         "D",
+        "W",
         "W",
         "W"
       ]
@@ -622,20 +622,20 @@
   },
   "14062175": {
     "homeTeam": {
-      "avgRating": "6.82",
-      "position": 6,
-      "value": "27",
+      "avgRating": "6.85",
+      "position": 5,
+      "value": "30",
       "form": [
-        "D",
         "W",
         "L",
         "W",
-        "D"
+        "D",
+        "W"
       ]
     },
     "awayTeam": {
       "avgRating": "6.92",
-      "position": 5,
+      "position": 6,
       "value": "29",
       "form": [
         "L",
@@ -649,15 +649,15 @@
   },
   "14062173": {
     "homeTeam": {
-      "avgRating": "6.71",
-      "position": 14,
-      "value": "15",
+      "avgRating": "6.72",
+      "position": 11,
+      "value": "18",
       "form": [
-        "D",
         "W",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ]
     },
     "awayTeam": {
@@ -1307,7 +1307,7 @@
     },
     "awayTeam": {
       "avgRating": "6.96",
-      "position": 2,
+      "position": 5,
       "value": "3",
       "form": [
         "L",
@@ -1354,11 +1354,12 @@
       ]
     },
     "awayTeam": {
-      "avgRating": "6.76",
-      "position": 12,
+      "avgRating": "6.68",
+      "position": 15,
       "value": "1",
       "form": [
-        "D"
+        "D",
+        "L"
       ]
     },
     "label": "Pts"
@@ -1366,7 +1367,7 @@
   "15238912": {
     "homeTeam": {
       "avgRating": "6.75",
-      "position": 7,
+      "position": 9,
       "value": "3",
       "form": [
         "W",
@@ -1374,30 +1375,33 @@
       ]
     },
     "awayTeam": {
-      "avgRating": "7.25",
-      "position": 4,
+      "avgRating": "6.78",
+      "position": 13,
       "value": "3",
       "form": [
-        "W"
+        "W",
+        "L"
       ]
     },
     "label": "Pts"
   },
   "15238914": {
     "homeTeam": {
-      "avgRating": "6.93",
-      "position": 14,
-      "value": "1",
+      "avgRating": "6.95",
+      "position": 2,
+      "value": "4",
       "form": [
-        "D"
+        "D",
+        "W"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.57",
-      "position": 15,
-      "value": "0",
+      "avgRating": "6.83",
+      "position": 4,
+      "value": "3",
       "form": [
-        "L"
+        "L",
+        "W"
       ]
     },
     "label": "Pts"
@@ -1405,7 +1409,7 @@
   "15238913": {
     "homeTeam": {
       "avgRating": "6.80",
-      "position": 3,
+      "position": 6,
       "value": "3",
       "form": [
         "W"
@@ -1413,7 +1417,7 @@
     },
     "awayTeam": {
       "avgRating": "6.84",
-      "position": 5,
+      "position": 7,
       "value": "3",
       "form": [
         "W"
@@ -1423,16 +1427,17 @@
   },
   "15238915": {
     "homeTeam": {
-      "avgRating": "6.67",
-      "position": 16,
-      "value": "0",
+      "avgRating": "6.88",
+      "position": 3,
+      "value": "3",
       "form": [
-        "L"
+        "L",
+        "W"
       ]
     },
     "awayTeam": {
       "avgRating": "6.76",
-      "position": 8,
+      "position": 10,
       "value": "3",
       "form": [
         "L",
@@ -2073,27 +2078,29 @@
       ]
     },
     "awayTeam": {
-      "avgRating": "6.90",
-      "position": 10,
-      "value": "1",
+      "avgRating": "6.87",
+      "position": 3,
+      "value": "4",
       "form": [
-        "D"
+        "D",
+        "W"
       ]
     },
     "label": "Pts"
   },
   "15176514": {
     "homeTeam": {
-      "avgRating": "6.81",
-      "position": 9,
-      "value": "1",
+      "avgRating": "6.80",
+      "position": 2,
+      "value": "4",
       "form": [
-        "D"
+        "D",
+        "W"
       ]
     },
     "awayTeam": {
       "avgRating": "6.79",
-      "position": 4,
+      "position": 7,
       "value": "3",
       "form": [
         "L",
@@ -2131,19 +2138,21 @@
   },
   "15176523": {
     "homeTeam": {
-      "avgRating": "6.92",
-      "position": 7,
-      "value": "3",
+      "avgRating": "7.00",
+      "position": 1,
+      "value": "6",
       "form": [
+        "W",
         "W"
       ]
     },
     "awayTeam": {
-      "avgRating": "7.01",
-      "position": 2,
+      "avgRating": "6.79",
+      "position": 6,
       "value": "3",
       "form": [
-        "W"
+        "W",
+        "L"
       ]
     },
     "label": "Pts"
@@ -2151,7 +2160,7 @@
   "15176524": {
     "homeTeam": {
       "avgRating": "6.58",
-      "position": 8,
+      "position": 10,
       "value": "3",
       "form": [
         "L",
@@ -2159,10 +2168,11 @@
       ]
     },
     "awayTeam": {
-      "avgRating": "6.57",
-      "position": 15,
+      "avgRating": "6.59",
+      "position": 16,
       "value": "0",
       "form": [
+        "L",
         "L"
       ]
     },
@@ -3817,20 +3827,20 @@
   },
   "14771937": {
     "homeTeam": {
-      "avgRating": "6.72",
+      "avgRating": "6.68",
       "position": 12,
       "value": "13",
       "form": [
-        "L",
         "D",
         "L",
         "L",
-        "D"
+        "D",
+        "L"
       ]
     },
     "awayTeam": {
       "avgRating": "6.58",
-      "position": 14,
+      "position": 15,
       "value": "10",
       "form": [
         "D",
@@ -3856,15 +3866,15 @@
       ]
     },
     "awayTeam": {
-      "avgRating": "6.65",
-      "position": 16,
-      "value": "8",
+      "avgRating": "6.68",
+      "position": 14,
+      "value": "11",
       "form": [
-        "D",
         "L",
         "L",
         "L",
-        "L"
+        "L",
+        "W"
       ]
     },
     "label": "Pts"
@@ -3883,12 +3893,12 @@
       ]
     },
     "awayTeam": {
-      "avgRating": "6.90",
+      "avgRating": "6.89",
       "position": 4,
-      "value": "28",
+      "value": "31",
       "form": [
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W"
@@ -3980,7 +3990,7 @@
   "14038833": {
     "homeTeam": {
       "avgRating": "6.81",
-      "position": 8,
+      "position": 9,
       "value": "21",
       "form": [
         "L",
@@ -4091,10 +4101,10 @@
       "position": 12,
       "value": "10",
       "form": [
-        "L",
         "W",
         "L",
         "D",
+        "L",
         "L"
       ]
     },
@@ -4115,7 +4125,7 @@
   "14038831": {
     "homeTeam": {
       "avgRating": "6.87",
-      "position": 5,
+      "position": 6,
       "value": "29",
       "form": [
         "D",
@@ -4127,14 +4137,14 @@
     },
     "awayTeam": {
       "avgRating": "6.83",
-      "position": 9,
-      "value": "21",
+      "position": 7,
+      "value": "24",
       "form": [
-        "L",
         "W",
         "D",
         "D",
-        "L"
+        "L",
+        "W"
       ]
     },
     "label": "Pts"
@@ -4520,7 +4530,7 @@
   "15010576": {
     "homeTeam": {
       "avgRating": "6.73",
-      "position": 11,
+      "position": 10,
       "value": "11",
       "form": [
         "L",
@@ -4708,26 +4718,26 @@
   },
   "14194036": {
     "homeTeam": {
-      "avgRating": "6.59",
-      "position": 9,
+      "avgRating": "6.61",
+      "position": 10,
       "value": "8",
       "form": [
         "L",
-        "L",
         "W",
         "D",
-        "W"
+        "W",
+        "L"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.72",
-      "position": 7,
-      "value": "13",
+      "avgRating": "6.73",
+      "position": 6,
+      "value": "19",
       "form": [
-        "W",
         "L",
         "L",
         "D",
+        "W",
         "W"
       ]
     },
@@ -4736,107 +4746,107 @@
   "14194032": {
     "homeTeam": {
       "avgRating": "6.86",
-      "position": 5,
-      "value": "17",
+      "position": 4,
+      "value": "21",
       "form": [
-        "L",
         "L",
         "W",
         "D",
-        "L"
+        "L",
+        "D"
       ]
     },
     "awayTeam": {
       "avgRating": "6.68",
-      "position": 8,
+      "position": 9,
       "value": "11",
       "form": [
-        "D",
         "W",
         "L",
         "L",
-        "W"
+        "W",
+        "L"
       ]
     },
     "label": "Pts"
   },
   "14194029": {
     "homeTeam": {
-      "avgRating": "6.68",
-      "position": 11,
+      "avgRating": "6.66",
+      "position": 12,
       "value": "7",
       "form": [
         "L",
         "L",
-        "L",
         "D",
+        "L",
         "L"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.66",
-      "position": 6,
+      "avgRating": "6.63",
+      "position": 7,
       "value": "15",
       "form": [
-        "D",
         "W",
         "L",
         "D",
-        "W"
+        "W",
+        "L"
       ]
     },
     "label": "Pts"
   },
   "14194038": {
     "homeTeam": {
-      "avgRating": "6.58",
-      "position": 12,
-      "value": "5",
+      "avgRating": "6.61",
+      "position": 11,
+      "value": "8",
       "form": [
-        "L",
         "L",
         "L",
         "D",
-        "L"
+        "L",
+        "W"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.74",
-      "position": 4,
-      "value": "21",
+      "avgRating": "6.75",
+      "position": 2,
+      "value": "24",
       "form": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     "label": "Pts"
   },
   "14194031": {
     "homeTeam": {
-      "avgRating": "6.54",
-      "position": 10,
-      "value": "8",
+      "avgRating": "6.56",
+      "position": 8,
+      "value": "12",
       "form": [
         "L",
         "L",
         "L",
         "L",
-        "L"
+        "D"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.91",
-      "position": 2,
-      "value": "26",
+      "avgRating": "6.95",
+      "position": 5,
+      "value": "20",
       "form": [
         "W",
         "W",
-        "W",
         "D",
-        "D"
+        "D",
+        "W"
       ]
     },
     "label": "Pts"
@@ -5100,7 +5110,7 @@
     "awayTeam": {
       "avgRating": "7.34",
       "position": 1,
-      "value": "42",
+      "value": "45",
       "form": [
         "W",
         "W",
@@ -5142,35 +5152,39 @@
     "homeTeam": {
       "avgRating": "6.75",
       "position": 6,
-      "value": "0",
+      "value": "1",
       "form": [
-        "L"
+        "L",
+        "D"
       ]
     },
     "awayTeam": {
       "avgRating": "7.00",
-      "position": 5,
-      "value": "1",
+      "position": 1,
+      "value": "4",
       "form": [
-        "D"
+        "D",
+        "W"
       ]
     },
     "label": "Pts"
   },
   "15146338": {
     "homeTeam": {
-      "avgRating": "6.89",
-      "position": 5,
-      "value": "1",
+      "avgRating": "6.93",
+      "position": 3,
+      "value": "2",
       "form": [
+        "D",
         "D"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.97",
-      "position": 2,
-      "value": "1",
+      "avgRating": "6.86",
+      "position": 3,
+      "value": "2",
       "form": [
+        "D",
         "D"
       ]
     },
@@ -5179,17 +5193,19 @@
   "15146334": {
     "homeTeam": {
       "avgRating": "7.23",
-      "position": 1,
+      "position": 2,
       "value": "3",
       "form": [
-        "W"
+        "W",
+        "L"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.69",
-      "position": 3,
-      "value": "1",
+      "avgRating": "6.70",
+      "position": 4,
+      "value": "2",
       "form": [
+        "D",
         "D"
       ]
     },
@@ -5197,18 +5213,20 @@
   },
   "15188771": {
     "homeTeam": {
-      "avgRating": "6.96",
-      "position": 1,
-      "value": "1",
+      "avgRating": "6.85",
+      "position": 2,
+      "value": "2",
       "form": [
+        "D",
         "D"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.81",
+      "avgRating": "6.75",
       "position": 3,
-      "value": "1",
+      "value": "2",
       "form": [
+        "D",
         "D"
       ]
     },
@@ -5216,18 +5234,20 @@
   },
   "15188774": {
     "homeTeam": {
-      "avgRating": "7.04",
-      "position": 1,
+      "avgRating": "6.71",
+      "position": 2,
       "value": "3",
       "form": [
-        "W"
+        "W",
+        "L"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.46",
+      "avgRating": "6.54",
       "position": 4,
       "value": "0",
       "form": [
+        "L",
         "L"
       ]
     },
@@ -5235,18 +5255,20 @@
   },
   "15188772": {
     "homeTeam": {
-      "avgRating": "6.56",
-      "position": 2,
-      "value": "0",
+      "avgRating": "6.73",
+      "position": 1,
+      "value": "3",
       "form": [
-        "L"
+        "L",
+        "W"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.81",
-      "position": 3,
-      "value": "1",
+      "avgRating": "6.73",
+      "position": 4,
+      "value": "2",
       "form": [
+        "D",
         "D"
       ]
     },
@@ -5254,18 +5276,20 @@
   },
   "15188773": {
     "homeTeam": {
-      "avgRating": "6.72",
-      "position": 4,
-      "value": "1",
+      "avgRating": "6.83",
+      "position": 1,
+      "value": "4",
       "form": [
-        "D"
+        "D",
+        "W"
       ]
     },
     "awayTeam": {
-      "avgRating": "6.82",
+      "avgRating": "6.88",
       "position": 2,
-      "value": "3",
+      "value": "6",
       "form": [
+        "W",
         "W"
       ]
     },
@@ -5291,13 +5315,14 @@
   "15204485": {
     "homeTeam": {
       "position": 2,
-      "value": "3",
+      "value": "4",
       "form": [
-        "W"
+        "W",
+        "D"
       ]
     },
     "awayTeam": {
-      "position": 6,
+      "position": 7,
       "value": "1",
       "form": [
         "L",
@@ -7723,13 +7748,13 @@
   "14270994": {
     "homeTeam": {
       "position": 10,
-      "value": "12",
+      "value": "14",
       "form": [
         "D",
-        "D",
         "L",
         "L",
-        "L"
+        "L",
+        "D"
       ]
     },
     "awayTeam": {
@@ -8764,6 +8789,41 @@
         "L",
         "L",
         "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15138029": {
+    "homeTeam": {
+      "position": 3,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 1,
+      "value": "1",
+      "form": [
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15188411": {
+    "homeTeam": {
+      "position": 2,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 3,
+      "value": "1",
+      "form": [
+        "D"
       ]
     },
     "label": "Pts"

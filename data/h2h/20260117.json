@@ -2958,5 +2958,77 @@
       "draws": 0
     },
     "managerDuel": null
+  },
+  "14058091": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14929375": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14929379": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 3,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15369329": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15369330": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 2,
+      "draws": 4
+    },
+    "managerDuel": null
+  },
+  "15369332": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 2,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15369331": {
+    "teamDuel": {
+      "homeWins": 8,
+      "awayWins": 1,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15369333": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 4,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "15361866": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": null
   }
 }

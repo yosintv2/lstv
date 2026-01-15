@@ -11061,47 +11061,6 @@
           "reason": 1,
           "description": "Hamstring",
           "externalType": 72
-        },
-        {
-          "player": {
-            "name": "Ugo Raghouber",
-            "slug": "raghouber-ugo",
-            "shortName": "U. Raghouber",
-            "position": "M",
-            "jerseyNumber": "28",
-            "height": 180,
-            "userCount": 241,
-            "gender": "M",
-            "id": 1170694,
-            "country": {
-              "alpha2": "FR",
-              "alpha3": "FRA",
-              "name": "France",
-              "slug": "france"
-            },
-            "marketValueCurrency": "EUR",
-            "dateOfBirthTimestamp": 1058054400,
-            "proposedMarketValueRaw": {
-              "value": 2800000,
-              "currency": "EUR"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "\u0631\u0627\u062c\u0648\u0648\u0628\u0631\u060c \u0623\u0648\u063a\u0648",
-                "hi": "\u0930\u093e\u0918\u094c\u092c\u0930, \u0909\u0917\u094b",
-                "bn": "\u09b0\u09be\u0998\u09cb\u09ac\u09be\u09b0, \u0989\u0997\u09cb"
-              },
-              "shortNameTranslation": {
-                "ar": "\u0623. \u0631\u0627\u062c\u0648\u0648\u0628\u0631",
-                "hi": "\u0909. \u0930\u093e\u0918\u094c\u092c\u0930",
-                "bn": "\u0987\u0989. \u09b0\u09be\u0998\u09cb\u09ac\u09be\u09b0"
-              }
-            }
-          },
-          "type": "missing",
-          "reason": 1,
-          "description": "Ankle Injury",
-          "externalType": 72
         }
       ]
     },
