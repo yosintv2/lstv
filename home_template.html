@@ -4,23 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>{{PAGE_TITLE}} | CricFootTV</title>
-    <meta name="description" content="View the full live sports schedule for {{SELECTED_DATE}}. Get kickoff times, TV channels, and streaming guide for today's football and cricket matches on CricFootTV.">
-    <meta name="keywords" content="sports schedule, live football today, cricket match timings, watch sports live, {{SELECTED_DATE}} matches">
-    
-    <script>
-      (function() {
-        var link = document.createElement('link');
-        link.rel = 'canonical';
-        link.href = window.location.protocol + '//' + window.location.host + window.location.pathname;
-        document.head.appendChild(link);
-      })();
-    </script>
+<title>{{PAGE_TITLE}} | CricFootTV</title>
+<meta name="title" content="{{PAGE_TITLE}} | CricFootTV">
+<meta name="description" content="View the full live sports schedule for {{SELECTED_DATE}}. Get kickoff times, TV channels, and streaming guide for today's football and cricket matches on CricFootTV.">
+<meta name="keywords" content="sports schedule, live football today, cricket match timings, watch sports live, {{SELECTED_DATE}} matches, CricFootTV live">
+<meta name="author" content="CricFootTV">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="{{PAGE_TITLE}} | CricFootTV">
-    <meta property="og:description" content="Check the live broadcast schedule for football and cricket on {{SELECTED_DATE}}.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.hls-player.net/fav.png">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="" id="canonical-link">
+<script>
+    // Improved canonical script
+    (function() {
+        var canonicalURL = window.location.protocol + '//' + window.location.host + window.location.pathname;
+        document.getElementById('canonical-link').setAttribute('href', canonicalURL);
+    })();
+</script>
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.cricfoot-tv.net{{CURRENT_PATH}}">
+<meta property="og:title" content="{{PAGE_TITLE}} | CricFootTV">
+<meta property="og:description" content="Check the live broadcast schedule for football and cricket on {{SELECTED_DATE}}.">
+<meta property="og:image" content="https://www.hls-player.net/fav.png">
+<meta property="og:site_name" content="CricFootTV">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.cricfoot-tv.net{{CURRENT_PATH}}">
+<meta property="twitter:title" content="{{PAGE_TITLE}} | CricFootTV">
+<meta property="twitter:description" content="Live football and cricket schedules for {{SELECTED_DATE}}. Don't miss the action on CricFootTV.">
+<meta property="twitter:image" content="https://www.hls-player.net/fav.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsEvent",
+  "name": "{{PAGE_TITLE}}",
+  "description": "Live sports broadcast schedule for {{SELECTED_DATE}}",
+  "startDate": "{{SELECTED_DATE}}", 
+  "location": {
+    "@type": "VirtualLocation",
+    "url": "https://www.cricfoot-tv.net"
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "CricFootTV",
+    "url": "https://www.cricfoot-tv.net"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.cricfoot-tv.net",
+    "availability": "https://schema.org/InStock",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
     <script type="application/ld+json">
     [
